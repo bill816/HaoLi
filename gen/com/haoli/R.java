@@ -8,6 +8,12 @@
 package com.haoli;
 
 public final class R {
+    public static final class anim {
+        public static final int slide_in_from_bottom=0x7f040000;
+        public static final int slide_in_from_top=0x7f040001;
+        public static final int slide_out_to_bottom=0x7f040002;
+        public static final int slide_out_to_top=0x7f040003;
+    }
     public static final class attr {
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -17,7 +23,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsDividerColor=0x7f010002;
+        public static final int pstsDividerColor=0x7f010015;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -27,7 +33,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsDividerPadding=0x7f010005;
+        public static final int pstsDividerPadding=0x7f010018;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -36,7 +42,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsIndicatorColor=0x7f010000;
+        public static final int pstsIndicatorColor=0x7f010013;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -46,7 +52,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsIndicatorHeight=0x7f010003;
+        public static final int pstsIndicatorHeight=0x7f010016;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -56,7 +62,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsScrollOffset=0x7f010007;
+        public static final int pstsScrollOffset=0x7f01001a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -64,11 +70,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsShouldExpand=0x7f010009;
+        public static final int pstsShouldExpand=0x7f01001c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int pstsTabBackground=0x7f010008;
+        public static final int pstsTabBackground=0x7f01001b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -78,7 +84,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTabPaddingLeftRight=0x7f010006;
+        public static final int pstsTabPaddingLeftRight=0x7f010019;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -86,7 +92,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTextAllCaps=0x7f01000a;
+        public static final int pstsTextAllCaps=0x7f01001d;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -95,7 +101,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsUnderlineColor=0x7f010001;
+        public static final int pstsUnderlineColor=0x7f010014;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -105,70 +111,204 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsUnderlineHeight=0x7f010004;
+        public static final int pstsUnderlineHeight=0x7f010017;
+        /**  BELOW HERE ARE DEPRECEATED. DO NOT USE. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrAdapterViewBackground=0x7f010010;
+        /**  Style of Animation should be used displayed when pulling. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>rotate</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
+</table>
+         */
+        public static final int ptrAnimationStyle=0x7f01000c;
+        /**  Drawable to use as Loading Indicator. Changes both Header and Footer. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawable=0x7f010006;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableBottom=0x7f010012;
+        /**  Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableEnd=0x7f010008;
+        /**  Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableStart=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableTop=0x7f010011;
+        /**  A drawable to use as the background of the Header and Footer Loading Views 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderBackground=0x7f010001;
+        /**  Text Color of the Header and Footer Loading Views Sub Header 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderSubTextColor=0x7f010003;
+        /**  Base text color, typeface, size, and style for Header and Footer Loading Views 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrHeaderTextAppearance=0x7f01000a;
+        /**  Text Color of the Header and Footer Loading Views 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderTextColor=0x7f010002;
+        /** 
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrListViewExtrasEnabled=0x7f01000e;
+        /**  Mode of Pull-to-Refresh that should be used 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>disabled</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>pullFromStart</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>pullFromEnd</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>both</code></td><td>0x3</td><td></td></tr>
+<tr><td><code>manualOnly</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>pullDownFromTop</code></td><td>0x1</td><td> These last two are depreacted </td></tr>
+<tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
+</table>
+         */
+        public static final int ptrMode=0x7f010004;
+        /**  Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrOverScroll=0x7f010009;
+        /**  A drawable to use as the background of the Refreshable View 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrRefreshableViewBackground=0x7f010000;
+        /** 
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrRotateDrawableWhilePulling=0x7f01000f;
+        /**  Whether the user can scroll while the View is Refreshing 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrScrollingWhileRefreshingEnabled=0x7f01000d;
+        /**  Whether the Indicator overlay(s) should be used 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrShowIndicator=0x7f010005;
+        /**  Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrSubHeaderTextAppearance=0x7f01000b;
     }
     public static final class color {
-        public static final int ChattingSenderTextColor=0x7f04000c;
-        public static final int ConversationVoiceTextColor=0x7f04000d;
-        public static final int add_btn_text_color=0x7f04001c;
-        public static final int add_state_color_added=0x7f04001a;
-        public static final int add_state_color_waiting=0x7f04001b;
-        public static final int background_tab_pressed=0x7f040000;
-        public static final int black=0x7f040002;
-        public static final int blue=0x7f040003;
-        public static final int chat_card_seperator_color=0x7f040036;
-        public static final int chatting_bg_purecolor=0x7f040016;
-        public static final int conatct_info_summary_color=0x7f040034;
-        public static final int conatct_info_weibo_link_color=0x7f040033;
-        public static final int dark_bg_color=0x7f04000f;
-        public static final int darkgrey=0x7f040006;
-        public static final int default_background_color=0x7f040035;
-        public static final int general_background_color=0x7f040038;
-        public static final int general_sub_background_color=0x7f040039;
-        public static final int grey=0x7f040005;
-        public static final int invite_btn_text_color=0x7f04001d;
-        public static final int lightgrey=0x7f040008;
-        public static final int lightransparent=0x7f04000a;
-        public static final int media_explorer_bg_color=0x7f040037;
-        public static final int mm_tab_btn=0x7f04003b;
-        public static final int navpage=0x7f04000e;
-        public static final int plugin_mail_grey=0x7f040017;
-        public static final int plugin_readerapp_header_color_news=0x7f040018;
-        public static final int plugin_readerapp_header_color_weibo=0x7f040019;
-        public static final int possible_result_points=0x7f040011;
-        public static final int readerapp_item_content_color=0x7f040030;
-        public static final int readerapp_item_date_color=0x7f04002f;
-        public static final int readerapp_item_divider_color=0x7f040032;
-        public static final int readerapp_item_time_color=0x7f040031;
-        public static final int red=0x7f040004;
-        public static final int result_view=0x7f040014;
-        public static final int semitransparent=0x7f040009;
-        public static final int shake_info_text=0x7f040010;
-        public static final int sns_artist_background=0x7f04002e;
-        public static final int sns_artist_bg=0x7f040028;
-        public static final int sns_artist_desc=0x7f04002d;
-        public static final int sns_bg_color=0x7f040027;
-        public static final int sns_comment_color=0x7f040026;
-        public static final int sns_detail_normal_bg=0x7f04002c;
-        public static final int sns_detail_pressed_bg=0x7f04002b;
-        public static final int sns_dialog_transparent=0x7f04003a;
-        public static final int sns_like_color=0x7f04002a;
-        public static final int sns_line=0x7f040022;
-        public static final int sns_link_bg_color=0x7f040021;
-        public static final int sns_link_color=0x7f040020;
-        public static final int sns_loading_img=0x7f04001e;
-        public static final int sns_sign=0x7f040029;
-        public static final int sns_upload_text_normal=0x7f040023;
-        public static final int sns_upload_text_select=0x7f040024;
-        public static final int sns_word_color=0x7f040025;
-        public static final int tab_text=0x7f04003c;
-        public static final int toasterro=0x7f040007;
-        public static final int transparent=0x7f04000b;
-        public static final int viewfinder_frame=0x7f040012;
-        public static final int viewfinder_laser=0x7f040013;
-        public static final int viewfinder_mask=0x7f040015;
-        public static final int white=0x7f040001;
-        public static final int with_username=0x7f04001f;
+        public static final int ChattingSenderTextColor=0x7f08000c;
+        public static final int ConversationVoiceTextColor=0x7f08000d;
+        public static final int add_btn_text_color=0x7f08001c;
+        public static final int add_state_color_added=0x7f08001a;
+        public static final int add_state_color_waiting=0x7f08001b;
+        public static final int background_tab_pressed=0x7f080000;
+        public static final int black=0x7f080002;
+        public static final int blue=0x7f080003;
+        public static final int chat_card_seperator_color=0x7f080036;
+        public static final int chatting_bg_purecolor=0x7f080016;
+        public static final int conatct_info_summary_color=0x7f080034;
+        public static final int conatct_info_weibo_link_color=0x7f080033;
+        public static final int dark_bg_color=0x7f08000f;
+        public static final int darkgrey=0x7f080006;
+        public static final int default_background_color=0x7f080035;
+        public static final int general_background_color=0x7f080038;
+        public static final int general_sub_background_color=0x7f080039;
+        public static final int grey=0x7f080005;
+        public static final int invite_btn_text_color=0x7f08001d;
+        public static final int lightgrey=0x7f080008;
+        public static final int lightransparent=0x7f08000a;
+        public static final int media_explorer_bg_color=0x7f080037;
+        public static final int mm_tab_btn=0x7f08003b;
+        public static final int navpage=0x7f08000e;
+        public static final int plugin_mail_grey=0x7f080017;
+        public static final int plugin_readerapp_header_color_news=0x7f080018;
+        public static final int plugin_readerapp_header_color_weibo=0x7f080019;
+        public static final int possible_result_points=0x7f080011;
+        public static final int readerapp_item_content_color=0x7f080030;
+        public static final int readerapp_item_date_color=0x7f08002f;
+        public static final int readerapp_item_divider_color=0x7f080032;
+        public static final int readerapp_item_time_color=0x7f080031;
+        public static final int red=0x7f080004;
+        public static final int result_view=0x7f080014;
+        public static final int semitransparent=0x7f080009;
+        public static final int shake_info_text=0x7f080010;
+        public static final int sns_artist_background=0x7f08002e;
+        public static final int sns_artist_bg=0x7f080028;
+        public static final int sns_artist_desc=0x7f08002d;
+        public static final int sns_bg_color=0x7f080027;
+        public static final int sns_comment_color=0x7f080026;
+        public static final int sns_detail_normal_bg=0x7f08002c;
+        public static final int sns_detail_pressed_bg=0x7f08002b;
+        public static final int sns_dialog_transparent=0x7f08003a;
+        public static final int sns_like_color=0x7f08002a;
+        public static final int sns_line=0x7f080022;
+        public static final int sns_link_bg_color=0x7f080021;
+        public static final int sns_link_color=0x7f080020;
+        public static final int sns_loading_img=0x7f08001e;
+        public static final int sns_sign=0x7f080029;
+        public static final int sns_upload_text_normal=0x7f080023;
+        public static final int sns_upload_text_select=0x7f080024;
+        public static final int sns_word_color=0x7f080025;
+        public static final int tab_text=0x7f08003c;
+        public static final int toasterro=0x7f080007;
+        public static final int transparent=0x7f08000b;
+        public static final int viewfinder_frame=0x7f080012;
+        public static final int viewfinder_laser=0x7f080013;
+        public static final int viewfinder_mask=0x7f080015;
+        public static final int white=0x7f080001;
+        public static final int with_username=0x7f08001f;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -178,8 +318,14 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f060006;
+        public static final int activity_vertical_margin=0x7f060007;
+        public static final int header_footer_internal_padding=0x7f060005;
+        public static final int header_footer_left_right_padding=0x7f060003;
+        public static final int header_footer_top_bottom_padding=0x7f060004;
+        public static final int indicator_corner_radius=0x7f060001;
+        public static final int indicator_internal_padding=0x7f060002;
+        public static final int indicator_right_padding=0x7f060000;
     }
     public static final class drawable {
         public static final int actionbar_add_icon=0x7f020000;
@@ -195,1594 +341,1629 @@ containing a value of this type.
         public static final int background_tab=0x7f02000a;
         public static final int custom_loading=0x7f02000b;
         public static final int custom_progressbar=0x7f02000c;
-        public static final int friendactivity_newnotice=0x7f02000d;
-        public static final int ic_launcher=0x7f02000e;
-        public static final int icon=0x7f02000f;
-        public static final int loading=0x7f020010;
-        public static final int logo=0x7f020011;
-        public static final int mm_trans=0x7f020012;
-        public static final int mmfooter_bg=0x7f020013;
-        public static final int ofm_add_icon=0x7f020014;
-        public static final int ofm_camera_icon=0x7f020015;
-        public static final int ofm_card_icon=0x7f020016;
-        public static final int ofm_collect_icon=0x7f020017;
-        public static final int ofm_feedback_icon=0x7f020018;
-        public static final int ofm_group_chat_icon=0x7f020019;
-        public static final int ofm_photo_icon=0x7f02001a;
-        public static final int ofm_qrcode_icon=0x7f02001b;
-        public static final int ofm_setting_icon=0x7f02001c;
-        public static final int ofm_video_icon=0x7f02001d;
-        public static final int tab_address=0x7f02001e;
-        public static final int tab_address_normal=0x7f02001f;
-        public static final int tab_address_pressed=0x7f020020;
-        public static final int tab_bg=0x7f020021;
-        public static final int tab_bg_halo=0x7f020022;
-        public static final int tab_find_frd=0x7f020023;
-        public static final int tab_find_frd_normal=0x7f020024;
-        public static final int tab_find_frd_pressed=0x7f020025;
-        public static final int tab_item_d=0x7f020026;
-        public static final int tab_settings=0x7f020027;
-        public static final int tab_settings_normal=0x7f020028;
-        public static final int tab_settings_pressed=0x7f020029;
-        public static final int tab_unread_bg=0x7f02002a;
-        public static final int tab_weixin=0x7f02002b;
-        public static final int tab_weixin_normal=0x7f02002c;
-        public static final int tab_weixin_pressed=0x7f02002d;
+        public static final int default_indicator_arrow=0x7f02000d;
+        public static final int default_indicator_rotate=0x7f02000e;
+        public static final int friendactivity_newnotice=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int icon=0x7f020011;
+        public static final int indicator_bg_bottom=0x7f020012;
+        public static final int indicator_bg_top=0x7f020013;
+        public static final int loading=0x7f020014;
+        public static final int logo=0x7f020015;
+        public static final int mm_trans=0x7f020016;
+        public static final int mmfooter_bg=0x7f020017;
+        public static final int ofm_add_icon=0x7f020018;
+        public static final int ofm_camera_icon=0x7f020019;
+        public static final int ofm_card_icon=0x7f02001a;
+        public static final int ofm_collect_icon=0x7f02001b;
+        public static final int ofm_feedback_icon=0x7f02001c;
+        public static final int ofm_group_chat_icon=0x7f02001d;
+        public static final int ofm_photo_icon=0x7f02001e;
+        public static final int ofm_qrcode_icon=0x7f02001f;
+        public static final int ofm_setting_icon=0x7f020020;
+        public static final int ofm_video_icon=0x7f020021;
+        public static final int tab_address=0x7f020022;
+        public static final int tab_address_normal=0x7f020023;
+        public static final int tab_address_pressed=0x7f020024;
+        public static final int tab_bg=0x7f020025;
+        public static final int tab_bg_halo=0x7f020026;
+        public static final int tab_find_frd=0x7f020027;
+        public static final int tab_find_frd_normal=0x7f020028;
+        public static final int tab_find_frd_pressed=0x7f020029;
+        public static final int tab_item_d=0x7f02002a;
+        public static final int tab_settings=0x7f02002b;
+        public static final int tab_settings_normal=0x7f02002c;
+        public static final int tab_settings_pressed=0x7f02002d;
+        public static final int tab_unread_bg=0x7f02002e;
+        public static final int tab_weixin=0x7f02002f;
+        public static final int tab_weixin_normal=0x7f020030;
+        public static final int tab_weixin_pressed=0x7f020031;
     }
     public static final class id {
-        public static final int action_album=0x7f09000a;
-        public static final int action_card=0x7f09000c;
-        public static final int action_collection=0x7f09000b;
-        public static final int action_feed=0x7f09000e;
-        public static final int action_plus=0x7f090009;
-        public static final int action_search=0x7f090008;
-        public static final int action_settings=0x7f09000d;
-        public static final int imageview=0x7f090000;
-        public static final int main_radiogroup=0x7f090003;
-        public static final int main_tab_address=0x7f090005;
-        public static final int main_tab_find_friend=0x7f090006;
-        public static final int main_tab_settings=0x7f090007;
-        public static final int main_tab_weixin=0x7f090004;
-        public static final int pager=0x7f090002;
-        public static final int tabs=0x7f090001;
+        public static final int action_album=0x7f05001c;
+        public static final int action_card=0x7f05001e;
+        public static final int action_collection=0x7f05001d;
+        public static final int action_feed=0x7f050020;
+        public static final int action_plus=0x7f05001b;
+        public static final int action_search=0x7f05001a;
+        public static final int action_settings=0x7f05001f;
+        public static final int both=0x7f050003;
+        public static final int disabled=0x7f050000;
+        public static final int fl_inner=0x7f050019;
+        public static final int flip=0x7f050008;
+        public static final int gridview=0x7f050009;
+        public static final int imageview=0x7f05000c;
+        public static final int main_radiogroup=0x7f050010;
+        public static final int main_tab_address=0x7f050012;
+        public static final int main_tab_find_friend=0x7f050013;
+        public static final int main_tab_settings=0x7f050014;
+        public static final int main_tab_weixin=0x7f050011;
+        public static final int manualOnly=0x7f050004;
+        public static final int pager=0x7f05000f;
+        public static final int pullDownFromTop=0x7f050005;
+        public static final int pullFromEnd=0x7f050002;
+        public static final int pullFromStart=0x7f050001;
+        public static final int pullUpFromBottom=0x7f050006;
+        public static final int pull_refresh_list=0x7f05000d;
+        public static final int pull_to_refresh_image=0x7f050015;
+        public static final int pull_to_refresh_progress=0x7f050016;
+        public static final int pull_to_refresh_sub_text=0x7f050018;
+        public static final int pull_to_refresh_text=0x7f050017;
+        public static final int rotate=0x7f050007;
+        public static final int scrollview=0x7f05000b;
+        public static final int tabs=0x7f05000e;
+        public static final int webview=0x7f05000a;
     }
     public static final class layout {
         public static final int activity1_layout=0x7f030000;
         public static final int activity2_layout=0x7f030001;
         public static final int activity3_layout=0x7f030002;
         public static final int activity4_layout=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int fragment_main=0x7f030005;
-        public static final int main_tab=0x7f030006;
+        public static final int activity_list=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int fragment_main=0x7f030006;
+        public static final int main_tab=0x7f030007;
+        public static final int pull_to_refresh_header=0x7f030008;
+        public static final int pull_to_refresh_header_horizontal=0x7f030009;
+        public static final int pull_to_refresh_header_vertical=0x7f03000a;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f0a0000;
     }
     public static final class string {
-        public static final int action_album=0x7f060003;
-        public static final int action_card=0x7f060005;
-        public static final int action_collection=0x7f060004;
-        public static final int action_feed=0x7f060007;
-        public static final int action_plus=0x7f060002;
-        public static final int action_search=0x7f060001;
-        public static final int action_settings=0x7f060006;
-        public static final int add_more_friends_title=0x7f06030a;
-        public static final int add_room_mem_err=0x7f0603ec;
-        public static final int add_room_mem_memberExits=0x7f0603f0;
-        public static final int add_room_mem_ok=0x7f0603ed;
-        public static final int addapp_add_app=0x7f0604bc;
-        public static final int addapp_added_app=0x7f0604bd;
-        public static final int addapp_available_app=0x7f0604be;
-        public static final int addapp_empty_app_list_added=0x7f0604c1;
-        public static final int addapp_empty_app_list_available=0x7f0604c2;
-        public static final int addapp_no_app_tip=0x7f0604c3;
-        public static final int addapp_recommend_app=0x7f0604bf;
-        public static final int addapp_recommend_url=0x7f0604c4;
-        public static final int addapp_view_more_recommend_app=0x7f0604c0;
-        public static final int addcontact_fail=0x7f0603a3;
-        public static final int addcontact_fail_blacklist=0x7f0603a4;
-        public static final int adding_room_mem=0x7f0603eb;
-        public static final int address_delcontact=0x7f060289;
-        public static final int address_delgroupcard=0x7f06028a;
-        public static final int address_empty_blacklist_tip=0x7f06028b;
-        public static final int address_favour_contact_catalog_name=0x7f060293;
-        public static final int address_group_card_count=0x7f060295;
-        public static final int address_history_group_card=0x7f060291;
-        public static final int address_launch_chatting=0x7f06028e;
-        public static final int address_multi_select_create=0x7f06028f;
-        public static final int address_multi_select_delete=0x7f060290;
-        public static final int address_multi_select_opt=0x7f06028d;
-        public static final int address_near_contact_catalog_name=0x7f060294;
-        public static final int address_not_found=0x7f060288;
-        public static final int address_searching=0x7f060287;
-        public static final int address_select_group_card=0x7f060292;
-        public static final int address_title_add_contact=0x7f060286;
-        public static final int address_title_select_contact=0x7f060285;
-        public static final int address_title_select_country_code=0x7f06028c;
-        public static final int after_upload_voice=0x7f06001c;
-        public static final int alpha_version_alpha=0x7f060151;
-        public static final int alpha_version_tip=0x7f06014e;
-        public static final int alpha_version_tip_login=0x7f060150;
-        public static final int alpha_version_tip_reg=0x7f06014f;
-        public static final int app_app=0x7f060035;
-        public static final int app_back=0x7f060022;
-        public static final int app_cancel=0x7f060023;
-        public static final int app_canceling=0x7f060040;
-        public static final int app_clear=0x7f060027;
-        public static final int app_continue=0x7f060028;
-        public static final int app_copyright=0x7f060096;
-        public static final int app_default=0x7f060046;
-        public static final int app_delete=0x7f060026;
-        public static final int app_down_show_nexttime=0x7f060030;
-        public static final int app_download=0x7f06003e;
-        public static final int app_download_finish=0x7f060042;
-        public static final int app_download_update_package=0x7f060043;
-        public static final int app_downloading=0x7f060041;
-        public static final int app_edit=0x7f06002d;
-        public static final int app_emoji=0x7f060039;
-        public static final int app_empty_string=0x7f06003c;
-        public static final int app_en=0x7f060049;
-        public static final int app_err_mailexsit_tip=0x7f0600d5;
-        public static final int app_err_mailexsit_title=0x7f0600d4;
-        public static final int app_err_nouser=0x7f0600d3;
-        public static final int app_err_password=0x7f0600d2;
-        public static final int app_err_reg_title=0x7f0600d6;
-        public static final int app_err_server_busy_tip=0x7f0600d8;
-        public static final int app_err_system_busy_tip=0x7f0600d7;
-        public static final int app_es=0x7f06004e;
-        public static final int app_field_card=0x7f06005b;
-        public static final int app_field_location=0x7f06005c;
-        public static final int app_field_mobile=0x7f060055;
-        public static final int app_field_pic=0x7f060059;
-        public static final int app_field_qquin=0x7f060052;
-        public static final int app_field_smiley=0x7f060058;
-        public static final int app_field_text=0x7f060057;
-        public static final int app_field_username=0x7f060053;
-        public static final int app_field_video=0x7f06005a;
-        public static final int app_field_voice=0x7f060056;
-        public static final int app_field_weibo=0x7f060054;
-        public static final int app_file=0x7f060037;
-        public static final int app_find=0x7f06002c;
-        public static final int app_finish=0x7f06002b;
-        public static final int app_id=0x7f06004b;
-        public static final int app_ignore_it=0x7f060051;
-        public static final int app_install=0x7f06003f;
-        public static final int app_lang_sys=0x7f060050;
-        public static final int app_loading_data=0x7f06003b;
-        public static final int app_music=0x7f060032;
-        public static final int app_name=0x7f060000;
-        public static final int app_new=0x7f06003d;
-        public static final int app_nextstep=0x7f060029;
-        public static final int app_no=0x7f06002f;
-        public static final int app_ok=0x7f060024;
-        public static final int app_pic=0x7f060031;
-        public static final int app_prevstep=0x7f06002a;
-        public static final int app_profile_add=0x7f0604c5;
-        public static final int app_profile_remove=0x7f0604c6;
-        public static final int app_profile_title=0x7f0604c7;
-        public static final int app_pt=0x7f06004d;
-        public static final int app_recommend_update=0x7f060045;
-        public static final int app_ru=0x7f06004f;
-        public static final int app_save=0x7f060025;
-        public static final int app_send=0x7f06001f;
-        public static final int app_sending=0x7f060020;
-        public static final int app_set=0x7f060021;
-        public static final int app_share=0x7f06005d;
-        public static final int app_share_to_weixin=0x7f06005e;
-        public static final int app_th=0x7f06004a;
-        public static final int app_tip=0x7f06001e;
-        public static final int app_update_package_notify=0x7f060044;
-        public static final int app_url=0x7f060036;
-        public static final int app_vi=0x7f06004c;
-        public static final int app_video=0x7f060034;
-        public static final int app_voice=0x7f060033;
-        public static final int app_voip=0x7f060038;
-        public static final int app_waiting=0x7f06003a;
-        public static final int app_yes=0x7f06002e;
-        public static final int app_zh_CN=0x7f060047;
-        public static final int app_zh_TW=0x7f060048;
-        public static final int art_smiley_select_add_hint=0x7f0601bf;
-        public static final int bind_facebook_start_btn=0x7f060368;
-        public static final int bind_facebook_start_hint=0x7f06036a;
-        public static final int bind_facebook_start_title=0x7f060369;
-        public static final int bind_mcontact_bind_alert_content=0x7f06033b;
-        public static final int bind_mcontact_bind_alert_title=0x7f06033a;
-        public static final int bind_mcontact_bind_btn_text=0x7f060331;
-        public static final int bind_mcontact_del_btn_text=0x7f060337;
-        public static final int bind_mcontact_del_content=0x7f060352;
-        public static final int bind_mcontact_err_BindPhone_NeedAdjust=0x7f060345;
-        public static final int bind_mcontact_err_binded=0x7f060343;
-        public static final int bind_mcontact_err_binded_by_other=0x7f060349;
-        public static final int bind_mcontact_err_format=0x7f060348;
-        public static final int bind_mcontact_err_freq_limit=0x7f060342;
-        public static final int bind_mcontact_err_mobile_num=0x7f060353;
-        public static final int bind_mcontact_err_not_bind_qq=0x7f060346;
-        public static final int bind_mcontact_err_not_suport_country=0x7f060344;
-        public static final int bind_mcontact_err_unbinded_notbinded=0x7f060347;
-        public static final int bind_mcontact_exit_content=0x7f060351;
-        public static final int bind_mcontact_exit_tip=0x7f060350;
-        public static final int bind_mcontact_friend_btn_text=0x7f060333;
-        public static final int bind_mcontact_hint=0x7f060325;
-        public static final int bind_mcontact_input_mobile_hint=0x7f060326;
-        public static final int bind_mcontact_input_verify_hint=0x7f060327;
-        public static final int bind_mcontact_mobile_erro=0x7f06031d;
-        public static final int bind_mcontact_next_btn_text=0x7f060335;
-        public static final int bind_mcontact_status_bind_ok=0x7f06034f;
-        public static final int bind_mcontact_status_ok_btn_text=0x7f06034e;
-        public static final int bind_mcontact_title_bind=0x7f06031c;
-        public static final int bind_mcontact_title_setting=0x7f06031a;
-        public static final int bind_mcontact_title_verify=0x7f06031b;
-        public static final int bind_mcontact_unbind_alert_account_info=0x7f060340;
-        public static final int bind_mcontact_unbind_alert_account_title=0x7f06033f;
-        public static final int bind_mcontact_unbind_alert_content=0x7f060341;
-        public static final int bind_mcontact_unbind_alert_title=0x7f06033c;
-        public static final int bind_mcontact_unbind_btn_text=0x7f060336;
-        public static final int bind_mcontact_unbind_err=0x7f060324;
-        public static final int bind_mcontact_unbind_info=0x7f06033d;
-        public static final int bind_mcontact_unbind_ok=0x7f060323;
-        public static final int bind_mcontact_unbind_user_hit=0x7f06033e;
-        public static final int bind_mcontact_unbinding=0x7f060322;
-        public static final int bind_mcontact_unverify_mobile=0x7f060338;
-        public static final int bind_mcontact_upload_btn_text=0x7f060334;
-        public static final int bind_mcontact_verifing=0x7f06031f;
-        public static final int bind_mcontact_verifing_progress=0x7f060320;
-        public static final int bind_mcontact_verify_btn_text=0x7f060332;
-        public static final int bind_mcontact_verify_err=0x7f060321;
-        public static final int bind_mcontact_verify_err_time_out_content=0x7f06034d;
-        public static final int bind_mcontact_verify_err_unmatch_content=0x7f06034c;
-        public static final int bind_mcontact_verify_mobile=0x7f060339;
-        public static final int bind_mcontact_verify_tip=0x7f06034b;
-        public static final int bind_mcontact_verifynull=0x7f06031e;
-        public static final int bind_mcontact_voice_verify_Languages=0x7f060330;
-        public static final int bind_mcontact_voice_verify_defaultLanguage=0x7f06032f;
-        public static final int bind_mcontact_voice_verify_entrance=0x7f060328;
-        public static final int bind_mcontact_voice_verify_hint=0x7f060329;
-        public static final int bind_mcontact_voice_verify_hint2=0x7f06032a;
-        public static final int bind_mcontact_voice_verify_select_tips=0x7f06032e;
-        public static final int bind_mcontact_voice_verify_select_title=0x7f06032d;
-        public static final int bind_mcontact_voice_verify_start=0x7f06032b;
-        public static final int bind_mcontact_voice_verify_voice_title=0x7f06032c;
-        public static final int bind_mcontact_your_mobile=0x7f06034a;
-        public static final int bind_qq_finish_hint=0x7f060366;
-        public static final int bind_qq_finish_textview_hint=0x7f060367;
-        public static final int bind_qq_finish_title=0x7f060365;
-        public static final int bind_qq_start_alert_content=0x7f060358;
-        public static final int bind_qq_start_alert_title=0x7f060357;
-        public static final int bind_qq_start_btn=0x7f060356;
-        public static final int bind_qq_start_hint=0x7f060355;
-        public static final int bind_qq_start_title=0x7f060354;
-        public static final int bind_qq_verify_alert_binding=0x7f060360;
-        public static final int bind_qq_verify_alert_failed_content=0x7f060362;
-        public static final int bind_qq_verify_alert_failed_niceqq=0x7f060363;
-        public static final int bind_qq_verify_alert_failed_title=0x7f060361;
-        public static final int bind_qq_verify_alert_pwd=0x7f06035f;
-        public static final int bind_qq_verify_alert_qq=0x7f06035e;
-        public static final int bind_qq_verify_alert_succ=0x7f060364;
-        public static final int bind_qq_verify_alert_title=0x7f06035c;
-        public static final int bind_qq_verify_alert_wrong=0x7f06035d;
-        public static final int bind_qq_verify_textview_pwd=0x7f06035b;
-        public static final int bind_qq_verify_textview_qq=0x7f06035a;
-        public static final int bind_qq_verify_title=0x7f060359;
-        public static final int bottle_banby_expose=0x7f06048b;
-        public static final int bottle_beach_title=0x7f06046f;
-        public static final int bottle_cannot_pick=0x7f060484;
-        public static final int bottle_cannot_throw=0x7f060483;
-        public static final int bottle_chatting_from_city=0x7f06047b;
-        public static final int bottle_chatting_video_not_support=0x7f060487;
-        public static final int bottle_conversation_clear=0x7f060489;
-        public static final int bottle_conversation_delete=0x7f060488;
-        public static final int bottle_delete_confirm_title=0x7f060485;
-        public static final int bottle_delete_text=0x7f060486;
-        public static final int bottle_empty_msg_tip=0x7f06047c;
-        public static final int bottle_get_count_err=0x7f06047d;
-        public static final int bottle_open_contact_from=0x7f060480;
-        public static final int bottle_open_hint=0x7f06047f;
-        public static final int bottle_open_reply=0x7f06047a;
-        public static final int bottle_open_throw_back=0x7f060478;
-        public static final int bottle_open_throw_back_toast=0x7f060479;
-        public static final int bottle_opt_list=0x7f060472;
-        public static final int bottle_opt_pick=0x7f060471;
-        public static final int bottle_opt_throw=0x7f060470;
-        public static final int bottle_settings_change_avatar=0x7f06048c;
-        public static final int bottle_settings_change_avatar_tip_str=0x7f06048d;
-        public static final int bottle_settings_change_avatar_tip_str_2=0x7f06048f;
-        public static final int bottle_settings_change_info_err_district=0x7f060492;
-        public static final int bottle_settings_change_info_err_sex=0x7f060491;
-        public static final int bottle_settings_change_info_tip=0x7f060490;
-        public static final int bottle_settings_show_at_main=0x7f06048e;
-        public static final int bottle_switch_mode_alert_title=0x7f060481;
-        public static final int bottle_switch_mode_continue_text=0x7f060482;
-        public static final int bottle_throw_rcd_too_short=0x7f060477;
-        public static final int bottle_throw_text_btn_text=0x7f060474;
-        public static final int bottle_throw_text_too_short=0x7f060473;
-        public static final int bottle_throw_voice_btn_pressed_text=0x7f060476;
-        public static final int bottle_throw_voice_btn_text=0x7f060475;
-        public static final int bottle_unknowed_city=0x7f06048a;
-        public static final int bottle_wizard_step1_tip=0x7f06047e;
-        public static final int chatfooter_SpeakerON=0x7f0601b8;
-        public static final int chatfooter_SpeakerOff=0x7f0601b9;
-        public static final int chatfooter_SpeakerOff_now=0x7f0601ba;
-        public static final int chatfooter_cancel_rcd=0x7f0601bc;
-        public static final int chatfooter_cancel_rcd_release=0x7f0601bd;
-        public static final int chatfooter_delete_custom_emoji=0x7f0601be;
-        public static final int chatfooter_presstorcd=0x7f0601b6;
-        public static final int chatfooter_releasetofinish=0x7f0601b7;
-        public static final int chatfooter_too_short=0x7f0601bb;
-        public static final int chatroom_sys_msg_invite=0x7f0603e9;
-        public static final int chatting_add_attach_tips=0x7f060183;
-        public static final int chatting_addcontact=0x7f06018a;
-        public static final int chatting_context_menu_image=0x7f060184;
-        public static final int chatting_context_menu_take_picture=0x7f060185;
-        public static final int chatting_err_qqpwd_tip=0x7f0601a9;
-        public static final int chatting_from_QQ_friends=0x7f06019b;
-        public static final int chatting_from_QQ_friends_content=0x7f06019c;
-        public static final int chatting_from_QQ_friends_sys_tip=0x7f0601a4;
-        public static final int chatting_from_QQ_frineds_tip=0x7f0601a1;
-        public static final int chatting_from_card=0x7f0601a6;
-        public static final int chatting_from_message_add=0x7f0601af;
-        public static final int chatting_from_message_ignore=0x7f0601b1;
-        public static final int chatting_from_message_pass=0x7f0601b0;
-        public static final int chatting_from_mobile_friends=0x7f06019d;
-        public static final int chatting_from_mobile_friends_content=0x7f06019e;
-        public static final int chatting_from_mobile_friends_sys_tip=0x7f0601a5;
-        public static final int chatting_from_mobile_friends_tip=0x7f0601a2;
-        public static final int chatting_from_possible_friends=0x7f06019f;
-        public static final int chatting_from_possible_friends_content=0x7f0601a0;
-        public static final int chatting_from_possible_friends_tip=0x7f0601a3;
-        public static final int chatting_from_verify_bottle=0x7f060195;
-        public static final int chatting_from_verify_contact=0x7f060197;
-        public static final int chatting_from_verify_contact_tip=0x7f060198;
-        public static final int chatting_from_verify_facebook=0x7f060199;
-        public static final int chatting_from_verify_facebook_content=0x7f06019a;
-        public static final int chatting_from_verify_lbs=0x7f060193;
-        public static final int chatting_from_verify_lbs_tip=0x7f060196;
-        public static final int chatting_from_verify_shake=0x7f060194;
-        public static final int chatting_getimg_fail_tip=0x7f06018b;
-        public static final int chatting_long_click_menu_copy_msg=0x7f06017b;
-        public static final int chatting_long_click_menu_delete_emoji=0x7f06017c;
-        public static final int chatting_long_click_menu_delete_img=0x7f060176;
-        public static final int chatting_long_click_menu_delete_msg=0x7f060175;
-        public static final int chatting_long_click_menu_delete_video=0x7f060178;
-        public static final int chatting_long_click_menu_delete_voice=0x7f060177;
-        public static final int chatting_long_click_menu_resend_msg_img=0x7f06017f;
-        public static final int chatting_long_click_menu_save_art_emoji=0x7f06017e;
-        public static final int chatting_long_click_menu_save_emoji=0x7f06017d;
-        public static final int chatting_long_click_menu_save_video=0x7f060179;
-        public static final int chatting_long_click_menu_set_ring=0x7f06017a;
-        public static final int chatting_menu_clean=0x7f060173;
-        public static final int chatting_moreinfo=0x7f060189;
-        public static final int chatting_msg_type_not_support=0x7f0601b2;
-        public static final int chatting_music_volumn=0x7f060190;
-        public static final int chatting_music_volumn_change=0x7f060191;
-        public static final int chatting_need_qqpwd_hint=0x7f0601a8;
-        public static final int chatting_need_qqpwd_title=0x7f0601a7;
-        public static final int chatting_niceqq_expired_tip=0x7f0601aa;
-        public static final int chatting_play_err=0x7f06018e;
-        public static final int chatting_qqmail_clear_all=0x7f0601ad;
-        public static final int chatting_qqmail_clear_all_confirm=0x7f0601ae;
-        public static final int chatting_qqmail_compose=0x7f0601ab;
-        public static final int chatting_qqmail_download_mgr=0x7f0601ac;
-        public static final int chatting_rcd_err=0x7f06018d;
-        public static final int chatting_rcd_time_limit=0x7f06018c;
-        public static final int chatting_resend_content=0x7f0601b5;
-        public static final int chatting_resend_title=0x7f0601b4;
-        public static final int chatting_roominfo_noname=0x7f060192;
-        public static final int chatting_send=0x7f060172;
-        public static final int chatting_send_video_local=0x7f060181;
-        public static final int chatting_send_video_title=0x7f060180;
-        public static final int chatting_send_video_weixin=0x7f060182;
-        public static final int chatting_source_from=0x7f0601b3;
-        public static final int chatting_status_typing=0x7f060187;
-        public static final int chatting_status_voice_typing=0x7f060188;
-        public static final int chatting_tips_groupchat=0x7f060174;
-        public static final int chatting_toast_sdk_fail=0x7f060186;
-        public static final int chatting_use_handset=0x7f06018f;
-        public static final int cities=0x7f0603dd;
-        public static final int confirm_dialog_back=0x7f0604d0;
-        public static final int confirm_dialog_cancel=0x7f0604cd;
-        public static final int confirm_dialog_edittext_hint=0x7f0604ce;
-        public static final int confirm_dialog_sent=0x7f0604cf;
-        public static final int confirm_dialog_share=0x7f0604cc;
-        public static final int confirm_dialog_source=0x7f0604d1;
-        public static final int confirm_dialog_unknown_source=0x7f0604d2;
-        public static final int contact_info_add=0x7f060297;
-        public static final int contact_info_adding_tip=0x7f0602c5;
-        public static final int contact_info_bind_fb_entry_tip=0x7f0605b5;
-        public static final int contact_info_bind_mobile_entry_tip=0x7f0602d5;
-        public static final int contact_info_bind_qq_entry_tip=0x7f0602d6;
-        public static final int contact_info_change_remarkname=0x7f0602a1;
-        public static final int contact_info_clear_data=0x7f0602b1;
-        public static final int contact_info_clear_data_wording=0x7f0602b2;
-        public static final int contact_info_clear_location_tip=0x7f0602c0;
-        public static final int contact_info_close=0x7f0602a9;
-        public static final int contact_info_dealing_verify=0x7f0602cc;
-        public static final int contact_info_del_all_message=0x7f0602a7;
-        public static final int contact_info_del_all_message_tip=0x7f0602a6;
-        public static final int contact_info_del_contact=0x7f0602a4;
-        public static final int contact_info_district=0x7f0602c7;
-        public static final int contact_info_domainmail=0x7f0602c2;
-        public static final int contact_info_expose=0x7f0602ac;
-        public static final int contact_info_expose_confirm=0x7f0602ad;
-        public static final int contact_info_expose_tip=0x7f0602ae;
-        public static final int contact_info_facebookapp_bind=0x7f0605af;
-        public static final int contact_info_facebookapp_bind_fail=0x7f0605b2;
-        public static final int contact_info_facebookapp_bind_success=0x7f0605b1;
-        public static final int contact_info_facebookapp_connect=0x7f0605ad;
-        public static final int contact_info_facebookapp_listfriend=0x7f0605ac;
-        public static final int contact_info_facebookapp_showqrocode=0x7f0605ae;
-        public static final int contact_info_facebookapp_tip=0x7f0605ab;
-        public static final int contact_info_facebookapp_unbind=0x7f0605b0;
-        public static final int contact_info_facebookapp_unbind_fail=0x7f0605b4;
-        public static final int contact_info_facebookapp_unbind_success=0x7f0605b3;
-        public static final int contact_info_favour_start_message=0x7f060301;
-        public static final int contact_info_feedsapp_tip=0x7f0605e8;
-        public static final int contact_info_feedsapp_view=0x7f0605e9;
-        public static final int contact_info_floatbottle_tip=0x7f0602ee;
-        public static final int contact_info_fmessage_switch_tip=0x7f0602d2;
-        public static final int contact_info_friendtype_mobile=0x7f0602b0;
-        public static final int contact_info_friendtype_qq=0x7f0602af;
-        public static final int contact_info_get_headimg_fail=0x7f0602ec;
-        public static final int contact_info_go_to_sync=0x7f0602e2;
-        public static final int contact_info_lbs_clear_info=0x7f0602f3;
-        public static final int contact_info_lbs_go_lbs=0x7f0602f2;
-        public static final int contact_info_lbs_tip=0x7f0602f1;
-        public static final int contact_info_masssend_delete=0x7f0602ff;
-        public static final int contact_info_masssend_tip=0x7f0602fd;
-        public static final int contact_info_masssend_view=0x7f0602fe;
-        public static final int contact_info_medianote_sync_to_qqmail=0x7f0602f8;
-        public static final int contact_info_medianote_sync_to_qqmail_alert_tip=0x7f0602f9;
-        public static final int contact_info_medianote_tip=0x7f0602f6;
-        public static final int contact_info_medianote_view=0x7f0602f7;
-        public static final int contact_info_meishiapp_push=0x7f0605e6;
-        public static final int contact_info_meishiapp_tip=0x7f0605e4;
-        public static final int contact_info_meishiapp_viewcard=0x7f0605e7;
-        public static final int contact_info_meishiapp_viewmsg=0x7f0605e5;
-        public static final int contact_info_microblog_friends=0x7f0602de;
-        public static final int contact_info_microblog_tip=0x7f0602dd;
-        public static final int contact_info_mod_avatar=0x7f0602c4;
-        public static final int contact_info_mod_remarkname=0x7f0602a3;
-        public static final int contact_info_movein_blacklist=0x7f060299;
-        public static final int contact_info_movein_blacklist_confirm=0x7f06029a;
-        public static final int contact_info_movein_blacklist_tip=0x7f06029b;
-        public static final int contact_info_moveout_blacklist=0x7f06029c;
-        public static final int contact_info_no_user=0x7f0602ed;
-        public static final int contact_info_open=0x7f0602a8;
-        public static final int contact_info_phone_number=0x7f0602d1;
-        public static final int contact_info_plug_hide=0x7f0602bf;
-        public static final int contact_info_qcontact_address=0x7f0602ea;
-        public static final int contact_info_qcontact_age=0x7f0602e8;
-        public static final int contact_info_qcontact_birthday=0x7f0602e9;
-        public static final int contact_info_qcontact_sex=0x7f0602e7;
-        public static final int contact_info_qmessage_close_weixin_online_tip=0x7f0602db;
-        public static final int contact_info_qmessage_display_weixin_online=0x7f0602d9;
-        public static final int contact_info_qmessage_open_offline_msg_tip=0x7f0602dc;
-        public static final int contact_info_qmessage_recv_offline_msg=0x7f0602d8;
-        public static final int contact_info_qmessage_send_qq_message=0x7f0602da;
-        public static final int contact_info_qmessage_tip=0x7f0602d7;
-        public static final int contact_info_qq_number=0x7f0602d0;
-        public static final int contact_info_qq_send_offline_message=0x7f060302;
-        public static final int contact_info_qq_view_qzone=0x7f060303;
-        public static final int contact_info_qqfriend_tip=0x7f0602fa;
-        public static final int contact_info_qqfriend_view=0x7f0602fb;
-        public static final int contact_info_qqfriend_view_alert_tip=0x7f0602fc;
-        public static final int contact_info_qqmailhelper_compose=0x7f0602b5;
-        public static final int contact_info_qqmailhelper_disable=0x7f0602b9;
-        public static final int contact_info_qqmailhelper_disable_fail=0x7f0602be;
-        public static final int contact_info_qqmailhelper_disable_tip=0x7f0602ba;
-        public static final int contact_info_qqmailhelper_download_mgr_view=0x7f0602b7;
-        public static final int contact_info_qqmailhelper_enable=0x7f0602b8;
-        public static final int contact_info_qqmailhelper_enable_fail=0x7f0602bd;
-        public static final int contact_info_qqmailhelper_recv_remind=0x7f0602bc;
-        public static final int contact_info_qqmailhelper_secondpass=0x7f0602bb;
-        public static final int contact_info_qqmailhelper_set_files_view=0x7f0602b6;
-        public static final int contact_info_qqmailhelper_tip=0x7f0602b3;
-        public static final int contact_info_qqmailhelper_view=0x7f0602b4;
-        public static final int contact_info_qqsync_agreement=0x7f0602e6;
-        public static final int contact_info_qqsync_intro=0x7f0602e5;
-        public static final int contact_info_qqsync_switch_tip=0x7f0602e1;
-        public static final int contact_info_qzone_url=0x7f060304;
-        public static final int contact_info_readerappnews_push=0x7f0605d9;
-        public static final int contact_info_readerappnews_subscribe=0x7f0605da;
-        public static final int contact_info_readerappnews_subscribe_limit=0x7f0605db;
-        public static final int contact_info_readerappnews_tip=0x7f0605d7;
-        public static final int contact_info_readerappnews_to_setting_tip=0x7f0605e1;
-        public static final int contact_info_readerappnews_view=0x7f0605d8;
-        public static final int contact_info_readerappweibo_no_weibo=0x7f0605e0;
-        public static final int contact_info_readerappweibo_not_bind_qq=0x7f0605df;
-        public static final int contact_info_readerappweibo_push=0x7f0605de;
-        public static final int contact_info_readerappweibo_tip=0x7f0605dc;
-        public static final int contact_info_readerappweibo_view=0x7f0605dd;
-        public static final int contact_info_recommend_fbfriends_to_me=0x7f0605b6;
-        public static final int contact_info_recommend_mobilefriends_to_me=0x7f0602d4;
-        public static final int contact_info_recommend_qqfriends_to_me=0x7f0602d3;
-        public static final int contact_info_remarkname=0x7f0602a2;
-        public static final int contact_info_remind_me_syncing=0x7f0602e3;
-        public static final int contact_info_remind_me_syncing_tip=0x7f0602e4;
-        public static final int contact_info_room_title=0x7f060298;
-        public static final int contact_info_say_hi=0x7f0602a0;
-        public static final int contact_info_send=0x7f06029d;
-        public static final int contact_info_send_card=0x7f06029f;
-        public static final int contact_info_send_privatemsg=0x7f0602df;
-        public static final int contact_info_send_to_room=0x7f06029e;
-        public static final int contact_info_set_avatar=0x7f0602c3;
-        public static final int contact_info_shake_go_shake=0x7f0602f5;
-        public static final int contact_info_shake_tip=0x7f0602f4;
-        public static final int contact_info_signature=0x7f0602c9;
-        public static final int contact_info_sns_title=0x7f060300;
-        public static final int contact_info_source_lbs=0x7f0602ce;
-        public static final int contact_info_source_shake=0x7f0602cf;
-        public static final int contact_info_source_title=0x7f0602cd;
-        public static final int contact_info_title=0x7f060296;
-        public static final int contact_info_tmessage_recv_private_letter=0x7f0602e0;
-        public static final int contact_info_user_has_no_hd_avatar=0x7f0602eb;
-        public static final int contact_info_verify_accept=0x7f0602c6;
-        public static final int contact_info_verify_user_title=0x7f0602ca;
-        public static final int contact_info_verify_user_title_what=0x7f0602cb;
-        public static final int contact_info_view_message=0x7f0602a5;
-        public static final int contact_info_weibo=0x7f0602c8;
-        public static final int contact_into_goto_floatbottle_str=0x7f0602ef;
-        public static final int contact_into_goto_floatbottle_str_btn=0x7f0602f0;
-        public static final int contact_search_account_add_fail_tip=0x7f060308;
-        public static final int contact_search_account_hint=0x7f060306;
-        public static final int contact_search_account_recommend_friend=0x7f060307;
-        public static final int contact_search_title=0x7f060305;
-        public static final int country_china=0x7f0603e3;
-        public static final int country_code=0x7f0603de;
-        public static final int country_normal_code=0x7f0603df;
-        public static final int country_normal_name=0x7f0603e0;
-        public static final int country_others=0x7f0603e1;
-        public static final int country_province_others=0x7f0603e2;
-        public static final int create_id_by_phone=0x7f060145;
-        public static final int create_id_by_qq=0x7f060144;
-        public static final int cropimage_comfirm=0x7f060392;
-        public static final int cropimage_compress_img=0x7f060395;
-        public static final int cropimage_done=0x7f06039a;
-        public static final int cropimage_filter=0x7f060394;
-        public static final int cropimage_save=0x7f06038f;
-        public static final int cropimage_saved=0x7f060391;
-        public static final int cropimage_send_hd_img=0x7f060399;
-        public static final int cropimage_send_hd_img_size=0x7f06039b;
-        public static final int cropimage_send_hd_img_tip=0x7f060397;
-        public static final int cropimage_use=0x7f060390;
-        public static final int cropimage_use_filter=0x7f060393;
-        public static final int cropimage_use_filter_tip=0x7f060396;
-        public static final int cropimage_view_hd_img=0x7f060398;
-        public static final int del_contact_warning=0x7f0602aa;
-        public static final int del_groupcard_warning=0x7f0602ab;
-        public static final int del_room_mem_comfirm=0x7f0603ef;
-        public static final int del_room_mem_err=0x7f0603ee;
-        public static final int download_can_not_open=0x7f060422;
-        public static final int download_can_not_open_by_wechat=0x7f060423;
-        public static final int download_continue=0x7f06041e;
-        public static final int download_data=0x7f060425;
-        public static final int download_fail=0x7f060427;
-        public static final int download_ing=0x7f060421;
-        public static final int download_no_match_msg=0x7f060429;
-        public static final int download_no_match_title=0x7f060428;
-        public static final int download_open=0x7f06041f;
-        public static final int download_start=0x7f060420;
-        public static final int download_success=0x7f060426;
-        public static final int download_title=0x7f060424;
-        public static final int empty_qmsg_tip=0x7f06016b;
-        public static final int empty_tmsg_tip=0x7f06016a;
-        public static final int errcode_password=0x7f06013c;
-        public static final int facebook_auth_bind_access_denied=0x7f0605c7;
-        public static final int facebook_auth_bind_btn_text=0x7f0605c3;
-        public static final int facebook_auth_bind_tip=0x7f0605c0;
-        public static final int facebook_auth_binding=0x7f0605bd;
-        public static final int facebook_auth_bound_account=0x7f0605c2;
-        public static final int facebook_auth_have_bind_facebook=0x7f0605c5;
-        public static final int facebook_auth_title=0x7f0605bf;
-        public static final int facebook_auth_unbind_access_denied=0x7f0605c8;
-        public static final int facebook_auth_unbind_alert_tip=0x7f0605bc;
-        public static final int facebook_auth_unbind_btn_text=0x7f0605c4;
-        public static final int facebook_auth_unbind_tip=0x7f0605c1;
-        public static final int facebook_auth_unbinding=0x7f0605be;
-        public static final int facebook_empty_friend_tip=0x7f0605bb;
-        public static final int facebook_friend_need_rebind=0x7f0605c6;
-        public static final int facebook_invite_message=0x7f0605c9;
-        public static final int facebook_invitefriends_sendinvite=0x7f060257;
-        public static final int facebook_invitefriends_tips_invitemore=0x7f060259;
-        public static final int facebook_invitefriends_tips_max=0x7f060258;
-        public static final int facebook_invitefriends_title=0x7f060256;
-        public static final int facebook_inviteqqfriends_invite_success=0x7f0605ca;
-        public static final int facebook_mainui_tips=0x7f0605cb;
-        public static final int facebook_sdk_loading=0x7f060125;
-        public static final int facebooklogin_user_exist=0x7f060124;
-        public static final int fb_friend_not_bind=0x7f0605ba;
-        public static final int fb_non_weixin_tip=0x7f0605b9;
-        public static final int find_friends_by_facebook=0x7f0605b7;
-        public static final int find_friends_by_facebook_invite=0x7f0605b8;
-        public static final int find_friends_by_micromsg=0x7f06030d;
-        public static final int find_friends_by_mobile=0x7f06030f;
-        public static final int find_friends_by_qq=0x7f06030e;
-        public static final int find_friends_by_qrcode=0x7f06030b;
-        public static final int find_friends_by_qrcode_add_more_friend=0x7f06030c;
-        public static final int find_more_friends_title=0x7f060309;
-        public static final int fmt_add_chatroom_member_err=0x7f06009e;
-        public static final int fmt_afternoon=0x7f0600af;
-        public static final int fmt_am=0x7f0600b3;
-        public static final int fmt_auth_err=0x7f06009b;
-        public static final int fmt_bottle_say_hello_to_you=0x7f0600ca;
-        public static final int fmt_card_from=0x7f0600d0;
-        public static final int fmt_card_to=0x7f0600cf;
-        public static final int fmt_chatting_title_group=0x7f0600c4;
-        public static final int fmt_create_chatroom_err=0x7f06009d;
-        public static final int fmt_date=0x7f0600a0;
-        public static final int fmt_date_split=0x7f0600a1;
-        public static final int fmt_datetime=0x7f0600a3;
-        public static final int fmt_dawn=0x7f0600ac;
-        public static final int fmt_delcontactmsg_confirm=0x7f0600b5;
-        public static final int fmt_delcontactmsg_confirm_bottle=0x7f0600b6;
-        public static final int fmt_delcontactmsg_confirm_group=0x7f0600b7;
-        public static final int fmt_evening=0x7f0600b0;
-        public static final int fmt_http_err=0x7f060099;
-        public static final int fmt_iap_err=0x7f06009a;
-        public static final int fmt_in24h=0x7f0600a9;
-        public static final int fmt_in60min=0x7f0600a8;
-        public static final int fmt_in_blacklist=0x7f0600ba;
-        public static final int fmt_indayh=0x7f0600aa;
-        public static final int fmt_invalid_username=0x7f0600bb;
-        public static final int fmt_just_reg_micromsg=0x7f0600cb;
-        public static final int fmt_justnow=0x7f0600ab;
-        public static final int fmt_longdate=0x7f0600a2;
-        public static final int fmt_longtime=0x7f0600a7;
-        public static final int fmt_microblog_tip=0x7f0600bf;
-        public static final int fmt_more_btn=0x7f0600d1;
-        public static final int fmt_morning=0x7f0600ad;
-        public static final int fmt_need_verify_multiuser=0x7f0600c5;
-        public static final int fmt_need_verify_singleuser=0x7f0600c6;
-        public static final int fmt_noon=0x7f0600ae;
-        public static final int fmt_normal_time=0x7f0600a6;
-        public static final int fmt_normal_time_24=0x7f0600a5;
-        public static final int fmt_patime=0x7f0600a4;
-        public static final int fmt_percent=0x7f0600ce;
-        public static final int fmt_pm=0x7f0600b4;
-        public static final int fmt_pre_nowday=0x7f0600b1;
-        public static final int fmt_pre_yesterday=0x7f0600b2;
-        public static final int fmt_qqmailhelper_brief=0x7f0600c0;
-        public static final int fmt_qqsynchelper_brief_alert=0x7f0600c1;
-        public static final int fmt_qqsynchelper_brief_new=0x7f0600c2;
-        public static final int fmt_reg_err=0x7f06009c;
-        public static final int fmt_response_to=0x7f0600cc;
-        public static final int fmt_route_phone=0x7f060097;
-        public static final int fmt_route_speaker=0x7f060098;
-        public static final int fmt_say_hello_to_you=0x7f0600c8;
-        public static final int fmt_search_err=0x7f06009f;
-        public static final int fmt_self_qrcode_getting_err=0x7f0603bc;
-        public static final int fmt_send_err_account_disabled=0x7f0600bc;
-        public static final int fmt_send_err_qqoffline_disabled=0x7f0600be;
-        public static final int fmt_send_err_weibo_disabled=0x7f0600bd;
-        public static final int fmt_send_from=0x7f0600cd;
-        public static final int fmt_shake_say_hello_to_you=0x7f0600c9;
-        public static final int fmt_time_length=0x7f0600c3;
-        public static final int fmt_update=0x7f0600b8;
-        public static final int fmt_update_info=0x7f0600b9;
-        public static final int fmt_want_to_be_your_friend=0x7f0600c7;
-        public static final int friend_add=0x7f06037f;
-        public static final int friend_added=0x7f060380;
-        public static final int friend_invite=0x7f060383;
-        public static final int friend_invited=0x7f060384;
-        public static final int friend_not_added=0x7f060382;
-        public static final int friend_waiting=0x7f060381;
-        public static final int group_all=0x7f060060;
-        public static final int group_blacklist=0x7f060064;
-        public static final int group_domainmail_suffix=0x7f060063;
-        public static final int group_weibo=0x7f060062;
-        public static final int group_weixin=0x7f060061;
-        public static final int hardcode_group=0x7f060069;
-        public static final int hardcode_plugin_bottle_nick=0x7f06006d;
-        public static final int hardcode_plugin_bottle_pyinitial=0x7f06006e;
-        public static final int hardcode_plugin_bottle_quanpin=0x7f06006f;
-        public static final int hardcode_plugin_facebookapp_nick=0x7f060079;
-        public static final int hardcode_plugin_facebookapp_pyinitial=0x7f06007a;
-        public static final int hardcode_plugin_facebookapp_quanpin=0x7f06007b;
-        public static final int hardcode_plugin_feedsapp_nick=0x7f060085;
-        public static final int hardcode_plugin_feedsapp_pyinitial=0x7f060086;
-        public static final int hardcode_plugin_feedsapp_quanpin=0x7f060087;
-        public static final int hardcode_plugin_fmessage_nick=0x7f060089;
-        public static final int hardcode_plugin_lbs_nick=0x7f060070;
-        public static final int hardcode_plugin_lbs_pyinitial=0x7f060071;
-        public static final int hardcode_plugin_lbs_quanpin=0x7f060072;
-        public static final int hardcode_plugin_masssend_nick=0x7f06007f;
-        public static final int hardcode_plugin_masssend_pyinitial=0x7f060080;
-        public static final int hardcode_plugin_masssend_quanpin=0x7f060081;
-        public static final int hardcode_plugin_medianote_nick=0x7f060076;
-        public static final int hardcode_plugin_medianote_pyinitial=0x7f060077;
-        public static final int hardcode_plugin_medianote_quanpin=0x7f060078;
-        public static final int hardcode_plugin_meishiapp_nick=0x7f060082;
-        public static final int hardcode_plugin_meishiapp_pyinitial=0x7f060083;
-        public static final int hardcode_plugin_meishiapp_quanpin=0x7f060084;
-        public static final int hardcode_plugin_qmessage_nick=0x7f06008b;
-        public static final int hardcode_plugin_qqfriend_nick=0x7f06007c;
-        public static final int hardcode_plugin_qqfriend_pyinitial=0x7f06007d;
-        public static final int hardcode_plugin_qqfriend_quanpin=0x7f06007e;
-        public static final int hardcode_plugin_qqmail_nick=0x7f060088;
-        public static final int hardcode_plugin_qqsync_nick=0x7f06006a;
-        public static final int hardcode_plugin_qqsync_pyinitial=0x7f06006b;
-        public static final int hardcode_plugin_qqsync_quanpin=0x7f06006c;
-        public static final int hardcode_plugin_readerappnews_nick=0x7f06008c;
-        public static final int hardcode_plugin_readerappnews_pyinitial=0x7f06008d;
-        public static final int hardcode_plugin_readerappnews_quanpin=0x7f06008e;
-        public static final int hardcode_plugin_readerappweibo_nick=0x7f06008f;
-        public static final int hardcode_plugin_readerappweibo_pyinitial=0x7f060090;
-        public static final int hardcode_plugin_readerappweibo_quanpin=0x7f060091;
-        public static final int hardcode_plugin_shake_nick=0x7f060073;
-        public static final int hardcode_plugin_shake_pyinitial=0x7f060074;
-        public static final int hardcode_plugin_shake_quanpin=0x7f060075;
-        public static final int hardcode_plugin_tmessage_nick=0x7f06008a;
-        public static final int imgdownload_fail=0x7f06041d;
-        public static final int intro_create_account_qq=0x7f060105;
-        public static final int intro_create_account_reg=0x7f060106;
-        public static final int intro_existed_login=0x7f060107;
-        public static final int intro_title=0x7f060104;
-        public static final int invite_friend_invite=0x7f060387;
-        public static final int invite_friend_not_reg=0x7f060386;
-        public static final int invite_friend_send_qq_message=0x7f060388;
-        public static final int invite_friend_title=0x7f060385;
-        public static final int invite_sms=0x7f0600ee;
-        public static final int inviteqqfriends_invite=0x7f060389;
-        public static final int inviteqqfriends_invite_success=0x7f06038c;
-        public static final int inviteqqfriends_invite_tips=0x7f06038b;
-        public static final int inviteqqfriends_inviting=0x7f06038d;
-        public static final int inviteqqfriends_loading_friends_info=0x7f06038e;
-        public static final int inviteqqfriends_title=0x7f06038a;
-        public static final int launchchatting_create_chatroom_fail=0x7f0603e7;
-        public static final int launchchatting_creating_chatroom=0x7f0603e6;
-        public static final int launchchatting_talk_with_self=0x7f0603e8;
-        public static final int launcher_name=0x7f06001d;
-        public static final int license_agree=0x7f060108;
-        public static final int license_detail=0x7f060109;
-        public static final int link_no_such_group=0x7f0601cb;
-        public static final int location_conversation=0x7f0601ca;
-        public static final int location_conversation_sender=0x7f0601c9;
-        public static final int location_in_map=0x7f0601c7;
-        public static final int location_info=0x7f0601c4;
-        public static final int location_loading=0x7f0601c6;
-        public static final int location_path=0x7f0601c8;
-        public static final int location_send=0x7f0601c5;
-        public static final int login_account_hint=0x7f060147;
-        public static final int login_by_facebook=0x7f060142;
-        public static final int login_by_mobile_phone=0x7f060140;
-        public static final int login_by_others=0x7f06013e;
-        public static final int login_by_others_id=0x7f060141;
-        public static final int login_create_new_account=0x7f06013f;
-        public static final int login_err_mailnotverify=0x7f06014c;
-        public static final int login_err_title=0x7f06014b;
-        public static final int login_foget_password=0x7f06014d;
-        public static final int login_id=0x7f06013d;
-        public static final int login_login=0x7f060149;
-        public static final int login_logining=0x7f06014a;
-        public static final int login_password_hint=0x7f060148;
-        public static final int login_password_tip=0x7f060143;
-        public static final int login_title=0x7f060146;
-        public static final int mail_attach_download=0x7f06053b;
-        public static final int mail_attach_download_status=0x7f060542;
-        public static final int mail_attach_downloaded=0x7f06053d;
-        public static final int mail_attach_downloading_speed=0x7f06053e;
-        public static final int mail_attach_preview=0x7f06053a;
-        public static final int mail_attach_preview_open_downloaded=0x7f060541;
-        public static final int mail_attach_preview_open_notdownload=0x7f060540;
-        public static final int mail_attach_preview_status=0x7f06053f;
-        public static final int mail_attach_redownload=0x7f06053c;
-        public static final int mail_compress_preview_err_hint=0x7f060532;
-        public static final int mail_downlaod_notification_text=0x7f060535;
-        public static final int mail_downlaod_notification_text_finish=0x7f060536;
-        public static final int mail_download_bar_completed=0x7f060538;
-        public static final int mail_download_bar_not_complete=0x7f060537;
-        public static final int mail_download_notification_title=0x7f060534;
-        public static final int mail_download_state_error=0x7f060539;
-        public static final int mail_download_tip_dlg_content=0x7f060533;
-        public static final int mail_receiver_info_addr=0x7f060531;
-        public static final int mail_receiver_info_name=0x7f060530;
-        public static final int main_addcontact=0x7f060154;
-        public static final int main_contact=0x7f060153;
-        public static final int main_create_shortcut=0x7f060162;
-        public static final int main_delete=0x7f060155;
-        public static final int main_delete_all=0x7f060156;
-        public static final int main_delete_bottleentry=0x7f060159;
-        public static final int main_delete_qmessage=0x7f060157;
-        public static final int main_delete_tmessage=0x7f060158;
-        public static final int main_empty_conversation=0x7f060163;
-        public static final int main_err_another_place=0x7f06015f;
-        public static final int main_err_relogin=0x7f06015e;
-        public static final int main_exit=0x7f06015b;
-        public static final int main_exit_title=0x7f06015c;
-        public static final int main_exit_warning=0x7f06015d;
-        public static final int main_recving=0x7f060161;
-        public static final int main_sending=0x7f060160;
-        public static final int main_setting=0x7f06015a;
-        public static final int main_slide_toast=0x7f060164;
-        public static final int main_title=0x7f060152;
-        public static final int mass_send_card_not_support=0x7f0604e4;
-        public static final int mass_send_compose=0x7f0604dd;
-        public static final int mass_send_compose_new=0x7f0604dc;
-        public static final int mass_send_contact_count=0x7f0604e1;
-        public static final int mass_send_count=0x7f0604e5;
-        public static final int mass_send_custom_emoji_not_support=0x7f0604e3;
-        public static final int mass_send_delete_comfirm=0x7f0604e6;
-        public static final int mass_send_err_freq_limit=0x7f0604e8;
-        public static final int mass_send_helper=0x7f0604da;
-        public static final int mass_send_history_empty=0x7f0604e7;
-        public static final int mass_send_location_not_support=0x7f0604e2;
-        public static final int mass_send_msg=0x7f0604df;
-        public static final int mass_send_next=0x7f0604db;
-        public static final int mass_send_select_all=0x7f0604de;
-        public static final int mass_send_select_contact_title=0x7f0604e9;
-        public static final int mass_send_tolist_limit=0x7f0604e0;
-        public static final int media_ejected=0x7f060067;
-        public static final int media_explorer_title=0x7f0605ec;
-        public static final int media_full=0x7f060068;
-        public static final int media_video_explorer_title=0x7f0605ed;
-        public static final int mm_tips=0x7f060012;
-        public static final int mobile_friend_err=0x7f060375;
-        public static final int mobile_friend_loading=0x7f060374;
-        public static final int mobile_friend_mobile_not_bind=0x7f060376;
-        public static final int mobile_friend_title=0x7f060373;
-        public static final int mod_remark_name_hint=0x7f0602c1;
-        public static final int modify_ing=0x7f06025b;
-        public static final int modify_username=0x7f06025a;
-        public static final int modify_username_confirm=0x7f06025e;
-        public static final int modify_username_confirm_modify=0x7f060260;
-        public static final int modify_username_detail=0x7f06025c;
-        public static final int modify_username_failed=0x7f060261;
-        public static final int modify_username_hint=0x7f06025d;
-        public static final int modify_username_success=0x7f06025f;
-        public static final int msgretr_share_cancel=0x7f06041b;
-        public static final int msgretr_share_fail=0x7f06041a;
-        public static final int msgretr_share_nosdcard_fail=0x7f06041c;
-        public static final int msgretr_share_success=0x7f060419;
-        public static final int msgretr_uploading_img=0x7f060418;
-        public static final int nearby_friend_city_select=0x7f060455;
-        public static final int nearby_friend_clear_location_exit=0x7f060465;
-        public static final int nearby_friend_clear_location_exit_hint=0x7f060469;
-        public static final int nearby_friend_clear_location_failed=0x7f06046b;
-        public static final int nearby_friend_clear_location_ok=0x7f06046a;
-        public static final int nearby_friend_clearing_location=0x7f06046c;
-        public static final int nearby_friend_expose=0x7f06045e;
-        public static final int nearby_friend_finding=0x7f060457;
-        public static final int nearby_friend_get_friend_fail=0x7f06045d;
-        public static final int nearby_friend_intro_comfirm=0x7f060454;
-        public static final int nearby_friend_intro_open=0x7f060452;
-        public static final int nearby_friend_intro_start=0x7f060453;
-        public static final int nearby_friend_is_contact=0x7f06045b;
-        public static final int nearby_friend_locate_fail=0x7f06045c;
-        public static final int nearby_friend_locating=0x7f060456;
-        public static final int nearby_friend_location_findall=0x7f060468;
-        public static final int nearby_friend_location_findgg=0x7f060467;
-        public static final int nearby_friend_location_findmm=0x7f060466;
-        public static final int nearby_friend_say_hi=0x7f060460;
-        public static final int nearby_friend_say_hi_black_list=0x7f060462;
-        public static final int nearby_friend_say_hi_failed=0x7f060464;
-        public static final int nearby_friend_say_hi_hint=0x7f06045f;
-        public static final int nearby_friend_say_hi_ok=0x7f060461;
-        public static final int nearby_friend_say_hi_spam=0x7f060463;
-        public static final int nearby_friend_setting_tips_content=0x7f06046e;
-        public static final int nearby_friend_setting_tips_title=0x7f06046d;
-        public static final int nearby_friend_title=0x7f060451;
-        public static final int nearby_personal_info=0x7f060458;
-        public static final int nearby_personal_info_fail=0x7f06045a;
-        public static final int nearby_personal_info_tip=0x7f060459;
-        public static final int net_warn_connecting=0x7f06016d;
-        public static final int net_warn_detail_doc=0x7f06000d;
-        public static final int net_warn_no_network=0x7f06016e;
-        public static final int net_warn_server_down=0x7f060170;
-        public static final int net_warn_server_down_tip=0x7f060171;
-        public static final int net_warn_server_failed=0x7f06016f;
-        public static final int net_warn_show_page=0x7f06016c;
-        public static final int network_doctor=0x7f060095;
-        public static final int notification_fmt_multi_bottle=0x7f0600f8;
-        public static final int notification_fmt_multi_msg_and_one_talker=0x7f0600f1;
-        public static final int notification_fmt_multi_msg_and_talker=0x7f0600f0;
-        public static final int notification_fmt_one_emoji=0x7f0600f9;
-        public static final int notification_fmt_one_imgtype=0x7f0600f3;
-        public static final int notification_fmt_one_mailtype=0x7f0600f6;
-        public static final int notification_fmt_one_microblog_msgtype=0x7f0600f7;
-        public static final int notification_fmt_one_txttype=0x7f0600f2;
-        public static final int notification_fmt_one_videotype=0x7f0600f5;
-        public static final int notification_fmt_one_voicetype=0x7f0600f4;
-        public static final int official_alias=0x7f060066;
-        public static final int official_nick=0x7f060065;
-        public static final int openapi_app_file=0x7f0604c8;
-        public static final int openapi_redirect_url=0x7f0604cb;
-        public static final int openapi_source_url=0x7f0604c9;
-        public static final int openapi_uninstall_url=0x7f0604ca;
-        public static final int play_completed=0x7f060017;
-        public static final int plugin_qqmail_addr_profile_compose=0x7f060510;
-        public static final int plugin_qqmail_addressui_sync_dlg=0x7f06050f;
-        public static final int plugin_qqmail_addrlist_choose=0x7f06052f;
-        public static final int plugin_qqmail_addrlist_title=0x7f06052e;
-        public static final int plugin_qqmail_attach_upload_failed=0x7f060519;
-        public static final int plugin_qqmail_attach_uploading=0x7f060513;
-        public static final int plugin_qqmail_attachment_delete_confirm=0x7f06051d;
-        public static final int plugin_qqmail_compose_send_error=0x7f060516;
-        public static final int plugin_qqmail_compose_send_ing=0x7f060514;
-        public static final int plugin_qqmail_compose_send_success=0x7f060515;
-        public static final int plugin_qqmail_composeui_attach=0x7f0604ff;
-        public static final int plugin_qqmail_composeui_attach_choose_album=0x7f060503;
-        public static final int plugin_qqmail_composeui_attach_choose_file=0x7f060504;
-        public static final int plugin_qqmail_composeui_attach_hint=0x7f060500;
-        public static final int plugin_qqmail_composeui_attach_summary=0x7f060501;
-        public static final int plugin_qqmail_composeui_attach_take_phote=0x7f060502;
-        public static final int plugin_qqmail_composeui_attachment_upload_fail=0x7f06050c;
-        public static final int plugin_qqmail_composeui_bcc=0x7f0604fd;
-        public static final int plugin_qqmail_composeui_bccaddr_invalid=0x7f060509;
-        public static final int plugin_qqmail_composeui_cc=0x7f0604fc;
-        public static final int plugin_qqmail_composeui_ccaddr_invalid=0x7f060508;
-        public static final int plugin_qqmail_composeui_ccbcc=0x7f0604fb;
-        public static final int plugin_qqmail_composeui_content_invalid=0x7f06050b;
-        public static final int plugin_qqmail_composeui_content_suffix=0x7f06051c;
-        public static final int plugin_qqmail_composeui_leave_alert=0x7f06050e;
-        public static final int plugin_qqmail_composeui_nosubject=0x7f06051b;
-        public static final int plugin_qqmail_composeui_reply_hint=0x7f06050d;
-        public static final int plugin_qqmail_composeui_send_error=0x7f060506;
-        public static final int plugin_qqmail_composeui_send_success=0x7f060505;
-        public static final int plugin_qqmail_composeui_subject=0x7f0604fe;
-        public static final int plugin_qqmail_composeui_subject_invalid=0x7f06050a;
-        public static final int plugin_qqmail_composeui_title=0x7f0604f9;
-        public static final int plugin_qqmail_composeui_to=0x7f0604fa;
-        public static final int plugin_qqmail_composeui_toaddr_invalid=0x7f060507;
-        public static final int plugin_qqmail_download_file_open=0x7f06052c;
-        public static final int plugin_qqmail_download_file_open_err=0x7f06052d;
-        public static final int plugin_qqmail_download_file_redownload=0x7f06052b;
-        public static final int plugin_qqmail_file_explorer_download_tag=0x7f060529;
-        public static final int plugin_qqmail_file_explorer_file_tag=0x7f06052a;
-        public static final int plugin_qqmail_file_explorer_root_tag=0x7f060528;
-        public static final int plugin_qqmail_file_explorer_sdcard_tag=0x7f060527;
-        public static final int plugin_qqmail_file_explorer_ui_title=0x7f060518;
-        public static final int plugin_qqmail_mail_addr_format_invalid=0x7f06051a;
-        public static final int plugin_qqmail_no_save_draft=0x7f06051e;
-        public static final int plugin_qqmail_reply_subject_prefix=0x7f060517;
-        public static final int plugin_qqmail_svr_error_desc_1=0x7f06051f;
-        public static final int plugin_qqmail_svr_error_desc_101=0x7f060525;
-        public static final int plugin_qqmail_svr_error_desc_102=0x7f060521;
-        public static final int plugin_qqmail_svr_error_desc_103=0x7f060522;
-        public static final int plugin_qqmail_svr_error_desc_104=0x7f060526;
-        public static final int plugin_qqmail_svr_error_desc_3=0x7f060520;
-        public static final int plugin_qqmail_svr_error_desc_6=0x7f060523;
-        public static final int plugin_qqmail_svr_error_desc_7=0x7f060524;
-        public static final int plugin_qqmail_upload_attach_size_exceed=0x7f060512;
-        public static final int plugin_qqmail_upload_attach_size_tip=0x7f060511;
-        public static final int plus_add_friend=0x7f060009;
-        public static final int plus_group_chat=0x7f060008;
-        public static final int plus_scan=0x7f06000b;
-        public static final int plus_take_photo=0x7f06000c;
-        public static final int plus_video_chat=0x7f06000a;
-        public static final int process_limited_cancel=0x7f0605f0;
-        public static final int process_limited_next=0x7f0605ef;
-        public static final int process_limited_ok=0x7f0605ee;
-        public static final int process_limited_title=0x7f0605f1;
-        public static final int process_limited_warn_message=0x7f0605f2;
-        public static final int process_limited_warn_title=0x7f0605f3;
-        public static final int qq_friend_load_err=0x7f06037e;
-        public static final int qq_friend_loading=0x7f06037d;
-        public static final int qq_group_load_err=0x7f060379;
-        public static final int qq_group_loading=0x7f060378;
-        public static final int qq_group_no_qq_friend=0x7f06037b;
-        public static final int qq_group_qq_not_bind=0x7f06037c;
-        public static final int qq_group_title=0x7f060377;
-        public static final int qq_group_weixin_num=0x7f06037a;
-        public static final int qq_sync_agree=0x7f06044d;
-        public static final int qq_sync_bind_uin=0x7f060447;
-        public static final int qq_sync_bindqq_tip=0x7f06042e;
-        public static final int qq_sync_bottom=0x7f06044a;
-        public static final int qq_sync_download=0x7f060432;
-        public static final int qq_sync_download_hint=0x7f060433;
-        public static final int qq_sync_downloading=0x7f06042d;
-        public static final int qq_sync_fail=0x7f06042f;
-        public static final int qq_sync_first_time_content=0x7f06044c;
-        public static final int qq_sync_first_time_title=0x7f06044b;
-        public static final int qq_sync_intro=0x7f060437;
-        public static final int qq_sync_last_download_detail=0x7f06043d;
-        public static final int qq_sync_last_download_result=0x7f06043f;
-        public static final int qq_sync_last_upload_detail=0x7f06043c;
-        public static final int qq_sync_last_upload_result=0x7f06043e;
-        public static final int qq_sync_local_phone_count=0x7f060448;
-        public static final int qq_sync_pim_pwd=0x7f06044f;
-        public static final int qq_sync_pim_pwd_failed=0x7f060450;
-        public static final int qq_sync_pwd_freq_limit=0x7f060439;
-        public static final int qq_sync_pwd_hint=0x7f060434;
-        public static final int qq_sync_pwd_login_failed=0x7f060438;
-        public static final int qq_sync_pwd_safe=0x7f060435;
-        public static final int qq_sync_pwd_safe_tip=0x7f060436;
-        public static final int qq_sync_qq_pwd_failed=0x7f06043a;
-        public static final int qq_sync_refuse=0x7f06044e;
-        public static final int qq_sync_remote_phone_count=0x7f060449;
-        public static final int qq_sync_result_add=0x7f060440;
-        public static final int qq_sync_result_del=0x7f060442;
-        public static final int qq_sync_result_flow=0x7f060443;
-        public static final int qq_sync_result_mod=0x7f060441;
-        public static final int qq_sync_result_none=0x7f060444;
-        public static final int qq_sync_result_split=0x7f060445;
-        public static final int qq_sync_result_term=0x7f060446;
-        public static final int qq_sync_server_not_available=0x7f06043b;
-        public static final int qq_sync_upload=0x7f060430;
-        public static final int qq_sync_upload_hint=0x7f060431;
-        public static final int qq_sync_uploading=0x7f06042c;
-        public static final int qqsync_agreement_doc=0x7f060010;
-        public static final int qqsync_intro_doc=0x7f06000e;
-        public static final int qqsync_privacy_doc=0x7f06000f;
-        public static final int qqsync_weburl_lang=0x7f060011;
-        public static final int qrcode_alert_invalid_res=0x7f0603b6;
-        public static final int qrcode_alert_notmm_tip=0x7f0603b7;
-        public static final int qrcode_ban_by_expose=0x7f0603dc;
-        public static final int qrcode_from_qrcode=0x7f0603d8;
-        public static final int qrcode_help_begin_txt=0x7f0603d0;
-        public static final int qrcode_help_info=0x7f0603cd;
-        public static final int qrcode_help_info_from_addmorefriend=0x7f0603ce;
-        public static final int qrcode_help_info_from_friend=0x7f0603cf;
-        public static final int qrcode_no_user_tip=0x7f0603b8;
-        public static final int qrcode_read_file_failed=0x7f0603d2;
-        public static final int qrcode_reading_file=0x7f0603d1;
-        public static final int qrcode_sayhi_from=0x7f0603d9;
-        public static final int qrcode_select_from_photo=0x7f0603da;
-        public static final int qrcode_select_from_photo_land=0x7f0603db;
-        public static final int qrcode_show_btn=0x7f0603d3;
-        public static final int qrcode_tip_in_camera=0x7f0603d4;
-        public static final int qrcode_tip_in_discount=0x7f0603d7;
-        public static final int qrcode_tip_in_discount_from_addmorefriend=0x7f0603d5;
-        public static final int qrcode_tip_in_discount_from_friend=0x7f0603d6;
-        public static final int readerapp_delete_comfirm_news=0x7f0605cd;
-        public static final int readerapp_delete_comfirm_weibo=0x7f0605ce;
-        public static final int readerapp_delete_item=0x7f0605cf;
-        public static final int readerapp_empty_msg_tip=0x7f0605d1;
-        public static final int readerapp_menu_clean=0x7f0605cc;
-        public static final int readerapp_menu_delete=0x7f0605e3;
-        public static final int readerapp_news_intro=0x7f0605d2;
-        public static final int readerapp_pic_downing=0x7f0605d0;
-        public static final int readerapp_share=0x7f0605d5;
-        public static final int readerapp_share_weibo=0x7f0605e2;
-        public static final int readerapp_subscribe_category=0x7f0605d6;
-        public static final int readerapp_weibo_intro=0x7f0605d3;
-        public static final int readerapp_weibo_intro_btn=0x7f0605d4;
-        public static final int readmail_addr_hide=0x7f0604ee;
-        public static final int readmail_addr_show=0x7f0604ed;
-        public static final int readmail_attach_count=0x7f0604f1;
-        public static final int readmail_attachment_preview=0x7f0604f5;
-        public static final int readmail_cclist=0x7f0604ec;
-        public static final int readmail_delete=0x7f0604f2;
-        public static final int readmail_forward=0x7f0604f8;
-        public static final int readmail_no_next_mail=0x7f0604f4;
-        public static final int readmail_no_prev_mail=0x7f0604f3;
-        public static final int readmail_reply=0x7f0604f6;
-        public static final int readmail_reply_all=0x7f0604f7;
-        public static final int readmail_sender=0x7f0604ea;
-        public static final int readmail_set_unread=0x7f0604ef;
-        public static final int readmail_set_unreaded=0x7f0604f0;
-        public static final int readmail_tolist=0x7f0604eb;
-        public static final int reg_exiting=0x7f060114;
-        public static final int reg_forgetpwd_byemail=0x7f060139;
-        public static final int reg_forgetpwd_bymobile=0x7f060138;
-        public static final int reg_forgetpwd_byqq=0x7f060137;
-        public static final int reg_forgetpwd_mobile_fin=0x7f06013b;
-        public static final int reg_forgetpwd_mobile_tip=0x7f06013a;
-        public static final int reg_forgetpwd_title=0x7f060136;
-        public static final int reg_reg_account_hint=0x7f060110;
-        public static final int reg_type_email_text=0x7f06010f;
-        public static final int reg_type_mobile_text=0x7f06010e;
-        public static final int reg_username_exist_tip=0x7f060112;
-        public static final int reg_username_exist_title=0x7f060111;
-        public static final int reg_username_format_err_title=0x7f060113;
-        public static final int regbymail_reg_addr_hint=0x7f060127;
-        public static final int regbymail_reg_title=0x7f060126;
-        public static final int regbymobile_reg_setnick_fill_nick=0x7f060134;
-        public static final int regbymobile_reg_setnick_tip=0x7f060135;
-        public static final int regbymobile_reg_setnick_title=0x7f060133;
-        public static final int regbymobile_reg_setpwd_alert_diff=0x7f060131;
-        public static final int regbymobile_reg_setpwd_alert_more_byte=0x7f060132;
-        public static final int regbymobile_reg_setpwd_alert_title=0x7f060130;
-        public static final int regbymobile_reg_setpwd_fill_pwd=0x7f06012c;
-        public static final int regbymobile_reg_setpwd_fill_pwd_again=0x7f06012d;
-        public static final int regbymobile_reg_setpwd_fill_tip=0x7f06012f;
-        public static final int regbymobile_reg_setpwd_tip=0x7f06012e;
-        public static final int regbymobile_reg_setpwd_title=0x7f06012b;
-        public static final int regbymoile_reg_addr_hint=0x7f060129;
-        public static final int regbymoile_reg_private_tip=0x7f06012a;
-        public static final int regbymoile_reg_title=0x7f060128;
-        public static final int regbyqq_auth_err_failed_niceqq=0x7f06011a;
-        public static final int regbyqq_auth_err_nickinvalid=0x7f060119;
-        public static final int regbyqq_auth_err_title=0x7f060117;
-        public static final int regbyqq_auth_err_uinexsit=0x7f060118;
-        public static final int regbyqq_auth_title=0x7f060115;
-        public static final int regbyqq_auth_waiting=0x7f060116;
-        public static final int regbyqq_confirm_tip=0x7f06011f;
-        public static final int regbyqq_reg_nick_hint=0x7f06011e;
-        public static final int regbyqq_reg_nick_tip=0x7f060123;
-        public static final int regbyqq_reg_username_mod_tip=0x7f06011c;
-        public static final int regbyqq_reg_username_suggest_tip=0x7f06011d;
-        public static final int regbyqq_reg_username_title=0x7f06011b;
-        public static final int regbyqq_reg_waiting=0x7f060120;
-        public static final int regbyqq_secimg_change=0x7f060122;
-        public static final int regbyqq_secimg_title=0x7f060121;
-        public static final int report_via_wap=0x7f060094;
-        public static final int retransmit=0x7f060168;
-        public static final int retransmit_to_conv_comfirm=0x7f060169;
-        public static final int room_add_member=0x7f06040d;
-        public static final int room_add_member_hint=0x7f060412;
-        public static final int room_add_member_info_tip=0x7f060414;
-        public static final int room_chartting_room_max_len_tip=0x7f0603fc;
-        public static final int room_chartting_room_null_len_tip=0x7f0603fd;
-        public static final int room_clear_chatting_history=0x7f060403;
-        public static final int room_del_member=0x7f0603f4;
-        public static final int room_del_quit=0x7f060407;
-        public static final int room_delete_exit=0x7f06040c;
-        public static final int room_delete_msg=0x7f06040b;
-        public static final int room_delete_self_tip=0x7f060417;
-        public static final int room_has_no_topic=0x7f0603f5;
-        public static final int room_head_name=0x7f0603f7;
-        public static final int room_member_count=0x7f060411;
-        public static final int room_member_info=0x7f06040a;
-        public static final int room_member_not_added=0x7f060413;
-        public static final int room_member_only_support_weixin=0x7f060410;
-        public static final int room_member_toomuch=0x7f06040e;
-        public static final int room_member_toomuch_tip=0x7f06040f;
-        public static final int room_msg_close_notify=0x7f060401;
-        public static final int room_msg_notify=0x7f060400;
-        public static final int room_msg_setting=0x7f060408;
-        public static final int room_mute=0x7f0603ff;
-        public static final int room_mute_already=0x7f060405;
-        public static final int room_mute_already_cancel=0x7f060406;
-        public static final int room_mute_cancel=0x7f060404;
-        public static final int room_name=0x7f0603f2;
-        public static final int room_name_modify=0x7f0603f3;
-        public static final int room_rev_msg=0x7f060409;
-        public static final int room_save_to_contact=0x7f0603f6;
-        public static final int room_save_to_group_card_fail=0x7f0603f9;
-        public static final int room_save_to_group_card_max_len_tip=0x7f0603fe;
-        public static final int room_save_to_group_card_ok=0x7f0603fb;
-        public static final int room_save_to_group_card_prog=0x7f0603f8;
-        public static final int room_save_to_group_card_tip=0x7f0603fa;
-        public static final int room_set_chatting_background=0x7f060402;
-        public static final int room_set_name_for_chatroom=0x7f060416;
-        public static final int room_setting=0x7f0603f1;
-        public static final int room_share_friend=0x7f060415;
-        public static final int roominfo_name=0x7f0603ea;
-        public static final int scroll_bar_search=0x7f06005f;
-        public static final int select_conversation_create=0x7f060165;
-        public static final int select_conversation_cur=0x7f060166;
-        public static final int select_conversation_title=0x7f060167;
-        public static final int select_login_by_facebook=0x7f06010d;
-        public static final int select_login_by_qq_num=0x7f06010c;
-        public static final int select_login_hint=0x7f06010a;
-        public static final int select_register_hint=0x7f06010b;
-        public static final int selectattach_camera=0x7f0600eb;
-        public static final int selectattach_image=0x7f0600ea;
-        public static final int selectcameraapp_none=0x7f0600ed;
-        public static final int selectsmsapp_none=0x7f0600ec;
-        public static final int self_qrcode_change=0x7f0603c3;
-        public static final int self_qrcode_gallery=0x7f0603c5;
-        public static final int self_qrcode_getting=0x7f0603bb;
-        public static final int self_qrcode_land_btn_text=0x7f0603bd;
-        public static final int self_qrcode_save=0x7f0603c4;
-        public static final int self_qrcode_share_info=0x7f0603ba;
-        public static final int self_qrcode_show_all=0x7f0603c6;
-        public static final int self_qrcode_show_all_facebook=0x7f0603c7;
-        public static final int self_qrcode_show_all_qqwb=0x7f0603c9;
-        public static final int self_qrcode_show_all_qzone=0x7f0603ca;
-        public static final int self_qrcode_show_all_sina=0x7f0603c8;
-        public static final int self_qrcode_show_facebook_et_content=0x7f0600ef;
-        public static final int self_qrcode_show_no_qq_tip=0x7f0603cb;
-        public static final int self_qrcode_show_qq_et_content=0x7f0603cc;
-        public static final int self_qrcode_show_to_fuckbook=0x7f0603c2;
-        public static final int self_qrcode_show_to_qqwb=0x7f0603bf;
-        public static final int self_qrcode_show_to_qzone=0x7f0603c0;
-        public static final int self_qrcode_show_to_sina=0x7f0603c1;
-        public static final int self_qrcode_title=0x7f0603b9;
-        public static final int send_card_info=0x7f06039c;
-        public static final int send_card_tip=0x7f06039d;
-        public static final int send_card_to_microblog=0x7f060310;
-        public static final int send_card_to_sina=0x7f060312;
-        public static final int send_card_to_this=0x7f060311;
-        public static final int send_qrcode_to_microblog=0x7f0603be;
-        public static final int send_to_micro_blog_intro=0x7f060315;
-        public static final int send_to_micro_blog_intro_no_micro_blog=0x7f060317;
-        public static final int send_to_micro_blog_intro_sina=0x7f060316;
-        public static final int send_to_micro_blog_save_card_image=0x7f060319;
-        public static final int send_to_micro_blog_save_ok=0x7f060318;
-        public static final int sendrequest_send_fail=0x7f0603a2;
-        public static final int sendrequest_send_success=0x7f0603a1;
-        public static final int sendrequest_sending=0x7f0603a0;
-        public static final int sendrequest_tip=0x7f06039f;
-        public static final int sendrequest_title=0x7f06039e;
-        public static final int sent_message=0x7f060016;
-        public static final int setting_text_size_large=0x7f060282;
-        public static final int setting_text_size_normal=0x7f060283;
-        public static final int setting_text_size_small=0x7f060284;
-        public static final int settings_about_blacklist=0x7f0601f7;
-        public static final int settings_about_domainmail=0x7f0601e3;
-        public static final int settings_about_micromsg=0x7f060202;
-        public static final int settings_about_privacy=0x7f0601f8;
-        public static final int settings_about_system=0x7f060200;
-        public static final int settings_about_version=0x7f060243;
-        public static final int settings_account=0x7f06021b;
-        public static final int settings_account_info=0x7f0601cd;
-        public static final int settings_active_begin_time=0x7f060232;
-        public static final int settings_active_end_time=0x7f060233;
-        public static final int settings_active_time=0x7f060229;
-        public static final int settings_active_time_full=0x7f060231;
-        public static final int settings_add_domainmail=0x7f06020c;
-        public static final int settings_add_domainmail_fail_tip=0x7f060268;
-        public static final int settings_add_domainmail_hint=0x7f060269;
-        public static final int settings_add_domainmail_mailbadformat=0x7f06026c;
-        public static final int settings_add_domainmail_mailbeyondmax=0x7f06026a;
-        public static final int settings_add_domainmail_maildisable=0x7f06026b;
-        public static final int settings_add_domainmail_mailverified=0x7f06026d;
-        public static final int settings_add_domainmail_tip=0x7f060267;
-        public static final int settings_add_domainmail_title=0x7f060266;
-        public static final int settings_auto_add_reply_friends=0x7f0601fc;
-        public static final int settings_auto_add_reply_friends_tip=0x7f0601fd;
-        public static final int settings_bind_mobile_title=0x7f0601e2;
-        public static final int settings_bind_qq_unbind=0x7f060219;
-        public static final int settings_change_avatar=0x7f060210;
-        public static final int settings_chatting_bg=0x7f0601e1;
-        public static final int settings_chatting_bg_apply_to_all=0x7f06027b;
-        public static final int settings_chatting_bg_select_bg=0x7f060278;
-        public static final int settings_chatting_bg_select_from_album=0x7f060279;
-        public static final int settings_chatting_bg_take_photo=0x7f06027a;
-        public static final int settings_confirm_email_fail_tip=0x7f060264;
-        public static final int settings_confirm_email_success_tip=0x7f060263;
-        public static final int settings_confirm_email_tip=0x7f060262;
-        public static final int settings_confirm_email_verified_tip=0x7f060265;
-        public static final int settings_district=0x7f060215;
-        public static final int settings_domainemail_addr_verified=0x7f06020e;
-        public static final int settings_domainmail_delete=0x7f060272;
-        public static final int settings_domainmail_reach_limit=0x7f06020d;
-        public static final int settings_domainmail_viewmember=0x7f060271;
-        public static final int settings_email_addr=0x7f06021c;
-        public static final int settings_email_addr_not_verified=0x7f06021d;
-        public static final int settings_email_addr_verified=0x7f06021e;
-        public static final int settings_facebook_notice=0x7f0601d8;
-        public static final int settings_faq=0x7f0601db;
-        public static final int settings_feedback=0x7f06024a;
-        public static final int settings_feedbackui_err=0x7f0601de;
-        public static final int settings_feedbackui_succ=0x7f0601dd;
-        public static final int settings_feedbackui_title=0x7f0601dc;
-        public static final int settings_find_me_by_QQ=0x7f0601fb;
-        public static final int settings_find_me_by_mobile=0x7f0601fe;
-        public static final int settings_follow_twitter=0x7f060246;
-        public static final int settings_follow_twitter_uri=0x7f060248;
-        public static final int settings_invalid_weibo=0x7f0601d9;
-        public static final int settings_invite_facebook_friends=0x7f06020a;
-        public static final int settings_invite_friends_open_already=0x7f06020b;
-        public static final int settings_invite_mobile_friends=0x7f0601e4;
-        public static final int settings_invite_qq_friends=0x7f060209;
-        public static final int settings_landscape_mode=0x7f060236;
-        public static final int settings_language=0x7f060234;
-        public static final int settings_language_save=0x7f060255;
-        public static final int settings_language_title=0x7f060254;
-        public static final int settings_like_facebook=0x7f060247;
-        public static final int settings_like_facebook_uri=0x7f060249;
-        public static final int settings_logout=0x7f06021f;
-        public static final int settings_logout_warning_tip=0x7f060220;
-        public static final int settings_market_ratings=0x7f060245;
-        public static final int settings_menu_rename=0x7f06020f;
-        public static final int settings_mobile=0x7f06021a;
-        public static final int settings_modify_domainmail_deletetip=0x7f06026f;
-        public static final int settings_modify_domainmail_tip=0x7f06026e;
-        public static final int settings_modify_email_addr=0x7f06024e;
-        public static final int settings_modify_email_addr_warning=0x7f06024f;
-        public static final int settings_modify_name=0x7f06024b;
-        public static final int settings_modify_name_invalid=0x7f06024d;
-        public static final int settings_modify_name_tip=0x7f06024c;
-        public static final int settings_my_album=0x7f0601d0;
-        public static final int settings_my_qrcode=0x7f060217;
-        public static final int settings_name=0x7f060212;
-        public static final int settings_need_verify=0x7f0601f9;
-        public static final int settings_netstat_mobile=0x7f060273;
-        public static final int settings_netstat_source_self=0x7f060276;
-        public static final int settings_netstat_source_total=0x7f060275;
-        public static final int settings_netstat_statistic_period=0x7f060277;
-        public static final int settings_netstat_wifi=0x7f060274;
-        public static final int settings_new_msg_notification=0x7f060224;
-        public static final int settings_notification=0x7f060223;
-        public static final int settings_personal_card=0x7f0601cf;
-        public static final int settings_personal_info=0x7f0601ce;
-        public static final int settings_plugings_disturb_off=0x7f06022f;
-        public static final int settings_plugings_disturb_on=0x7f06022d;
-        public static final int settings_plugings_disturb_on_night=0x7f06022e;
-        public static final int settings_plugings_disturb_time_tip=0x7f060230;
-        public static final int settings_plugings_disturb_title=0x7f06022c;
-        public static final int settings_plugings_notify=0x7f06022a;
-        public static final int settings_plugings_notify_tip=0x7f06022b;
-        public static final int settings_plugins=0x7f0601e5;
-        public static final int settings_plugins_disable=0x7f0601e9;
-        public static final int settings_plugins_enable=0x7f0601e8;
-        public static final int settings_plugins_install=0x7f0601ef;
-        public static final int settings_plugins_install_fail=0x7f0601f5;
-        public static final int settings_plugins_installed=0x7f0601e7;
-        public static final int settings_plugins_installed_plugins=0x7f0601ec;
-        public static final int settings_plugins_installing=0x7f0601f2;
-        public static final int settings_plugins_management=0x7f0601ee;
-        public static final int settings_plugins_notset=0x7f0601ea;
-        public static final int settings_plugins_purge=0x7f0601f1;
-        public static final int settings_plugins_title=0x7f0601eb;
-        public static final int settings_plugins_uninstall=0x7f0601f0;
-        public static final int settings_plugins_uninstall_fail=0x7f0601f6;
-        public static final int settings_plugins_uninstall_hint=0x7f0601f4;
-        public static final int settings_plugins_uninstalled=0x7f0601e6;
-        public static final int settings_plugins_uninstalled_plugins=0x7f0601ed;
-        public static final int settings_plugins_uninstalling=0x7f0601f3;
-        public static final int settings_push_software=0x7f060203;
-        public static final int settings_recommend_by_mail=0x7f060205;
-        public static final int settings_recommend_by_mb=0x7f060204;
-        public static final int settings_recommend_no_mail_contact=0x7f060206;
-        public static final int settings_recommend_no_mb_contact=0x7f060208;
-        public static final int settings_recommend_no_qq_contact=0x7f060207;
-        public static final int settings_recommend_to_QQfriends=0x7f0601fa;
-        public static final int settings_reset=0x7f060221;
-        public static final int settings_reset_warning=0x7f060222;
-        public static final int settings_select_bg_canceling=0x7f060280;
-        public static final int settings_select_bg_download=0x7f06027e;
-        public static final int settings_select_bg_downloading=0x7f06027f;
-        public static final int settings_select_bg_sdcard_fail=0x7f060281;
-        public static final int settings_select_bg_title=0x7f06027c;
-        public static final int settings_select_bg_using=0x7f06027d;
-        public static final int settings_send_confirmed_domainmail_again=0x7f060270;
-        public static final int settings_send_raw_image=0x7f060239;
-        public static final int settings_sex=0x7f060214;
-        public static final int settings_shake=0x7f060226;
-        public static final int settings_share_weibo_tip=0x7f0601ff;
-        public static final int settings_show_weibo_field=0x7f0601d6;
-        public static final int settings_signature=0x7f0601da;
-        public static final int settings_signature_empty=0x7f0601df;
-        public static final int settings_skin=0x7f0601e0;
-        public static final int settings_sns_bg_from_artist=0x7f06058d;
-        public static final int settings_sns_bg_select_bg=0x7f060589;
-        public static final int settings_sns_bg_select_from_album=0x7f06058a;
-        public static final int settings_sns_bg_take_photo=0x7f06058b;
-        public static final int settings_sns_bg_title=0x7f06058c;
-        public static final int settings_sns_notify=0x7f060227;
-        public static final int settings_sns_notify_tip=0x7f060228;
-        public static final int settings_sound=0x7f060225;
-        public static final int settings_system_notice=0x7f060201;
-        public static final int settings_system_notice_url=0x7f060253;
-        public static final int settings_text_size=0x7f060235;
-        public static final int settings_title=0x7f0601cc;
-        public static final int settings_total_traffic_statistic=0x7f060242;
-        public static final int settings_total_traffic_statistic_all=0x7f060241;
-        public static final int settings_traffic_all_statistic=0x7f06023b;
-        public static final int settings_traffic_all_statistic_info=0x7f06023c;
-        public static final int settings_traffic_statistic=0x7f06023e;
-        public static final int settings_traffic_statistic_clear=0x7f06023f;
-        public static final int settings_traffic_statistic_reset=0x7f060240;
-        public static final int settings_traffic_statistic_tip=0x7f06023d;
-        public static final int settings_tweibo=0x7f060216;
-        public static final int settings_tweibo_notfind=0x7f0601d5;
-        public static final int settings_tweibo_open=0x7f0601d1;
-        public static final int settings_tweibo_open_not_set=0x7f0601d3;
-        public static final int settings_tweibo_open_set=0x7f0601d4;
-        public static final int settings_tweibo_open_title=0x7f0601d2;
-        public static final int settings_tweibo_tip=0x7f060218;
-        public static final int settings_uin=0x7f060213;
-        public static final int settings_update=0x7f060244;
-        public static final int settings_upload_hd_avatar_fail=0x7f060252;
-        public static final int settings_upload_hd_avatar_success=0x7f060251;
-        public static final int settings_uploading_hd_avatar=0x7f060250;
-        public static final int settings_username=0x7f060211;
-        public static final int settings_voice_play_mode=0x7f060238;
-        public static final int settings_voicerecorder_mode=0x7f060237;
-        public static final int settings_voicerecorder_mode_change_to_amr=0x7f06023a;
-        public static final int settings_weibo_notice=0x7f0601d7;
-        public static final int sex_female=0x7f060093;
-        public static final int sex_male=0x7f060092;
-        public static final int shake_a_friend=0x7f060494;
-        public static final int shake_click_to_change_bg=0x7f060498;
-        public static final int shake_finding=0x7f060495;
-        public static final int shake_friends_clear_all=0x7f0604a1;
-        public static final int shake_friends_clear_title=0x7f0604a2;
-        public static final int shake_friends_no_shake_friends=0x7f0604a3;
-        public static final int shake_friends_see_olders=0x7f0604a4;
-        public static final int shake_getfial=0x7f060496;
-        public static final int shake_has_closed_sound=0x7f06049f;
-        public static final int shake_info_known=0x7f0604ab;
-        public static final int shake_info_long_text=0x7f0604aa;
-        public static final int shake_info_long_title=0x7f0604a9;
-        public static final int shake_info_party_text=0x7f0604a8;
-        public static final int shake_info_party_title=0x7f0604a7;
-        public static final int shake_info_short_text=0x7f0604a6;
-        public static final int shake_info_short_title=0x7f0604a5;
-        public static final int shake_item_change_bgimg=0x7f06049b;
-        public static final int shake_item_clear_shake_friends=0x7f06049a;
-        public static final int shake_item_close_sound=0x7f06049d;
-        public static final int shake_item_default_bgimg=0x7f06049c;
-        public static final int shake_item_open_sound=0x7f06049e;
-        public static final int shake_match=0x7f06001b;
-        public static final int shake_match_isfriend=0x7f0604a0;
-        public static final int shake_meter=0x7f060499;
-        public static final int shake_nomatch=0x7f06001a;
-        public static final int shake_not_support=0x7f060497;
-        public static final int shake_report_title=0x7f060493;
-        public static final int shake_sound_male=0x7f060019;
-        public static final int share_at_least_one_item=0x7f06036f;
-        public static final int share_btn=0x7f06036b;
-        public static final int share_content=0x7f060370;
-        public static final int share_err=0x7f060371;
-        public static final int share_micromsg_card_name=0x7f060313;
-        public static final int share_micromsg_card_title=0x7f060314;
-        public static final int share_ok=0x7f060372;
-        public static final int share_to_qq_sign=0x7f06036d;
-        public static final int share_to_qq_zone=0x7f06036e;
-        public static final int share_to_tencent_microblog=0x7f06036c;
-        public static final int shareimg_file_too_large=0x7f06042b;
-        public static final int shareimg_get_res_fail=0x7f06042a;
-        public static final int skin_getmore=0x7f0603e5;
-        public static final int skin_getting_list=0x7f0603e4;
-        public static final int smiley_panel_art=0x7f0601c3;
-        public static final int smiley_panel_custom=0x7f0601c2;
-        public static final int smiley_panel_def=0x7f0601c0;
-        public static final int smiley_panel_emoji=0x7f0601c1;
-        public static final int sns_choose_image_from_album=0x7f060586;
-        public static final int sns_choose_image_from_take_photo=0x7f060587;
-        public static final int sns_comefrome=0x7f060554;
-        public static final int sns_comment=0x7f060565;
-        public static final int sns_comment_detial_ui_photo_count=0x7f060570;
-        public static final int sns_comment_detial_ui_title=0x7f06056f;
-        public static final int sns_comment_like=0x7f060545;
-        public static final int sns_comment_reply=0x7f060547;
-        public static final int sns_comment_title=0x7f06058f;
-        public static final int sns_comment_word=0x7f060546;
-        public static final int sns_del_my_comment=0x7f060552;
-        public static final int sns_del_sns=0x7f06055c;
-        public static final int sns_deling_sns=0x7f06055d;
-        public static final int sns_down_error=0x7f060556;
-        public static final int sns_dyna_photo_ui_title=0x7f060544;
-        public static final int sns_dynamic_title=0x7f060566;
-        public static final int sns_expose_sns=0x7f06055b;
-        public static final int sns_from_bottle=0x7f060576;
-        public static final int sns_from_lbs=0x7f060578;
-        public static final int sns_from_qrcode=0x7f060577;
-        public static final int sns_from_shake=0x7f060579;
-        public static final int sns_from_stranger=0x7f060575;
-        public static final int sns_gallery_comment=0x7f060592;
-        public static final int sns_gallery_has_like=0x7f060591;
-        public static final int sns_gallery_like=0x7f060590;
-        public static final int sns_get_location=0x7f06057c;
-        public static final int sns_get_old_msg=0x7f060572;
-        public static final int sns_has_liked=0x7f060564;
-        public static final int sns_has_save=0x7f060588;
-        public static final int sns_is_all=0x7f06054c;
-        public static final int sns_like=0x7f060563;
-        public static final int sns_like_background=0x7f06057b;
-        public static final int sns_loading=0x7f06054d;
-        public static final int sns_love_back=0x7f06054b;
-        public static final int sns_media_count=0x7f060583;
-        public static final int sns_msg_clear_mgslist=0x7f060574;
-        public static final int sns_msg_list=0x7f060573;
-        public static final int sns_msgui_title=0x7f060571;
-        public static final int sns_no_msg=0x7f06057a;
-        public static final int sns_no_timeline=0x7f060555;
-        public static final int sns_not_get_location=0x7f06057d;
-        public static final int sns_photo_ui_title=0x7f060543;
-        public static final int sns_post_to=0x7f06055a;
-        public static final int sns_privated=0x7f060580;
-        public static final int sns_privated_hint=0x7f060581;
-        public static final int sns_reply=0x7f060553;
-        public static final int sns_save_to_sns=0x7f060559;
-        public static final int sns_setPrivateing_sns=0x7f06055e;
-        public static final int sns_set_has_like_bg=0x7f060585;
-        public static final int sns_set_it_bg=0x7f060584;
-        public static final int sns_set_private=0x7f060558;
-        public static final int sns_some_comment=0x7f060561;
-        public static final int sns_some_new_msg=0x7f060560;
-        public static final int sns_some_praise=0x7f060562;
-        public static final int sns_strange_tip=0x7f06054f;
-        public static final int sns_sync_facebook=0x7f06057f;
-        public static final int sns_sync_weibo=0x7f06057e;
-        public static final int sns_timeline_ui_chang_background=0x7f060568;
-        public static final int sns_timeline_ui_confirm_del=0x7f06056d;
-        public static final int sns_timeline_ui_recommend_a_song=0x7f060569;
-        public static final int sns_timeline_ui_recommend_a_video=0x7f06056a;
-        public static final int sns_timeline_ui_recommend_an_article=0x7f06056b;
-        public static final int sns_timeline_ui_title=0x7f060567;
-        public static final int sns_timeline_ui_with_to=0x7f06056c;
-        public static final int sns_timeline_ui_with_you=0x7f06056e;
-        public static final int sns_total_count=0x7f06054e;
-        public static final int sns_touch_setbg=0x7f060551;
-        public static final int sns_ui_comment=0x7f06054a;
-        public static final int sns_ui_setback=0x7f060549;
-        public static final int sns_upload_litmit=0x7f060582;
-        public static final int sns_upload_sns_hint=0x7f06055f;
-        public static final int sns_user_start=0x7f060550;
-        public static final int sns_welcome_i_know=0x7f060597;
-        public static final int sns_welcome_tip=0x7f060593;
-        public static final int sns_welcome_titlea=0x7f060594;
-        public static final int sns_welcome_titleb=0x7f060595;
-        public static final int sns_welcome_titlec=0x7f060596;
-        public static final int sns_who_album=0x7f06058e;
-        public static final int sns_wirte_down=0x7f060557;
-        public static final int sns_with_you=0x7f060548;
-        public static final int sys_bucket_name=0x7f0605eb;
-        public static final int sys_camera_bucket_name=0x7f0605ea;
-        public static final int time_apr=0x7f06059b;
-        public static final int time_aug=0x7f06059f;
-        public static final int time_dec=0x7f0605a3;
-        public static final int time_feb=0x7f060599;
-        public static final int time_fri=0x7f0605a8;
-        public static final int time_jan=0x7f060598;
-        public static final int time_jul=0x7f06059e;
-        public static final int time_jun=0x7f06059d;
-        public static final int time_limit=0x7f060018;
-        public static final int time_mar=0x7f06059a;
-        public static final int time_may=0x7f06059c;
-        public static final int time_mon=0x7f0605a4;
-        public static final int time_nov=0x7f0605a2;
-        public static final int time_oct=0x7f0605a1;
-        public static final int time_sat=0x7f0605a9;
-        public static final int time_sept=0x7f0605a0;
-        public static final int time_sun=0x7f0605aa;
-        public static final int time_thur=0x7f0605a7;
-        public static final int time_tues=0x7f0605a5;
-        public static final int time_wed=0x7f0605a6;
-        public static final int update_cancel=0x7f060102;
-        public static final int update_err_getinfo=0x7f0600fd;
-        public static final int update_exit=0x7f060101;
-        public static final int update_get_pack_error=0x7f060103;
-        public static final int update_getting_updateinfo=0x7f0600fb;
-        public static final int update_getting_updatepack=0x7f0600fc;
-        public static final int update_noupdate=0x7f0600fa;
-        public static final int update_now=0x7f060100;
-        public static final int update_tip_critical=0x7f0600ff;
-        public static final int update_tip_recommended_down=0x7f0600fe;
-        public static final int url_agreement=0x7f060013;
-        public static final int url_getpassword=0x7f060014;
-        public static final int url_getqqpassword=0x7f060015;
-        public static final int verify_account_err_chinese=0x7f0600dc;
-        public static final int verify_account_err_other=0x7f0600de;
-        public static final int verify_account_err_space=0x7f0600dd;
-        public static final int verify_account_err_start=0x7f0600db;
-        public static final int verify_account_null_tip=0x7f0600df;
-        public static final int verify_account_tip=0x7f0600d9;
-        public static final int verify_account_tip_short=0x7f0600da;
-        public static final int verify_email_err_tip=0x7f0600e9;
-        public static final int verify_email_null_tip=0x7f0600e3;
-        public static final int verify_email_tip=0x7f0600e8;
-        public static final int verify_input_null_tip=0x7f0600e0;
-        public static final int verify_password_all_num_tip=0x7f0600e4;
-        public static final int verify_password_null_tip=0x7f0600e1;
-        public static final int verify_password_tip=0x7f0600e5;
-        public static final int verify_seccode_fail_tip=0x7f0600e7;
-        public static final int verify_seccode_tip=0x7f0600e6;
-        public static final int verify_username_null_tip=0x7f0600e2;
-        public static final int video_compress_fail=0x7f0603af;
-        public static final int video_compress_ok=0x7f0603ab;
-        public static final int video_compressing=0x7f0603aa;
-        public static final int video_dev_create_failed=0x7f0603a6;
-        public static final int video_export_file_error=0x7f0603b3;
-        public static final int video_export_file_too_big=0x7f0603b4;
-        public static final int video_export_file_warning=0x7f0603b5;
-        public static final int video_play_export_file_error=0x7f0603b2;
-        public static final int video_play_faile=0x7f0603a8;
-        public static final int video_play_title=0x7f0603a9;
-        public static final int video_recorder_cancel=0x7f0603ad;
-        public static final int video_recorder_file_error=0x7f0603b1;
-        public static final int video_recorder_restart=0x7f0603ac;
-        public static final int video_recorder_start_hint=0x7f0603ae;
-        public static final int video_recorder_time_limit=0x7f0603b0;
-        public static final int video_save_failed=0x7f0603a7;
-        public static final int video_saved=0x7f0603a5;
-        public static final int voip_disconnect_tip=0x7f0604d7;
-        public static final int voip_invite_incoming_text=0x7f0604d4;
-        public static final int voip_invite_start=0x7f0604d5;
-        public static final int voip_invite_waiting_tip=0x7f0604d3;
-        public static final int voip_no_resp=0x7f0604d9;
-        public static final int voip_reject=0x7f0604d8;
-        public static final int voip_shutdown_tip=0x7f0604d6;
-        public static final int whats_new_daybeforeyesterday=0x7f0604b9;
-        public static final int whats_new_guangzhou=0x7f0604ba;
-        public static final int whats_new_march=0x7f0604bb;
-        public static final int whats_new_msg1=0x7f0604ac;
-        public static final int whats_new_msg3=0x7f0604af;
-        public static final int whats_new_start=0x7f0604b6;
-        public static final int whats_new_tip=0x7f0604b2;
-        public static final int whats_new_title2=0x7f0604ad;
-        public static final int whats_new_title3=0x7f0604ae;
-        public static final int whats_new_title4=0x7f0604b0;
-        public static final int whats_new_title5=0x7f0604b1;
-        public static final int whats_new_title6=0x7f0604b3;
-        public static final int whats_new_title7_01=0x7f0604b4;
-        public static final int whats_new_title7_02=0x7f0604b5;
-        public static final int whats_new_today=0x7f0604b7;
-        public static final int whats_new_yesterday=0x7f0604b8;
+        public static final int action_album=0x7f070009;
+        public static final int action_card=0x7f07000b;
+        public static final int action_collection=0x7f07000a;
+        public static final int action_feed=0x7f07000d;
+        public static final int action_plus=0x7f070008;
+        public static final int action_search=0x7f070007;
+        public static final int action_settings=0x7f07000c;
+        public static final int add_more_friends_title=0x7f070310;
+        public static final int add_room_mem_err=0x7f0703f2;
+        public static final int add_room_mem_memberExits=0x7f0703f6;
+        public static final int add_room_mem_ok=0x7f0703f3;
+        public static final int addapp_add_app=0x7f0704c2;
+        public static final int addapp_added_app=0x7f0704c3;
+        public static final int addapp_available_app=0x7f0704c4;
+        public static final int addapp_empty_app_list_added=0x7f0704c7;
+        public static final int addapp_empty_app_list_available=0x7f0704c8;
+        public static final int addapp_no_app_tip=0x7f0704c9;
+        public static final int addapp_recommend_app=0x7f0704c5;
+        public static final int addapp_recommend_url=0x7f0704ca;
+        public static final int addapp_view_more_recommend_app=0x7f0704c6;
+        public static final int addcontact_fail=0x7f0703a9;
+        public static final int addcontact_fail_blacklist=0x7f0703aa;
+        public static final int adding_room_mem=0x7f0703f1;
+        public static final int address_delcontact=0x7f07028f;
+        public static final int address_delgroupcard=0x7f070290;
+        public static final int address_empty_blacklist_tip=0x7f070291;
+        public static final int address_favour_contact_catalog_name=0x7f070299;
+        public static final int address_group_card_count=0x7f07029b;
+        public static final int address_history_group_card=0x7f070297;
+        public static final int address_launch_chatting=0x7f070294;
+        public static final int address_multi_select_create=0x7f070295;
+        public static final int address_multi_select_delete=0x7f070296;
+        public static final int address_multi_select_opt=0x7f070293;
+        public static final int address_near_contact_catalog_name=0x7f07029a;
+        public static final int address_not_found=0x7f07028e;
+        public static final int address_searching=0x7f07028d;
+        public static final int address_select_group_card=0x7f070298;
+        public static final int address_title_add_contact=0x7f07028c;
+        public static final int address_title_select_contact=0x7f07028b;
+        public static final int address_title_select_country_code=0x7f070292;
+        public static final int after_upload_voice=0x7f070022;
+        public static final int alpha_version_alpha=0x7f070157;
+        public static final int alpha_version_tip=0x7f070154;
+        public static final int alpha_version_tip_login=0x7f070156;
+        public static final int alpha_version_tip_reg=0x7f070155;
+        public static final int app_app=0x7f07003b;
+        public static final int app_back=0x7f070028;
+        public static final int app_cancel=0x7f070029;
+        public static final int app_canceling=0x7f070046;
+        public static final int app_clear=0x7f07002d;
+        public static final int app_continue=0x7f07002e;
+        public static final int app_copyright=0x7f07009c;
+        public static final int app_default=0x7f07004c;
+        public static final int app_delete=0x7f07002c;
+        public static final int app_down_show_nexttime=0x7f070036;
+        public static final int app_download=0x7f070044;
+        public static final int app_download_finish=0x7f070048;
+        public static final int app_download_update_package=0x7f070049;
+        public static final int app_downloading=0x7f070047;
+        public static final int app_edit=0x7f070033;
+        public static final int app_emoji=0x7f07003f;
+        public static final int app_empty_string=0x7f070042;
+        public static final int app_en=0x7f07004f;
+        public static final int app_err_mailexsit_tip=0x7f0700db;
+        public static final int app_err_mailexsit_title=0x7f0700da;
+        public static final int app_err_nouser=0x7f0700d9;
+        public static final int app_err_password=0x7f0700d8;
+        public static final int app_err_reg_title=0x7f0700dc;
+        public static final int app_err_server_busy_tip=0x7f0700de;
+        public static final int app_err_system_busy_tip=0x7f0700dd;
+        public static final int app_es=0x7f070054;
+        public static final int app_field_card=0x7f070061;
+        public static final int app_field_location=0x7f070062;
+        public static final int app_field_mobile=0x7f07005b;
+        public static final int app_field_pic=0x7f07005f;
+        public static final int app_field_qquin=0x7f070058;
+        public static final int app_field_smiley=0x7f07005e;
+        public static final int app_field_text=0x7f07005d;
+        public static final int app_field_username=0x7f070059;
+        public static final int app_field_video=0x7f070060;
+        public static final int app_field_voice=0x7f07005c;
+        public static final int app_field_weibo=0x7f07005a;
+        public static final int app_file=0x7f07003d;
+        public static final int app_find=0x7f070032;
+        public static final int app_finish=0x7f070031;
+        public static final int app_id=0x7f070051;
+        public static final int app_ignore_it=0x7f070057;
+        public static final int app_install=0x7f070045;
+        public static final int app_lang_sys=0x7f070056;
+        public static final int app_loading_data=0x7f070041;
+        public static final int app_music=0x7f070038;
+        public static final int app_name=0x7f070006;
+        public static final int app_new=0x7f070043;
+        public static final int app_nextstep=0x7f07002f;
+        public static final int app_no=0x7f070035;
+        public static final int app_ok=0x7f07002a;
+        public static final int app_pic=0x7f070037;
+        public static final int app_prevstep=0x7f070030;
+        public static final int app_profile_add=0x7f0704cb;
+        public static final int app_profile_remove=0x7f0704cc;
+        public static final int app_profile_title=0x7f0704cd;
+        public static final int app_pt=0x7f070053;
+        public static final int app_recommend_update=0x7f07004b;
+        public static final int app_ru=0x7f070055;
+        public static final int app_save=0x7f07002b;
+        public static final int app_send=0x7f070025;
+        public static final int app_sending=0x7f070026;
+        public static final int app_set=0x7f070027;
+        public static final int app_share=0x7f070063;
+        public static final int app_share_to_weixin=0x7f070064;
+        public static final int app_th=0x7f070050;
+        public static final int app_tip=0x7f070024;
+        public static final int app_update_package_notify=0x7f07004a;
+        public static final int app_url=0x7f07003c;
+        public static final int app_vi=0x7f070052;
+        public static final int app_video=0x7f07003a;
+        public static final int app_voice=0x7f070039;
+        public static final int app_voip=0x7f07003e;
+        public static final int app_waiting=0x7f070040;
+        public static final int app_yes=0x7f070034;
+        public static final int app_zh_CN=0x7f07004d;
+        public static final int app_zh_TW=0x7f07004e;
+        public static final int art_smiley_select_add_hint=0x7f0701c5;
+        public static final int bind_facebook_start_btn=0x7f07036e;
+        public static final int bind_facebook_start_hint=0x7f070370;
+        public static final int bind_facebook_start_title=0x7f07036f;
+        public static final int bind_mcontact_bind_alert_content=0x7f070341;
+        public static final int bind_mcontact_bind_alert_title=0x7f070340;
+        public static final int bind_mcontact_bind_btn_text=0x7f070337;
+        public static final int bind_mcontact_del_btn_text=0x7f07033d;
+        public static final int bind_mcontact_del_content=0x7f070358;
+        public static final int bind_mcontact_err_BindPhone_NeedAdjust=0x7f07034b;
+        public static final int bind_mcontact_err_binded=0x7f070349;
+        public static final int bind_mcontact_err_binded_by_other=0x7f07034f;
+        public static final int bind_mcontact_err_format=0x7f07034e;
+        public static final int bind_mcontact_err_freq_limit=0x7f070348;
+        public static final int bind_mcontact_err_mobile_num=0x7f070359;
+        public static final int bind_mcontact_err_not_bind_qq=0x7f07034c;
+        public static final int bind_mcontact_err_not_suport_country=0x7f07034a;
+        public static final int bind_mcontact_err_unbinded_notbinded=0x7f07034d;
+        public static final int bind_mcontact_exit_content=0x7f070357;
+        public static final int bind_mcontact_exit_tip=0x7f070356;
+        public static final int bind_mcontact_friend_btn_text=0x7f070339;
+        public static final int bind_mcontact_hint=0x7f07032b;
+        public static final int bind_mcontact_input_mobile_hint=0x7f07032c;
+        public static final int bind_mcontact_input_verify_hint=0x7f07032d;
+        public static final int bind_mcontact_mobile_erro=0x7f070323;
+        public static final int bind_mcontact_next_btn_text=0x7f07033b;
+        public static final int bind_mcontact_status_bind_ok=0x7f070355;
+        public static final int bind_mcontact_status_ok_btn_text=0x7f070354;
+        public static final int bind_mcontact_title_bind=0x7f070322;
+        public static final int bind_mcontact_title_setting=0x7f070320;
+        public static final int bind_mcontact_title_verify=0x7f070321;
+        public static final int bind_mcontact_unbind_alert_account_info=0x7f070346;
+        public static final int bind_mcontact_unbind_alert_account_title=0x7f070345;
+        public static final int bind_mcontact_unbind_alert_content=0x7f070347;
+        public static final int bind_mcontact_unbind_alert_title=0x7f070342;
+        public static final int bind_mcontact_unbind_btn_text=0x7f07033c;
+        public static final int bind_mcontact_unbind_err=0x7f07032a;
+        public static final int bind_mcontact_unbind_info=0x7f070343;
+        public static final int bind_mcontact_unbind_ok=0x7f070329;
+        public static final int bind_mcontact_unbind_user_hit=0x7f070344;
+        public static final int bind_mcontact_unbinding=0x7f070328;
+        public static final int bind_mcontact_unverify_mobile=0x7f07033e;
+        public static final int bind_mcontact_upload_btn_text=0x7f07033a;
+        public static final int bind_mcontact_verifing=0x7f070325;
+        public static final int bind_mcontact_verifing_progress=0x7f070326;
+        public static final int bind_mcontact_verify_btn_text=0x7f070338;
+        public static final int bind_mcontact_verify_err=0x7f070327;
+        public static final int bind_mcontact_verify_err_time_out_content=0x7f070353;
+        public static final int bind_mcontact_verify_err_unmatch_content=0x7f070352;
+        public static final int bind_mcontact_verify_mobile=0x7f07033f;
+        public static final int bind_mcontact_verify_tip=0x7f070351;
+        public static final int bind_mcontact_verifynull=0x7f070324;
+        public static final int bind_mcontact_voice_verify_Languages=0x7f070336;
+        public static final int bind_mcontact_voice_verify_defaultLanguage=0x7f070335;
+        public static final int bind_mcontact_voice_verify_entrance=0x7f07032e;
+        public static final int bind_mcontact_voice_verify_hint=0x7f07032f;
+        public static final int bind_mcontact_voice_verify_hint2=0x7f070330;
+        public static final int bind_mcontact_voice_verify_select_tips=0x7f070334;
+        public static final int bind_mcontact_voice_verify_select_title=0x7f070333;
+        public static final int bind_mcontact_voice_verify_start=0x7f070331;
+        public static final int bind_mcontact_voice_verify_voice_title=0x7f070332;
+        public static final int bind_mcontact_your_mobile=0x7f070350;
+        public static final int bind_qq_finish_hint=0x7f07036c;
+        public static final int bind_qq_finish_textview_hint=0x7f07036d;
+        public static final int bind_qq_finish_title=0x7f07036b;
+        public static final int bind_qq_start_alert_content=0x7f07035e;
+        public static final int bind_qq_start_alert_title=0x7f07035d;
+        public static final int bind_qq_start_btn=0x7f07035c;
+        public static final int bind_qq_start_hint=0x7f07035b;
+        public static final int bind_qq_start_title=0x7f07035a;
+        public static final int bind_qq_verify_alert_binding=0x7f070366;
+        public static final int bind_qq_verify_alert_failed_content=0x7f070368;
+        public static final int bind_qq_verify_alert_failed_niceqq=0x7f070369;
+        public static final int bind_qq_verify_alert_failed_title=0x7f070367;
+        public static final int bind_qq_verify_alert_pwd=0x7f070365;
+        public static final int bind_qq_verify_alert_qq=0x7f070364;
+        public static final int bind_qq_verify_alert_succ=0x7f07036a;
+        public static final int bind_qq_verify_alert_title=0x7f070362;
+        public static final int bind_qq_verify_alert_wrong=0x7f070363;
+        public static final int bind_qq_verify_textview_pwd=0x7f070361;
+        public static final int bind_qq_verify_textview_qq=0x7f070360;
+        public static final int bind_qq_verify_title=0x7f07035f;
+        public static final int bottle_banby_expose=0x7f070491;
+        public static final int bottle_beach_title=0x7f070475;
+        public static final int bottle_cannot_pick=0x7f07048a;
+        public static final int bottle_cannot_throw=0x7f070489;
+        public static final int bottle_chatting_from_city=0x7f070481;
+        public static final int bottle_chatting_video_not_support=0x7f07048d;
+        public static final int bottle_conversation_clear=0x7f07048f;
+        public static final int bottle_conversation_delete=0x7f07048e;
+        public static final int bottle_delete_confirm_title=0x7f07048b;
+        public static final int bottle_delete_text=0x7f07048c;
+        public static final int bottle_empty_msg_tip=0x7f070482;
+        public static final int bottle_get_count_err=0x7f070483;
+        public static final int bottle_open_contact_from=0x7f070486;
+        public static final int bottle_open_hint=0x7f070485;
+        public static final int bottle_open_reply=0x7f070480;
+        public static final int bottle_open_throw_back=0x7f07047e;
+        public static final int bottle_open_throw_back_toast=0x7f07047f;
+        public static final int bottle_opt_list=0x7f070478;
+        public static final int bottle_opt_pick=0x7f070477;
+        public static final int bottle_opt_throw=0x7f070476;
+        public static final int bottle_settings_change_avatar=0x7f070492;
+        public static final int bottle_settings_change_avatar_tip_str=0x7f070493;
+        public static final int bottle_settings_change_avatar_tip_str_2=0x7f070495;
+        public static final int bottle_settings_change_info_err_district=0x7f070498;
+        public static final int bottle_settings_change_info_err_sex=0x7f070497;
+        public static final int bottle_settings_change_info_tip=0x7f070496;
+        public static final int bottle_settings_show_at_main=0x7f070494;
+        public static final int bottle_switch_mode_alert_title=0x7f070487;
+        public static final int bottle_switch_mode_continue_text=0x7f070488;
+        public static final int bottle_throw_rcd_too_short=0x7f07047d;
+        public static final int bottle_throw_text_btn_text=0x7f07047a;
+        public static final int bottle_throw_text_too_short=0x7f070479;
+        public static final int bottle_throw_voice_btn_pressed_text=0x7f07047c;
+        public static final int bottle_throw_voice_btn_text=0x7f07047b;
+        public static final int bottle_unknowed_city=0x7f070490;
+        public static final int bottle_wizard_step1_tip=0x7f070484;
+        public static final int chatfooter_SpeakerON=0x7f0701be;
+        public static final int chatfooter_SpeakerOff=0x7f0701bf;
+        public static final int chatfooter_SpeakerOff_now=0x7f0701c0;
+        public static final int chatfooter_cancel_rcd=0x7f0701c2;
+        public static final int chatfooter_cancel_rcd_release=0x7f0701c3;
+        public static final int chatfooter_delete_custom_emoji=0x7f0701c4;
+        public static final int chatfooter_presstorcd=0x7f0701bc;
+        public static final int chatfooter_releasetofinish=0x7f0701bd;
+        public static final int chatfooter_too_short=0x7f0701c1;
+        public static final int chatroom_sys_msg_invite=0x7f0703ef;
+        public static final int chatting_add_attach_tips=0x7f070189;
+        public static final int chatting_addcontact=0x7f070190;
+        public static final int chatting_context_menu_image=0x7f07018a;
+        public static final int chatting_context_menu_take_picture=0x7f07018b;
+        public static final int chatting_err_qqpwd_tip=0x7f0701af;
+        public static final int chatting_from_QQ_friends=0x7f0701a1;
+        public static final int chatting_from_QQ_friends_content=0x7f0701a2;
+        public static final int chatting_from_QQ_friends_sys_tip=0x7f0701aa;
+        public static final int chatting_from_QQ_frineds_tip=0x7f0701a7;
+        public static final int chatting_from_card=0x7f0701ac;
+        public static final int chatting_from_message_add=0x7f0701b5;
+        public static final int chatting_from_message_ignore=0x7f0701b7;
+        public static final int chatting_from_message_pass=0x7f0701b6;
+        public static final int chatting_from_mobile_friends=0x7f0701a3;
+        public static final int chatting_from_mobile_friends_content=0x7f0701a4;
+        public static final int chatting_from_mobile_friends_sys_tip=0x7f0701ab;
+        public static final int chatting_from_mobile_friends_tip=0x7f0701a8;
+        public static final int chatting_from_possible_friends=0x7f0701a5;
+        public static final int chatting_from_possible_friends_content=0x7f0701a6;
+        public static final int chatting_from_possible_friends_tip=0x7f0701a9;
+        public static final int chatting_from_verify_bottle=0x7f07019b;
+        public static final int chatting_from_verify_contact=0x7f07019d;
+        public static final int chatting_from_verify_contact_tip=0x7f07019e;
+        public static final int chatting_from_verify_facebook=0x7f07019f;
+        public static final int chatting_from_verify_facebook_content=0x7f0701a0;
+        public static final int chatting_from_verify_lbs=0x7f070199;
+        public static final int chatting_from_verify_lbs_tip=0x7f07019c;
+        public static final int chatting_from_verify_shake=0x7f07019a;
+        public static final int chatting_getimg_fail_tip=0x7f070191;
+        public static final int chatting_long_click_menu_copy_msg=0x7f070181;
+        public static final int chatting_long_click_menu_delete_emoji=0x7f070182;
+        public static final int chatting_long_click_menu_delete_img=0x7f07017c;
+        public static final int chatting_long_click_menu_delete_msg=0x7f07017b;
+        public static final int chatting_long_click_menu_delete_video=0x7f07017e;
+        public static final int chatting_long_click_menu_delete_voice=0x7f07017d;
+        public static final int chatting_long_click_menu_resend_msg_img=0x7f070185;
+        public static final int chatting_long_click_menu_save_art_emoji=0x7f070184;
+        public static final int chatting_long_click_menu_save_emoji=0x7f070183;
+        public static final int chatting_long_click_menu_save_video=0x7f07017f;
+        public static final int chatting_long_click_menu_set_ring=0x7f070180;
+        public static final int chatting_menu_clean=0x7f070179;
+        public static final int chatting_moreinfo=0x7f07018f;
+        public static final int chatting_msg_type_not_support=0x7f0701b8;
+        public static final int chatting_music_volumn=0x7f070196;
+        public static final int chatting_music_volumn_change=0x7f070197;
+        public static final int chatting_need_qqpwd_hint=0x7f0701ae;
+        public static final int chatting_need_qqpwd_title=0x7f0701ad;
+        public static final int chatting_niceqq_expired_tip=0x7f0701b0;
+        public static final int chatting_play_err=0x7f070194;
+        public static final int chatting_qqmail_clear_all=0x7f0701b3;
+        public static final int chatting_qqmail_clear_all_confirm=0x7f0701b4;
+        public static final int chatting_qqmail_compose=0x7f0701b1;
+        public static final int chatting_qqmail_download_mgr=0x7f0701b2;
+        public static final int chatting_rcd_err=0x7f070193;
+        public static final int chatting_rcd_time_limit=0x7f070192;
+        public static final int chatting_resend_content=0x7f0701bb;
+        public static final int chatting_resend_title=0x7f0701ba;
+        public static final int chatting_roominfo_noname=0x7f070198;
+        public static final int chatting_send=0x7f070178;
+        public static final int chatting_send_video_local=0x7f070187;
+        public static final int chatting_send_video_title=0x7f070186;
+        public static final int chatting_send_video_weixin=0x7f070188;
+        public static final int chatting_source_from=0x7f0701b9;
+        public static final int chatting_status_typing=0x7f07018d;
+        public static final int chatting_status_voice_typing=0x7f07018e;
+        public static final int chatting_tips_groupchat=0x7f07017a;
+        public static final int chatting_toast_sdk_fail=0x7f07018c;
+        public static final int chatting_use_handset=0x7f070195;
+        public static final int cities=0x7f0703e3;
+        public static final int confirm_dialog_back=0x7f0704d6;
+        public static final int confirm_dialog_cancel=0x7f0704d3;
+        public static final int confirm_dialog_edittext_hint=0x7f0704d4;
+        public static final int confirm_dialog_sent=0x7f0704d5;
+        public static final int confirm_dialog_share=0x7f0704d2;
+        public static final int confirm_dialog_source=0x7f0704d7;
+        public static final int confirm_dialog_unknown_source=0x7f0704d8;
+        public static final int contact_info_add=0x7f07029d;
+        public static final int contact_info_adding_tip=0x7f0702cb;
+        public static final int contact_info_bind_fb_entry_tip=0x7f0705bb;
+        public static final int contact_info_bind_mobile_entry_tip=0x7f0702db;
+        public static final int contact_info_bind_qq_entry_tip=0x7f0702dc;
+        public static final int contact_info_change_remarkname=0x7f0702a7;
+        public static final int contact_info_clear_data=0x7f0702b7;
+        public static final int contact_info_clear_data_wording=0x7f0702b8;
+        public static final int contact_info_clear_location_tip=0x7f0702c6;
+        public static final int contact_info_close=0x7f0702af;
+        public static final int contact_info_dealing_verify=0x7f0702d2;
+        public static final int contact_info_del_all_message=0x7f0702ad;
+        public static final int contact_info_del_all_message_tip=0x7f0702ac;
+        public static final int contact_info_del_contact=0x7f0702aa;
+        public static final int contact_info_district=0x7f0702cd;
+        public static final int contact_info_domainmail=0x7f0702c8;
+        public static final int contact_info_expose=0x7f0702b2;
+        public static final int contact_info_expose_confirm=0x7f0702b3;
+        public static final int contact_info_expose_tip=0x7f0702b4;
+        public static final int contact_info_facebookapp_bind=0x7f0705b5;
+        public static final int contact_info_facebookapp_bind_fail=0x7f0705b8;
+        public static final int contact_info_facebookapp_bind_success=0x7f0705b7;
+        public static final int contact_info_facebookapp_connect=0x7f0705b3;
+        public static final int contact_info_facebookapp_listfriend=0x7f0705b2;
+        public static final int contact_info_facebookapp_showqrocode=0x7f0705b4;
+        public static final int contact_info_facebookapp_tip=0x7f0705b1;
+        public static final int contact_info_facebookapp_unbind=0x7f0705b6;
+        public static final int contact_info_facebookapp_unbind_fail=0x7f0705ba;
+        public static final int contact_info_facebookapp_unbind_success=0x7f0705b9;
+        public static final int contact_info_favour_start_message=0x7f070307;
+        public static final int contact_info_feedsapp_tip=0x7f0705ee;
+        public static final int contact_info_feedsapp_view=0x7f0705ef;
+        public static final int contact_info_floatbottle_tip=0x7f0702f4;
+        public static final int contact_info_fmessage_switch_tip=0x7f0702d8;
+        public static final int contact_info_friendtype_mobile=0x7f0702b6;
+        public static final int contact_info_friendtype_qq=0x7f0702b5;
+        public static final int contact_info_get_headimg_fail=0x7f0702f2;
+        public static final int contact_info_go_to_sync=0x7f0702e8;
+        public static final int contact_info_lbs_clear_info=0x7f0702f9;
+        public static final int contact_info_lbs_go_lbs=0x7f0702f8;
+        public static final int contact_info_lbs_tip=0x7f0702f7;
+        public static final int contact_info_masssend_delete=0x7f070305;
+        public static final int contact_info_masssend_tip=0x7f070303;
+        public static final int contact_info_masssend_view=0x7f070304;
+        public static final int contact_info_medianote_sync_to_qqmail=0x7f0702fe;
+        public static final int contact_info_medianote_sync_to_qqmail_alert_tip=0x7f0702ff;
+        public static final int contact_info_medianote_tip=0x7f0702fc;
+        public static final int contact_info_medianote_view=0x7f0702fd;
+        public static final int contact_info_meishiapp_push=0x7f0705ec;
+        public static final int contact_info_meishiapp_tip=0x7f0705ea;
+        public static final int contact_info_meishiapp_viewcard=0x7f0705ed;
+        public static final int contact_info_meishiapp_viewmsg=0x7f0705eb;
+        public static final int contact_info_microblog_friends=0x7f0702e4;
+        public static final int contact_info_microblog_tip=0x7f0702e3;
+        public static final int contact_info_mod_avatar=0x7f0702ca;
+        public static final int contact_info_mod_remarkname=0x7f0702a9;
+        public static final int contact_info_movein_blacklist=0x7f07029f;
+        public static final int contact_info_movein_blacklist_confirm=0x7f0702a0;
+        public static final int contact_info_movein_blacklist_tip=0x7f0702a1;
+        public static final int contact_info_moveout_blacklist=0x7f0702a2;
+        public static final int contact_info_no_user=0x7f0702f3;
+        public static final int contact_info_open=0x7f0702ae;
+        public static final int contact_info_phone_number=0x7f0702d7;
+        public static final int contact_info_plug_hide=0x7f0702c5;
+        public static final int contact_info_qcontact_address=0x7f0702f0;
+        public static final int contact_info_qcontact_age=0x7f0702ee;
+        public static final int contact_info_qcontact_birthday=0x7f0702ef;
+        public static final int contact_info_qcontact_sex=0x7f0702ed;
+        public static final int contact_info_qmessage_close_weixin_online_tip=0x7f0702e1;
+        public static final int contact_info_qmessage_display_weixin_online=0x7f0702df;
+        public static final int contact_info_qmessage_open_offline_msg_tip=0x7f0702e2;
+        public static final int contact_info_qmessage_recv_offline_msg=0x7f0702de;
+        public static final int contact_info_qmessage_send_qq_message=0x7f0702e0;
+        public static final int contact_info_qmessage_tip=0x7f0702dd;
+        public static final int contact_info_qq_number=0x7f0702d6;
+        public static final int contact_info_qq_send_offline_message=0x7f070308;
+        public static final int contact_info_qq_view_qzone=0x7f070309;
+        public static final int contact_info_qqfriend_tip=0x7f070300;
+        public static final int contact_info_qqfriend_view=0x7f070301;
+        public static final int contact_info_qqfriend_view_alert_tip=0x7f070302;
+        public static final int contact_info_qqmailhelper_compose=0x7f0702bb;
+        public static final int contact_info_qqmailhelper_disable=0x7f0702bf;
+        public static final int contact_info_qqmailhelper_disable_fail=0x7f0702c4;
+        public static final int contact_info_qqmailhelper_disable_tip=0x7f0702c0;
+        public static final int contact_info_qqmailhelper_download_mgr_view=0x7f0702bd;
+        public static final int contact_info_qqmailhelper_enable=0x7f0702be;
+        public static final int contact_info_qqmailhelper_enable_fail=0x7f0702c3;
+        public static final int contact_info_qqmailhelper_recv_remind=0x7f0702c2;
+        public static final int contact_info_qqmailhelper_secondpass=0x7f0702c1;
+        public static final int contact_info_qqmailhelper_set_files_view=0x7f0702bc;
+        public static final int contact_info_qqmailhelper_tip=0x7f0702b9;
+        public static final int contact_info_qqmailhelper_view=0x7f0702ba;
+        public static final int contact_info_qqsync_agreement=0x7f0702ec;
+        public static final int contact_info_qqsync_intro=0x7f0702eb;
+        public static final int contact_info_qqsync_switch_tip=0x7f0702e7;
+        public static final int contact_info_qzone_url=0x7f07030a;
+        public static final int contact_info_readerappnews_push=0x7f0705df;
+        public static final int contact_info_readerappnews_subscribe=0x7f0705e0;
+        public static final int contact_info_readerappnews_subscribe_limit=0x7f0705e1;
+        public static final int contact_info_readerappnews_tip=0x7f0705dd;
+        public static final int contact_info_readerappnews_to_setting_tip=0x7f0705e7;
+        public static final int contact_info_readerappnews_view=0x7f0705de;
+        public static final int contact_info_readerappweibo_no_weibo=0x7f0705e6;
+        public static final int contact_info_readerappweibo_not_bind_qq=0x7f0705e5;
+        public static final int contact_info_readerappweibo_push=0x7f0705e4;
+        public static final int contact_info_readerappweibo_tip=0x7f0705e2;
+        public static final int contact_info_readerappweibo_view=0x7f0705e3;
+        public static final int contact_info_recommend_fbfriends_to_me=0x7f0705bc;
+        public static final int contact_info_recommend_mobilefriends_to_me=0x7f0702da;
+        public static final int contact_info_recommend_qqfriends_to_me=0x7f0702d9;
+        public static final int contact_info_remarkname=0x7f0702a8;
+        public static final int contact_info_remind_me_syncing=0x7f0702e9;
+        public static final int contact_info_remind_me_syncing_tip=0x7f0702ea;
+        public static final int contact_info_room_title=0x7f07029e;
+        public static final int contact_info_say_hi=0x7f0702a6;
+        public static final int contact_info_send=0x7f0702a3;
+        public static final int contact_info_send_card=0x7f0702a5;
+        public static final int contact_info_send_privatemsg=0x7f0702e5;
+        public static final int contact_info_send_to_room=0x7f0702a4;
+        public static final int contact_info_set_avatar=0x7f0702c9;
+        public static final int contact_info_shake_go_shake=0x7f0702fb;
+        public static final int contact_info_shake_tip=0x7f0702fa;
+        public static final int contact_info_signature=0x7f0702cf;
+        public static final int contact_info_sns_title=0x7f070306;
+        public static final int contact_info_source_lbs=0x7f0702d4;
+        public static final int contact_info_source_shake=0x7f0702d5;
+        public static final int contact_info_source_title=0x7f0702d3;
+        public static final int contact_info_title=0x7f07029c;
+        public static final int contact_info_tmessage_recv_private_letter=0x7f0702e6;
+        public static final int contact_info_user_has_no_hd_avatar=0x7f0702f1;
+        public static final int contact_info_verify_accept=0x7f0702cc;
+        public static final int contact_info_verify_user_title=0x7f0702d0;
+        public static final int contact_info_verify_user_title_what=0x7f0702d1;
+        public static final int contact_info_view_message=0x7f0702ab;
+        public static final int contact_info_weibo=0x7f0702ce;
+        public static final int contact_into_goto_floatbottle_str=0x7f0702f5;
+        public static final int contact_into_goto_floatbottle_str_btn=0x7f0702f6;
+        public static final int contact_search_account_add_fail_tip=0x7f07030e;
+        public static final int contact_search_account_hint=0x7f07030c;
+        public static final int contact_search_account_recommend_friend=0x7f07030d;
+        public static final int contact_search_title=0x7f07030b;
+        public static final int country_china=0x7f0703e9;
+        public static final int country_code=0x7f0703e4;
+        public static final int country_normal_code=0x7f0703e5;
+        public static final int country_normal_name=0x7f0703e6;
+        public static final int country_others=0x7f0703e7;
+        public static final int country_province_others=0x7f0703e8;
+        public static final int create_id_by_phone=0x7f07014b;
+        public static final int create_id_by_qq=0x7f07014a;
+        public static final int cropimage_comfirm=0x7f070398;
+        public static final int cropimage_compress_img=0x7f07039b;
+        public static final int cropimage_done=0x7f0703a0;
+        public static final int cropimage_filter=0x7f07039a;
+        public static final int cropimage_save=0x7f070395;
+        public static final int cropimage_saved=0x7f070397;
+        public static final int cropimage_send_hd_img=0x7f07039f;
+        public static final int cropimage_send_hd_img_size=0x7f0703a1;
+        public static final int cropimage_send_hd_img_tip=0x7f07039d;
+        public static final int cropimage_use=0x7f070396;
+        public static final int cropimage_use_filter=0x7f070399;
+        public static final int cropimage_use_filter_tip=0x7f07039c;
+        public static final int cropimage_view_hd_img=0x7f07039e;
+        public static final int del_contact_warning=0x7f0702b0;
+        public static final int del_groupcard_warning=0x7f0702b1;
+        public static final int del_room_mem_comfirm=0x7f0703f5;
+        public static final int del_room_mem_err=0x7f0703f4;
+        public static final int download_can_not_open=0x7f070428;
+        public static final int download_can_not_open_by_wechat=0x7f070429;
+        public static final int download_continue=0x7f070424;
+        public static final int download_data=0x7f07042b;
+        public static final int download_fail=0x7f07042d;
+        public static final int download_ing=0x7f070427;
+        public static final int download_no_match_msg=0x7f07042f;
+        public static final int download_no_match_title=0x7f07042e;
+        public static final int download_open=0x7f070425;
+        public static final int download_start=0x7f070426;
+        public static final int download_success=0x7f07042c;
+        public static final int download_title=0x7f07042a;
+        public static final int empty_qmsg_tip=0x7f070171;
+        public static final int empty_tmsg_tip=0x7f070170;
+        public static final int errcode_password=0x7f070142;
+        public static final int facebook_auth_bind_access_denied=0x7f0705cd;
+        public static final int facebook_auth_bind_btn_text=0x7f0705c9;
+        public static final int facebook_auth_bind_tip=0x7f0705c6;
+        public static final int facebook_auth_binding=0x7f0705c3;
+        public static final int facebook_auth_bound_account=0x7f0705c8;
+        public static final int facebook_auth_have_bind_facebook=0x7f0705cb;
+        public static final int facebook_auth_title=0x7f0705c5;
+        public static final int facebook_auth_unbind_access_denied=0x7f0705ce;
+        public static final int facebook_auth_unbind_alert_tip=0x7f0705c2;
+        public static final int facebook_auth_unbind_btn_text=0x7f0705ca;
+        public static final int facebook_auth_unbind_tip=0x7f0705c7;
+        public static final int facebook_auth_unbinding=0x7f0705c4;
+        public static final int facebook_empty_friend_tip=0x7f0705c1;
+        public static final int facebook_friend_need_rebind=0x7f0705cc;
+        public static final int facebook_invite_message=0x7f0705cf;
+        public static final int facebook_invitefriends_sendinvite=0x7f07025d;
+        public static final int facebook_invitefriends_tips_invitemore=0x7f07025f;
+        public static final int facebook_invitefriends_tips_max=0x7f07025e;
+        public static final int facebook_invitefriends_title=0x7f07025c;
+        public static final int facebook_inviteqqfriends_invite_success=0x7f0705d0;
+        public static final int facebook_mainui_tips=0x7f0705d1;
+        public static final int facebook_sdk_loading=0x7f07012b;
+        public static final int facebooklogin_user_exist=0x7f07012a;
+        public static final int fb_friend_not_bind=0x7f0705c0;
+        public static final int fb_non_weixin_tip=0x7f0705bf;
+        public static final int find_friends_by_facebook=0x7f0705bd;
+        public static final int find_friends_by_facebook_invite=0x7f0705be;
+        public static final int find_friends_by_micromsg=0x7f070313;
+        public static final int find_friends_by_mobile=0x7f070315;
+        public static final int find_friends_by_qq=0x7f070314;
+        public static final int find_friends_by_qrcode=0x7f070311;
+        public static final int find_friends_by_qrcode_add_more_friend=0x7f070312;
+        public static final int find_more_friends_title=0x7f07030f;
+        public static final int fmt_add_chatroom_member_err=0x7f0700a4;
+        public static final int fmt_afternoon=0x7f0700b5;
+        public static final int fmt_am=0x7f0700b9;
+        public static final int fmt_auth_err=0x7f0700a1;
+        public static final int fmt_bottle_say_hello_to_you=0x7f0700d0;
+        public static final int fmt_card_from=0x7f0700d6;
+        public static final int fmt_card_to=0x7f0700d5;
+        public static final int fmt_chatting_title_group=0x7f0700ca;
+        public static final int fmt_create_chatroom_err=0x7f0700a3;
+        public static final int fmt_date=0x7f0700a6;
+        public static final int fmt_date_split=0x7f0700a7;
+        public static final int fmt_datetime=0x7f0700a9;
+        public static final int fmt_dawn=0x7f0700b2;
+        public static final int fmt_delcontactmsg_confirm=0x7f0700bb;
+        public static final int fmt_delcontactmsg_confirm_bottle=0x7f0700bc;
+        public static final int fmt_delcontactmsg_confirm_group=0x7f0700bd;
+        public static final int fmt_evening=0x7f0700b6;
+        public static final int fmt_http_err=0x7f07009f;
+        public static final int fmt_iap_err=0x7f0700a0;
+        public static final int fmt_in24h=0x7f0700af;
+        public static final int fmt_in60min=0x7f0700ae;
+        public static final int fmt_in_blacklist=0x7f0700c0;
+        public static final int fmt_indayh=0x7f0700b0;
+        public static final int fmt_invalid_username=0x7f0700c1;
+        public static final int fmt_just_reg_micromsg=0x7f0700d1;
+        public static final int fmt_justnow=0x7f0700b1;
+        public static final int fmt_longdate=0x7f0700a8;
+        public static final int fmt_longtime=0x7f0700ad;
+        public static final int fmt_microblog_tip=0x7f0700c5;
+        public static final int fmt_more_btn=0x7f0700d7;
+        public static final int fmt_morning=0x7f0700b3;
+        public static final int fmt_need_verify_multiuser=0x7f0700cb;
+        public static final int fmt_need_verify_singleuser=0x7f0700cc;
+        public static final int fmt_noon=0x7f0700b4;
+        public static final int fmt_normal_time=0x7f0700ac;
+        public static final int fmt_normal_time_24=0x7f0700ab;
+        public static final int fmt_patime=0x7f0700aa;
+        public static final int fmt_percent=0x7f0700d4;
+        public static final int fmt_pm=0x7f0700ba;
+        public static final int fmt_pre_nowday=0x7f0700b7;
+        public static final int fmt_pre_yesterday=0x7f0700b8;
+        public static final int fmt_qqmailhelper_brief=0x7f0700c6;
+        public static final int fmt_qqsynchelper_brief_alert=0x7f0700c7;
+        public static final int fmt_qqsynchelper_brief_new=0x7f0700c8;
+        public static final int fmt_reg_err=0x7f0700a2;
+        public static final int fmt_response_to=0x7f0700d2;
+        public static final int fmt_route_phone=0x7f07009d;
+        public static final int fmt_route_speaker=0x7f07009e;
+        public static final int fmt_say_hello_to_you=0x7f0700ce;
+        public static final int fmt_search_err=0x7f0700a5;
+        public static final int fmt_self_qrcode_getting_err=0x7f0703c2;
+        public static final int fmt_send_err_account_disabled=0x7f0700c2;
+        public static final int fmt_send_err_qqoffline_disabled=0x7f0700c4;
+        public static final int fmt_send_err_weibo_disabled=0x7f0700c3;
+        public static final int fmt_send_from=0x7f0700d3;
+        public static final int fmt_shake_say_hello_to_you=0x7f0700cf;
+        public static final int fmt_time_length=0x7f0700c9;
+        public static final int fmt_update=0x7f0700be;
+        public static final int fmt_update_info=0x7f0700bf;
+        public static final int fmt_want_to_be_your_friend=0x7f0700cd;
+        public static final int friend_add=0x7f070385;
+        public static final int friend_added=0x7f070386;
+        public static final int friend_invite=0x7f070389;
+        public static final int friend_invited=0x7f07038a;
+        public static final int friend_not_added=0x7f070388;
+        public static final int friend_waiting=0x7f070387;
+        public static final int group_all=0x7f070066;
+        public static final int group_blacklist=0x7f07006a;
+        public static final int group_domainmail_suffix=0x7f070069;
+        public static final int group_weibo=0x7f070068;
+        public static final int group_weixin=0x7f070067;
+        public static final int hardcode_group=0x7f07006f;
+        public static final int hardcode_plugin_bottle_nick=0x7f070073;
+        public static final int hardcode_plugin_bottle_pyinitial=0x7f070074;
+        public static final int hardcode_plugin_bottle_quanpin=0x7f070075;
+        public static final int hardcode_plugin_facebookapp_nick=0x7f07007f;
+        public static final int hardcode_plugin_facebookapp_pyinitial=0x7f070080;
+        public static final int hardcode_plugin_facebookapp_quanpin=0x7f070081;
+        public static final int hardcode_plugin_feedsapp_nick=0x7f07008b;
+        public static final int hardcode_plugin_feedsapp_pyinitial=0x7f07008c;
+        public static final int hardcode_plugin_feedsapp_quanpin=0x7f07008d;
+        public static final int hardcode_plugin_fmessage_nick=0x7f07008f;
+        public static final int hardcode_plugin_lbs_nick=0x7f070076;
+        public static final int hardcode_plugin_lbs_pyinitial=0x7f070077;
+        public static final int hardcode_plugin_lbs_quanpin=0x7f070078;
+        public static final int hardcode_plugin_masssend_nick=0x7f070085;
+        public static final int hardcode_plugin_masssend_pyinitial=0x7f070086;
+        public static final int hardcode_plugin_masssend_quanpin=0x7f070087;
+        public static final int hardcode_plugin_medianote_nick=0x7f07007c;
+        public static final int hardcode_plugin_medianote_pyinitial=0x7f07007d;
+        public static final int hardcode_plugin_medianote_quanpin=0x7f07007e;
+        public static final int hardcode_plugin_meishiapp_nick=0x7f070088;
+        public static final int hardcode_plugin_meishiapp_pyinitial=0x7f070089;
+        public static final int hardcode_plugin_meishiapp_quanpin=0x7f07008a;
+        public static final int hardcode_plugin_qmessage_nick=0x7f070091;
+        public static final int hardcode_plugin_qqfriend_nick=0x7f070082;
+        public static final int hardcode_plugin_qqfriend_pyinitial=0x7f070083;
+        public static final int hardcode_plugin_qqfriend_quanpin=0x7f070084;
+        public static final int hardcode_plugin_qqmail_nick=0x7f07008e;
+        public static final int hardcode_plugin_qqsync_nick=0x7f070070;
+        public static final int hardcode_plugin_qqsync_pyinitial=0x7f070071;
+        public static final int hardcode_plugin_qqsync_quanpin=0x7f070072;
+        public static final int hardcode_plugin_readerappnews_nick=0x7f070092;
+        public static final int hardcode_plugin_readerappnews_pyinitial=0x7f070093;
+        public static final int hardcode_plugin_readerappnews_quanpin=0x7f070094;
+        public static final int hardcode_plugin_readerappweibo_nick=0x7f070095;
+        public static final int hardcode_plugin_readerappweibo_pyinitial=0x7f070096;
+        public static final int hardcode_plugin_readerappweibo_quanpin=0x7f070097;
+        public static final int hardcode_plugin_shake_nick=0x7f070079;
+        public static final int hardcode_plugin_shake_pyinitial=0x7f07007a;
+        public static final int hardcode_plugin_shake_quanpin=0x7f07007b;
+        public static final int hardcode_plugin_tmessage_nick=0x7f070090;
+        public static final int imgdownload_fail=0x7f070423;
+        public static final int intro_create_account_qq=0x7f07010b;
+        public static final int intro_create_account_reg=0x7f07010c;
+        public static final int intro_existed_login=0x7f07010d;
+        public static final int intro_title=0x7f07010a;
+        public static final int invite_friend_invite=0x7f07038d;
+        public static final int invite_friend_not_reg=0x7f07038c;
+        public static final int invite_friend_send_qq_message=0x7f07038e;
+        public static final int invite_friend_title=0x7f07038b;
+        public static final int invite_sms=0x7f0700f4;
+        public static final int inviteqqfriends_invite=0x7f07038f;
+        public static final int inviteqqfriends_invite_success=0x7f070392;
+        public static final int inviteqqfriends_invite_tips=0x7f070391;
+        public static final int inviteqqfriends_inviting=0x7f070393;
+        public static final int inviteqqfriends_loading_friends_info=0x7f070394;
+        public static final int inviteqqfriends_title=0x7f070390;
+        public static final int launchchatting_create_chatroom_fail=0x7f0703ed;
+        public static final int launchchatting_creating_chatroom=0x7f0703ec;
+        public static final int launchchatting_talk_with_self=0x7f0703ee;
+        public static final int launcher_name=0x7f070023;
+        public static final int license_agree=0x7f07010e;
+        public static final int license_detail=0x7f07010f;
+        public static final int link_no_such_group=0x7f0701d1;
+        public static final int location_conversation=0x7f0701d0;
+        public static final int location_conversation_sender=0x7f0701cf;
+        public static final int location_in_map=0x7f0701cd;
+        public static final int location_info=0x7f0701ca;
+        public static final int location_loading=0x7f0701cc;
+        public static final int location_path=0x7f0701ce;
+        public static final int location_send=0x7f0701cb;
+        public static final int login_account_hint=0x7f07014d;
+        public static final int login_by_facebook=0x7f070148;
+        public static final int login_by_mobile_phone=0x7f070146;
+        public static final int login_by_others=0x7f070144;
+        public static final int login_by_others_id=0x7f070147;
+        public static final int login_create_new_account=0x7f070145;
+        public static final int login_err_mailnotverify=0x7f070152;
+        public static final int login_err_title=0x7f070151;
+        public static final int login_foget_password=0x7f070153;
+        public static final int login_id=0x7f070143;
+        public static final int login_login=0x7f07014f;
+        public static final int login_logining=0x7f070150;
+        public static final int login_password_hint=0x7f07014e;
+        public static final int login_password_tip=0x7f070149;
+        public static final int login_title=0x7f07014c;
+        public static final int mail_attach_download=0x7f070541;
+        public static final int mail_attach_download_status=0x7f070548;
+        public static final int mail_attach_downloaded=0x7f070543;
+        public static final int mail_attach_downloading_speed=0x7f070544;
+        public static final int mail_attach_preview=0x7f070540;
+        public static final int mail_attach_preview_open_downloaded=0x7f070547;
+        public static final int mail_attach_preview_open_notdownload=0x7f070546;
+        public static final int mail_attach_preview_status=0x7f070545;
+        public static final int mail_attach_redownload=0x7f070542;
+        public static final int mail_compress_preview_err_hint=0x7f070538;
+        public static final int mail_downlaod_notification_text=0x7f07053b;
+        public static final int mail_downlaod_notification_text_finish=0x7f07053c;
+        public static final int mail_download_bar_completed=0x7f07053e;
+        public static final int mail_download_bar_not_complete=0x7f07053d;
+        public static final int mail_download_notification_title=0x7f07053a;
+        public static final int mail_download_state_error=0x7f07053f;
+        public static final int mail_download_tip_dlg_content=0x7f070539;
+        public static final int mail_receiver_info_addr=0x7f070537;
+        public static final int mail_receiver_info_name=0x7f070536;
+        public static final int main_addcontact=0x7f07015a;
+        public static final int main_contact=0x7f070159;
+        public static final int main_create_shortcut=0x7f070168;
+        public static final int main_delete=0x7f07015b;
+        public static final int main_delete_all=0x7f07015c;
+        public static final int main_delete_bottleentry=0x7f07015f;
+        public static final int main_delete_qmessage=0x7f07015d;
+        public static final int main_delete_tmessage=0x7f07015e;
+        public static final int main_empty_conversation=0x7f070169;
+        public static final int main_err_another_place=0x7f070165;
+        public static final int main_err_relogin=0x7f070164;
+        public static final int main_exit=0x7f070161;
+        public static final int main_exit_title=0x7f070162;
+        public static final int main_exit_warning=0x7f070163;
+        public static final int main_recving=0x7f070167;
+        public static final int main_sending=0x7f070166;
+        public static final int main_setting=0x7f070160;
+        public static final int main_slide_toast=0x7f07016a;
+        public static final int main_title=0x7f070158;
+        public static final int mass_send_card_not_support=0x7f0704ea;
+        public static final int mass_send_compose=0x7f0704e3;
+        public static final int mass_send_compose_new=0x7f0704e2;
+        public static final int mass_send_contact_count=0x7f0704e7;
+        public static final int mass_send_count=0x7f0704eb;
+        public static final int mass_send_custom_emoji_not_support=0x7f0704e9;
+        public static final int mass_send_delete_comfirm=0x7f0704ec;
+        public static final int mass_send_err_freq_limit=0x7f0704ee;
+        public static final int mass_send_helper=0x7f0704e0;
+        public static final int mass_send_history_empty=0x7f0704ed;
+        public static final int mass_send_location_not_support=0x7f0704e8;
+        public static final int mass_send_msg=0x7f0704e5;
+        public static final int mass_send_next=0x7f0704e1;
+        public static final int mass_send_select_all=0x7f0704e4;
+        public static final int mass_send_select_contact_title=0x7f0704ef;
+        public static final int mass_send_tolist_limit=0x7f0704e6;
+        public static final int media_ejected=0x7f07006d;
+        public static final int media_explorer_title=0x7f0705f2;
+        public static final int media_full=0x7f07006e;
+        public static final int media_video_explorer_title=0x7f0705f3;
+        public static final int mm_tips=0x7f070018;
+        public static final int mobile_friend_err=0x7f07037b;
+        public static final int mobile_friend_loading=0x7f07037a;
+        public static final int mobile_friend_mobile_not_bind=0x7f07037c;
+        public static final int mobile_friend_title=0x7f070379;
+        public static final int mod_remark_name_hint=0x7f0702c7;
+        public static final int modify_ing=0x7f070261;
+        public static final int modify_username=0x7f070260;
+        public static final int modify_username_confirm=0x7f070264;
+        public static final int modify_username_confirm_modify=0x7f070266;
+        public static final int modify_username_detail=0x7f070262;
+        public static final int modify_username_failed=0x7f070267;
+        public static final int modify_username_hint=0x7f070263;
+        public static final int modify_username_success=0x7f070265;
+        public static final int msgretr_share_cancel=0x7f070421;
+        public static final int msgretr_share_fail=0x7f070420;
+        public static final int msgretr_share_nosdcard_fail=0x7f070422;
+        public static final int msgretr_share_success=0x7f07041f;
+        public static final int msgretr_uploading_img=0x7f07041e;
+        public static final int nearby_friend_city_select=0x7f07045b;
+        public static final int nearby_friend_clear_location_exit=0x7f07046b;
+        public static final int nearby_friend_clear_location_exit_hint=0x7f07046f;
+        public static final int nearby_friend_clear_location_failed=0x7f070471;
+        public static final int nearby_friend_clear_location_ok=0x7f070470;
+        public static final int nearby_friend_clearing_location=0x7f070472;
+        public static final int nearby_friend_expose=0x7f070464;
+        public static final int nearby_friend_finding=0x7f07045d;
+        public static final int nearby_friend_get_friend_fail=0x7f070463;
+        public static final int nearby_friend_intro_comfirm=0x7f07045a;
+        public static final int nearby_friend_intro_open=0x7f070458;
+        public static final int nearby_friend_intro_start=0x7f070459;
+        public static final int nearby_friend_is_contact=0x7f070461;
+        public static final int nearby_friend_locate_fail=0x7f070462;
+        public static final int nearby_friend_locating=0x7f07045c;
+        public static final int nearby_friend_location_findall=0x7f07046e;
+        public static final int nearby_friend_location_findgg=0x7f07046d;
+        public static final int nearby_friend_location_findmm=0x7f07046c;
+        public static final int nearby_friend_say_hi=0x7f070466;
+        public static final int nearby_friend_say_hi_black_list=0x7f070468;
+        public static final int nearby_friend_say_hi_failed=0x7f07046a;
+        public static final int nearby_friend_say_hi_hint=0x7f070465;
+        public static final int nearby_friend_say_hi_ok=0x7f070467;
+        public static final int nearby_friend_say_hi_spam=0x7f070469;
+        public static final int nearby_friend_setting_tips_content=0x7f070474;
+        public static final int nearby_friend_setting_tips_title=0x7f070473;
+        public static final int nearby_friend_title=0x7f070457;
+        public static final int nearby_personal_info=0x7f07045e;
+        public static final int nearby_personal_info_fail=0x7f070460;
+        public static final int nearby_personal_info_tip=0x7f07045f;
+        public static final int net_warn_connecting=0x7f070173;
+        public static final int net_warn_detail_doc=0x7f070013;
+        public static final int net_warn_no_network=0x7f070174;
+        public static final int net_warn_server_down=0x7f070176;
+        public static final int net_warn_server_down_tip=0x7f070177;
+        public static final int net_warn_server_failed=0x7f070175;
+        public static final int net_warn_show_page=0x7f070172;
+        public static final int network_doctor=0x7f07009b;
+        public static final int notification_fmt_multi_bottle=0x7f0700fe;
+        public static final int notification_fmt_multi_msg_and_one_talker=0x7f0700f7;
+        public static final int notification_fmt_multi_msg_and_talker=0x7f0700f6;
+        public static final int notification_fmt_one_emoji=0x7f0700ff;
+        public static final int notification_fmt_one_imgtype=0x7f0700f9;
+        public static final int notification_fmt_one_mailtype=0x7f0700fc;
+        public static final int notification_fmt_one_microblog_msgtype=0x7f0700fd;
+        public static final int notification_fmt_one_txttype=0x7f0700f8;
+        public static final int notification_fmt_one_videotype=0x7f0700fb;
+        public static final int notification_fmt_one_voicetype=0x7f0700fa;
+        public static final int official_alias=0x7f07006c;
+        public static final int official_nick=0x7f07006b;
+        public static final int openapi_app_file=0x7f0704ce;
+        public static final int openapi_redirect_url=0x7f0704d1;
+        public static final int openapi_source_url=0x7f0704cf;
+        public static final int openapi_uninstall_url=0x7f0704d0;
+        public static final int play_completed=0x7f07001d;
+        public static final int plugin_qqmail_addr_profile_compose=0x7f070516;
+        public static final int plugin_qqmail_addressui_sync_dlg=0x7f070515;
+        public static final int plugin_qqmail_addrlist_choose=0x7f070535;
+        public static final int plugin_qqmail_addrlist_title=0x7f070534;
+        public static final int plugin_qqmail_attach_upload_failed=0x7f07051f;
+        public static final int plugin_qqmail_attach_uploading=0x7f070519;
+        public static final int plugin_qqmail_attachment_delete_confirm=0x7f070523;
+        public static final int plugin_qqmail_compose_send_error=0x7f07051c;
+        public static final int plugin_qqmail_compose_send_ing=0x7f07051a;
+        public static final int plugin_qqmail_compose_send_success=0x7f07051b;
+        public static final int plugin_qqmail_composeui_attach=0x7f070505;
+        public static final int plugin_qqmail_composeui_attach_choose_album=0x7f070509;
+        public static final int plugin_qqmail_composeui_attach_choose_file=0x7f07050a;
+        public static final int plugin_qqmail_composeui_attach_hint=0x7f070506;
+        public static final int plugin_qqmail_composeui_attach_summary=0x7f070507;
+        public static final int plugin_qqmail_composeui_attach_take_phote=0x7f070508;
+        public static final int plugin_qqmail_composeui_attachment_upload_fail=0x7f070512;
+        public static final int plugin_qqmail_composeui_bcc=0x7f070503;
+        public static final int plugin_qqmail_composeui_bccaddr_invalid=0x7f07050f;
+        public static final int plugin_qqmail_composeui_cc=0x7f070502;
+        public static final int plugin_qqmail_composeui_ccaddr_invalid=0x7f07050e;
+        public static final int plugin_qqmail_composeui_ccbcc=0x7f070501;
+        public static final int plugin_qqmail_composeui_content_invalid=0x7f070511;
+        public static final int plugin_qqmail_composeui_content_suffix=0x7f070522;
+        public static final int plugin_qqmail_composeui_leave_alert=0x7f070514;
+        public static final int plugin_qqmail_composeui_nosubject=0x7f070521;
+        public static final int plugin_qqmail_composeui_reply_hint=0x7f070513;
+        public static final int plugin_qqmail_composeui_send_error=0x7f07050c;
+        public static final int plugin_qqmail_composeui_send_success=0x7f07050b;
+        public static final int plugin_qqmail_composeui_subject=0x7f070504;
+        public static final int plugin_qqmail_composeui_subject_invalid=0x7f070510;
+        public static final int plugin_qqmail_composeui_title=0x7f0704ff;
+        public static final int plugin_qqmail_composeui_to=0x7f070500;
+        public static final int plugin_qqmail_composeui_toaddr_invalid=0x7f07050d;
+        public static final int plugin_qqmail_download_file_open=0x7f070532;
+        public static final int plugin_qqmail_download_file_open_err=0x7f070533;
+        public static final int plugin_qqmail_download_file_redownload=0x7f070531;
+        public static final int plugin_qqmail_file_explorer_download_tag=0x7f07052f;
+        public static final int plugin_qqmail_file_explorer_file_tag=0x7f070530;
+        public static final int plugin_qqmail_file_explorer_root_tag=0x7f07052e;
+        public static final int plugin_qqmail_file_explorer_sdcard_tag=0x7f07052d;
+        public static final int plugin_qqmail_file_explorer_ui_title=0x7f07051e;
+        public static final int plugin_qqmail_mail_addr_format_invalid=0x7f070520;
+        public static final int plugin_qqmail_no_save_draft=0x7f070524;
+        public static final int plugin_qqmail_reply_subject_prefix=0x7f07051d;
+        public static final int plugin_qqmail_svr_error_desc_1=0x7f070525;
+        public static final int plugin_qqmail_svr_error_desc_101=0x7f07052b;
+        public static final int plugin_qqmail_svr_error_desc_102=0x7f070527;
+        public static final int plugin_qqmail_svr_error_desc_103=0x7f070528;
+        public static final int plugin_qqmail_svr_error_desc_104=0x7f07052c;
+        public static final int plugin_qqmail_svr_error_desc_3=0x7f070526;
+        public static final int plugin_qqmail_svr_error_desc_6=0x7f070529;
+        public static final int plugin_qqmail_svr_error_desc_7=0x7f07052a;
+        public static final int plugin_qqmail_upload_attach_size_exceed=0x7f070518;
+        public static final int plugin_qqmail_upload_attach_size_tip=0x7f070517;
+        public static final int plus_add_friend=0x7f07000f;
+        public static final int plus_group_chat=0x7f07000e;
+        public static final int plus_scan=0x7f070011;
+        public static final int plus_take_photo=0x7f070012;
+        public static final int plus_video_chat=0x7f070010;
+        public static final int process_limited_cancel=0x7f0705f6;
+        public static final int process_limited_next=0x7f0705f5;
+        public static final int process_limited_ok=0x7f0705f4;
+        public static final int process_limited_title=0x7f0705f7;
+        public static final int process_limited_warn_message=0x7f0705f8;
+        public static final int process_limited_warn_title=0x7f0705f9;
+        /**  Just use standard Pull Down String when pulling up. These can be set for languages which require it 
+ Just use standard Pull Down String when pulling up. These can be set for languages which require it 
+         */
+        public static final int pull_to_refresh_from_bottom_pull_label=0x7f070003;
+        public static final int pull_to_refresh_from_bottom_refreshing_label=0x7f070005;
+        public static final int pull_to_refresh_from_bottom_release_label=0x7f070004;
+        public static final int pull_to_refresh_pull_label=0x7f070000;
+        public static final int pull_to_refresh_refreshing_label=0x7f070002;
+        public static final int pull_to_refresh_release_label=0x7f070001;
+        public static final int qq_friend_load_err=0x7f070384;
+        public static final int qq_friend_loading=0x7f070383;
+        public static final int qq_group_load_err=0x7f07037f;
+        public static final int qq_group_loading=0x7f07037e;
+        public static final int qq_group_no_qq_friend=0x7f070381;
+        public static final int qq_group_qq_not_bind=0x7f070382;
+        public static final int qq_group_title=0x7f07037d;
+        public static final int qq_group_weixin_num=0x7f070380;
+        public static final int qq_sync_agree=0x7f070453;
+        public static final int qq_sync_bind_uin=0x7f07044d;
+        public static final int qq_sync_bindqq_tip=0x7f070434;
+        public static final int qq_sync_bottom=0x7f070450;
+        public static final int qq_sync_download=0x7f070438;
+        public static final int qq_sync_download_hint=0x7f070439;
+        public static final int qq_sync_downloading=0x7f070433;
+        public static final int qq_sync_fail=0x7f070435;
+        public static final int qq_sync_first_time_content=0x7f070452;
+        public static final int qq_sync_first_time_title=0x7f070451;
+        public static final int qq_sync_intro=0x7f07043d;
+        public static final int qq_sync_last_download_detail=0x7f070443;
+        public static final int qq_sync_last_download_result=0x7f070445;
+        public static final int qq_sync_last_upload_detail=0x7f070442;
+        public static final int qq_sync_last_upload_result=0x7f070444;
+        public static final int qq_sync_local_phone_count=0x7f07044e;
+        public static final int qq_sync_pim_pwd=0x7f070455;
+        public static final int qq_sync_pim_pwd_failed=0x7f070456;
+        public static final int qq_sync_pwd_freq_limit=0x7f07043f;
+        public static final int qq_sync_pwd_hint=0x7f07043a;
+        public static final int qq_sync_pwd_login_failed=0x7f07043e;
+        public static final int qq_sync_pwd_safe=0x7f07043b;
+        public static final int qq_sync_pwd_safe_tip=0x7f07043c;
+        public static final int qq_sync_qq_pwd_failed=0x7f070440;
+        public static final int qq_sync_refuse=0x7f070454;
+        public static final int qq_sync_remote_phone_count=0x7f07044f;
+        public static final int qq_sync_result_add=0x7f070446;
+        public static final int qq_sync_result_del=0x7f070448;
+        public static final int qq_sync_result_flow=0x7f070449;
+        public static final int qq_sync_result_mod=0x7f070447;
+        public static final int qq_sync_result_none=0x7f07044a;
+        public static final int qq_sync_result_split=0x7f07044b;
+        public static final int qq_sync_result_term=0x7f07044c;
+        public static final int qq_sync_server_not_available=0x7f070441;
+        public static final int qq_sync_upload=0x7f070436;
+        public static final int qq_sync_upload_hint=0x7f070437;
+        public static final int qq_sync_uploading=0x7f070432;
+        public static final int qqsync_agreement_doc=0x7f070016;
+        public static final int qqsync_intro_doc=0x7f070014;
+        public static final int qqsync_privacy_doc=0x7f070015;
+        public static final int qqsync_weburl_lang=0x7f070017;
+        public static final int qrcode_alert_invalid_res=0x7f0703bc;
+        public static final int qrcode_alert_notmm_tip=0x7f0703bd;
+        public static final int qrcode_ban_by_expose=0x7f0703e2;
+        public static final int qrcode_from_qrcode=0x7f0703de;
+        public static final int qrcode_help_begin_txt=0x7f0703d6;
+        public static final int qrcode_help_info=0x7f0703d3;
+        public static final int qrcode_help_info_from_addmorefriend=0x7f0703d4;
+        public static final int qrcode_help_info_from_friend=0x7f0703d5;
+        public static final int qrcode_no_user_tip=0x7f0703be;
+        public static final int qrcode_read_file_failed=0x7f0703d8;
+        public static final int qrcode_reading_file=0x7f0703d7;
+        public static final int qrcode_sayhi_from=0x7f0703df;
+        public static final int qrcode_select_from_photo=0x7f0703e0;
+        public static final int qrcode_select_from_photo_land=0x7f0703e1;
+        public static final int qrcode_show_btn=0x7f0703d9;
+        public static final int qrcode_tip_in_camera=0x7f0703da;
+        public static final int qrcode_tip_in_discount=0x7f0703dd;
+        public static final int qrcode_tip_in_discount_from_addmorefriend=0x7f0703db;
+        public static final int qrcode_tip_in_discount_from_friend=0x7f0703dc;
+        public static final int readerapp_delete_comfirm_news=0x7f0705d3;
+        public static final int readerapp_delete_comfirm_weibo=0x7f0705d4;
+        public static final int readerapp_delete_item=0x7f0705d5;
+        public static final int readerapp_empty_msg_tip=0x7f0705d7;
+        public static final int readerapp_menu_clean=0x7f0705d2;
+        public static final int readerapp_menu_delete=0x7f0705e9;
+        public static final int readerapp_news_intro=0x7f0705d8;
+        public static final int readerapp_pic_downing=0x7f0705d6;
+        public static final int readerapp_share=0x7f0705db;
+        public static final int readerapp_share_weibo=0x7f0705e8;
+        public static final int readerapp_subscribe_category=0x7f0705dc;
+        public static final int readerapp_weibo_intro=0x7f0705d9;
+        public static final int readerapp_weibo_intro_btn=0x7f0705da;
+        public static final int readmail_addr_hide=0x7f0704f4;
+        public static final int readmail_addr_show=0x7f0704f3;
+        public static final int readmail_attach_count=0x7f0704f7;
+        public static final int readmail_attachment_preview=0x7f0704fb;
+        public static final int readmail_cclist=0x7f0704f2;
+        public static final int readmail_delete=0x7f0704f8;
+        public static final int readmail_forward=0x7f0704fe;
+        public static final int readmail_no_next_mail=0x7f0704fa;
+        public static final int readmail_no_prev_mail=0x7f0704f9;
+        public static final int readmail_reply=0x7f0704fc;
+        public static final int readmail_reply_all=0x7f0704fd;
+        public static final int readmail_sender=0x7f0704f0;
+        public static final int readmail_set_unread=0x7f0704f5;
+        public static final int readmail_set_unreaded=0x7f0704f6;
+        public static final int readmail_tolist=0x7f0704f1;
+        public static final int reg_exiting=0x7f07011a;
+        public static final int reg_forgetpwd_byemail=0x7f07013f;
+        public static final int reg_forgetpwd_bymobile=0x7f07013e;
+        public static final int reg_forgetpwd_byqq=0x7f07013d;
+        public static final int reg_forgetpwd_mobile_fin=0x7f070141;
+        public static final int reg_forgetpwd_mobile_tip=0x7f070140;
+        public static final int reg_forgetpwd_title=0x7f07013c;
+        public static final int reg_reg_account_hint=0x7f070116;
+        public static final int reg_type_email_text=0x7f070115;
+        public static final int reg_type_mobile_text=0x7f070114;
+        public static final int reg_username_exist_tip=0x7f070118;
+        public static final int reg_username_exist_title=0x7f070117;
+        public static final int reg_username_format_err_title=0x7f070119;
+        public static final int regbymail_reg_addr_hint=0x7f07012d;
+        public static final int regbymail_reg_title=0x7f07012c;
+        public static final int regbymobile_reg_setnick_fill_nick=0x7f07013a;
+        public static final int regbymobile_reg_setnick_tip=0x7f07013b;
+        public static final int regbymobile_reg_setnick_title=0x7f070139;
+        public static final int regbymobile_reg_setpwd_alert_diff=0x7f070137;
+        public static final int regbymobile_reg_setpwd_alert_more_byte=0x7f070138;
+        public static final int regbymobile_reg_setpwd_alert_title=0x7f070136;
+        public static final int regbymobile_reg_setpwd_fill_pwd=0x7f070132;
+        public static final int regbymobile_reg_setpwd_fill_pwd_again=0x7f070133;
+        public static final int regbymobile_reg_setpwd_fill_tip=0x7f070135;
+        public static final int regbymobile_reg_setpwd_tip=0x7f070134;
+        public static final int regbymobile_reg_setpwd_title=0x7f070131;
+        public static final int regbymoile_reg_addr_hint=0x7f07012f;
+        public static final int regbymoile_reg_private_tip=0x7f070130;
+        public static final int regbymoile_reg_title=0x7f07012e;
+        public static final int regbyqq_auth_err_failed_niceqq=0x7f070120;
+        public static final int regbyqq_auth_err_nickinvalid=0x7f07011f;
+        public static final int regbyqq_auth_err_title=0x7f07011d;
+        public static final int regbyqq_auth_err_uinexsit=0x7f07011e;
+        public static final int regbyqq_auth_title=0x7f07011b;
+        public static final int regbyqq_auth_waiting=0x7f07011c;
+        public static final int regbyqq_confirm_tip=0x7f070125;
+        public static final int regbyqq_reg_nick_hint=0x7f070124;
+        public static final int regbyqq_reg_nick_tip=0x7f070129;
+        public static final int regbyqq_reg_username_mod_tip=0x7f070122;
+        public static final int regbyqq_reg_username_suggest_tip=0x7f070123;
+        public static final int regbyqq_reg_username_title=0x7f070121;
+        public static final int regbyqq_reg_waiting=0x7f070126;
+        public static final int regbyqq_secimg_change=0x7f070128;
+        public static final int regbyqq_secimg_title=0x7f070127;
+        public static final int report_via_wap=0x7f07009a;
+        public static final int retransmit=0x7f07016e;
+        public static final int retransmit_to_conv_comfirm=0x7f07016f;
+        public static final int room_add_member=0x7f070413;
+        public static final int room_add_member_hint=0x7f070418;
+        public static final int room_add_member_info_tip=0x7f07041a;
+        public static final int room_chartting_room_max_len_tip=0x7f070402;
+        public static final int room_chartting_room_null_len_tip=0x7f070403;
+        public static final int room_clear_chatting_history=0x7f070409;
+        public static final int room_del_member=0x7f0703fa;
+        public static final int room_del_quit=0x7f07040d;
+        public static final int room_delete_exit=0x7f070412;
+        public static final int room_delete_msg=0x7f070411;
+        public static final int room_delete_self_tip=0x7f07041d;
+        public static final int room_has_no_topic=0x7f0703fb;
+        public static final int room_head_name=0x7f0703fd;
+        public static final int room_member_count=0x7f070417;
+        public static final int room_member_info=0x7f070410;
+        public static final int room_member_not_added=0x7f070419;
+        public static final int room_member_only_support_weixin=0x7f070416;
+        public static final int room_member_toomuch=0x7f070414;
+        public static final int room_member_toomuch_tip=0x7f070415;
+        public static final int room_msg_close_notify=0x7f070407;
+        public static final int room_msg_notify=0x7f070406;
+        public static final int room_msg_setting=0x7f07040e;
+        public static final int room_mute=0x7f070405;
+        public static final int room_mute_already=0x7f07040b;
+        public static final int room_mute_already_cancel=0x7f07040c;
+        public static final int room_mute_cancel=0x7f07040a;
+        public static final int room_name=0x7f0703f8;
+        public static final int room_name_modify=0x7f0703f9;
+        public static final int room_rev_msg=0x7f07040f;
+        public static final int room_save_to_contact=0x7f0703fc;
+        public static final int room_save_to_group_card_fail=0x7f0703ff;
+        public static final int room_save_to_group_card_max_len_tip=0x7f070404;
+        public static final int room_save_to_group_card_ok=0x7f070401;
+        public static final int room_save_to_group_card_prog=0x7f0703fe;
+        public static final int room_save_to_group_card_tip=0x7f070400;
+        public static final int room_set_chatting_background=0x7f070408;
+        public static final int room_set_name_for_chatroom=0x7f07041c;
+        public static final int room_setting=0x7f0703f7;
+        public static final int room_share_friend=0x7f07041b;
+        public static final int roominfo_name=0x7f0703f0;
+        public static final int scroll_bar_search=0x7f070065;
+        public static final int select_conversation_create=0x7f07016b;
+        public static final int select_conversation_cur=0x7f07016c;
+        public static final int select_conversation_title=0x7f07016d;
+        public static final int select_login_by_facebook=0x7f070113;
+        public static final int select_login_by_qq_num=0x7f070112;
+        public static final int select_login_hint=0x7f070110;
+        public static final int select_register_hint=0x7f070111;
+        public static final int selectattach_camera=0x7f0700f1;
+        public static final int selectattach_image=0x7f0700f0;
+        public static final int selectcameraapp_none=0x7f0700f3;
+        public static final int selectsmsapp_none=0x7f0700f2;
+        public static final int self_qrcode_change=0x7f0703c9;
+        public static final int self_qrcode_gallery=0x7f0703cb;
+        public static final int self_qrcode_getting=0x7f0703c1;
+        public static final int self_qrcode_land_btn_text=0x7f0703c3;
+        public static final int self_qrcode_save=0x7f0703ca;
+        public static final int self_qrcode_share_info=0x7f0703c0;
+        public static final int self_qrcode_show_all=0x7f0703cc;
+        public static final int self_qrcode_show_all_facebook=0x7f0703cd;
+        public static final int self_qrcode_show_all_qqwb=0x7f0703cf;
+        public static final int self_qrcode_show_all_qzone=0x7f0703d0;
+        public static final int self_qrcode_show_all_sina=0x7f0703ce;
+        public static final int self_qrcode_show_facebook_et_content=0x7f0700f5;
+        public static final int self_qrcode_show_no_qq_tip=0x7f0703d1;
+        public static final int self_qrcode_show_qq_et_content=0x7f0703d2;
+        public static final int self_qrcode_show_to_fuckbook=0x7f0703c8;
+        public static final int self_qrcode_show_to_qqwb=0x7f0703c5;
+        public static final int self_qrcode_show_to_qzone=0x7f0703c6;
+        public static final int self_qrcode_show_to_sina=0x7f0703c7;
+        public static final int self_qrcode_title=0x7f0703bf;
+        public static final int send_card_info=0x7f0703a2;
+        public static final int send_card_tip=0x7f0703a3;
+        public static final int send_card_to_microblog=0x7f070316;
+        public static final int send_card_to_sina=0x7f070318;
+        public static final int send_card_to_this=0x7f070317;
+        public static final int send_qrcode_to_microblog=0x7f0703c4;
+        public static final int send_to_micro_blog_intro=0x7f07031b;
+        public static final int send_to_micro_blog_intro_no_micro_blog=0x7f07031d;
+        public static final int send_to_micro_blog_intro_sina=0x7f07031c;
+        public static final int send_to_micro_blog_save_card_image=0x7f07031f;
+        public static final int send_to_micro_blog_save_ok=0x7f07031e;
+        public static final int sendrequest_send_fail=0x7f0703a8;
+        public static final int sendrequest_send_success=0x7f0703a7;
+        public static final int sendrequest_sending=0x7f0703a6;
+        public static final int sendrequest_tip=0x7f0703a5;
+        public static final int sendrequest_title=0x7f0703a4;
+        public static final int sent_message=0x7f07001c;
+        public static final int setting_text_size_large=0x7f070288;
+        public static final int setting_text_size_normal=0x7f070289;
+        public static final int setting_text_size_small=0x7f07028a;
+        public static final int settings_about_blacklist=0x7f0701fd;
+        public static final int settings_about_domainmail=0x7f0701e9;
+        public static final int settings_about_micromsg=0x7f070208;
+        public static final int settings_about_privacy=0x7f0701fe;
+        public static final int settings_about_system=0x7f070206;
+        public static final int settings_about_version=0x7f070249;
+        public static final int settings_account=0x7f070221;
+        public static final int settings_account_info=0x7f0701d3;
+        public static final int settings_active_begin_time=0x7f070238;
+        public static final int settings_active_end_time=0x7f070239;
+        public static final int settings_active_time=0x7f07022f;
+        public static final int settings_active_time_full=0x7f070237;
+        public static final int settings_add_domainmail=0x7f070212;
+        public static final int settings_add_domainmail_fail_tip=0x7f07026e;
+        public static final int settings_add_domainmail_hint=0x7f07026f;
+        public static final int settings_add_domainmail_mailbadformat=0x7f070272;
+        public static final int settings_add_domainmail_mailbeyondmax=0x7f070270;
+        public static final int settings_add_domainmail_maildisable=0x7f070271;
+        public static final int settings_add_domainmail_mailverified=0x7f070273;
+        public static final int settings_add_domainmail_tip=0x7f07026d;
+        public static final int settings_add_domainmail_title=0x7f07026c;
+        public static final int settings_auto_add_reply_friends=0x7f070202;
+        public static final int settings_auto_add_reply_friends_tip=0x7f070203;
+        public static final int settings_bind_mobile_title=0x7f0701e8;
+        public static final int settings_bind_qq_unbind=0x7f07021f;
+        public static final int settings_change_avatar=0x7f070216;
+        public static final int settings_chatting_bg=0x7f0701e7;
+        public static final int settings_chatting_bg_apply_to_all=0x7f070281;
+        public static final int settings_chatting_bg_select_bg=0x7f07027e;
+        public static final int settings_chatting_bg_select_from_album=0x7f07027f;
+        public static final int settings_chatting_bg_take_photo=0x7f070280;
+        public static final int settings_confirm_email_fail_tip=0x7f07026a;
+        public static final int settings_confirm_email_success_tip=0x7f070269;
+        public static final int settings_confirm_email_tip=0x7f070268;
+        public static final int settings_confirm_email_verified_tip=0x7f07026b;
+        public static final int settings_district=0x7f07021b;
+        public static final int settings_domainemail_addr_verified=0x7f070214;
+        public static final int settings_domainmail_delete=0x7f070278;
+        public static final int settings_domainmail_reach_limit=0x7f070213;
+        public static final int settings_domainmail_viewmember=0x7f070277;
+        public static final int settings_email_addr=0x7f070222;
+        public static final int settings_email_addr_not_verified=0x7f070223;
+        public static final int settings_email_addr_verified=0x7f070224;
+        public static final int settings_facebook_notice=0x7f0701de;
+        public static final int settings_faq=0x7f0701e1;
+        public static final int settings_feedback=0x7f070250;
+        public static final int settings_feedbackui_err=0x7f0701e4;
+        public static final int settings_feedbackui_succ=0x7f0701e3;
+        public static final int settings_feedbackui_title=0x7f0701e2;
+        public static final int settings_find_me_by_QQ=0x7f070201;
+        public static final int settings_find_me_by_mobile=0x7f070204;
+        public static final int settings_follow_twitter=0x7f07024c;
+        public static final int settings_follow_twitter_uri=0x7f07024e;
+        public static final int settings_invalid_weibo=0x7f0701df;
+        public static final int settings_invite_facebook_friends=0x7f070210;
+        public static final int settings_invite_friends_open_already=0x7f070211;
+        public static final int settings_invite_mobile_friends=0x7f0701ea;
+        public static final int settings_invite_qq_friends=0x7f07020f;
+        public static final int settings_landscape_mode=0x7f07023c;
+        public static final int settings_language=0x7f07023a;
+        public static final int settings_language_save=0x7f07025b;
+        public static final int settings_language_title=0x7f07025a;
+        public static final int settings_like_facebook=0x7f07024d;
+        public static final int settings_like_facebook_uri=0x7f07024f;
+        public static final int settings_logout=0x7f070225;
+        public static final int settings_logout_warning_tip=0x7f070226;
+        public static final int settings_market_ratings=0x7f07024b;
+        public static final int settings_menu_rename=0x7f070215;
+        public static final int settings_mobile=0x7f070220;
+        public static final int settings_modify_domainmail_deletetip=0x7f070275;
+        public static final int settings_modify_domainmail_tip=0x7f070274;
+        public static final int settings_modify_email_addr=0x7f070254;
+        public static final int settings_modify_email_addr_warning=0x7f070255;
+        public static final int settings_modify_name=0x7f070251;
+        public static final int settings_modify_name_invalid=0x7f070253;
+        public static final int settings_modify_name_tip=0x7f070252;
+        public static final int settings_my_album=0x7f0701d6;
+        public static final int settings_my_qrcode=0x7f07021d;
+        public static final int settings_name=0x7f070218;
+        public static final int settings_need_verify=0x7f0701ff;
+        public static final int settings_netstat_mobile=0x7f070279;
+        public static final int settings_netstat_source_self=0x7f07027c;
+        public static final int settings_netstat_source_total=0x7f07027b;
+        public static final int settings_netstat_statistic_period=0x7f07027d;
+        public static final int settings_netstat_wifi=0x7f07027a;
+        public static final int settings_new_msg_notification=0x7f07022a;
+        public static final int settings_notification=0x7f070229;
+        public static final int settings_personal_card=0x7f0701d5;
+        public static final int settings_personal_info=0x7f0701d4;
+        public static final int settings_plugings_disturb_off=0x7f070235;
+        public static final int settings_plugings_disturb_on=0x7f070233;
+        public static final int settings_plugings_disturb_on_night=0x7f070234;
+        public static final int settings_plugings_disturb_time_tip=0x7f070236;
+        public static final int settings_plugings_disturb_title=0x7f070232;
+        public static final int settings_plugings_notify=0x7f070230;
+        public static final int settings_plugings_notify_tip=0x7f070231;
+        public static final int settings_plugins=0x7f0701eb;
+        public static final int settings_plugins_disable=0x7f0701ef;
+        public static final int settings_plugins_enable=0x7f0701ee;
+        public static final int settings_plugins_install=0x7f0701f5;
+        public static final int settings_plugins_install_fail=0x7f0701fb;
+        public static final int settings_plugins_installed=0x7f0701ed;
+        public static final int settings_plugins_installed_plugins=0x7f0701f2;
+        public static final int settings_plugins_installing=0x7f0701f8;
+        public static final int settings_plugins_management=0x7f0701f4;
+        public static final int settings_plugins_notset=0x7f0701f0;
+        public static final int settings_plugins_purge=0x7f0701f7;
+        public static final int settings_plugins_title=0x7f0701f1;
+        public static final int settings_plugins_uninstall=0x7f0701f6;
+        public static final int settings_plugins_uninstall_fail=0x7f0701fc;
+        public static final int settings_plugins_uninstall_hint=0x7f0701fa;
+        public static final int settings_plugins_uninstalled=0x7f0701ec;
+        public static final int settings_plugins_uninstalled_plugins=0x7f0701f3;
+        public static final int settings_plugins_uninstalling=0x7f0701f9;
+        public static final int settings_push_software=0x7f070209;
+        public static final int settings_recommend_by_mail=0x7f07020b;
+        public static final int settings_recommend_by_mb=0x7f07020a;
+        public static final int settings_recommend_no_mail_contact=0x7f07020c;
+        public static final int settings_recommend_no_mb_contact=0x7f07020e;
+        public static final int settings_recommend_no_qq_contact=0x7f07020d;
+        public static final int settings_recommend_to_QQfriends=0x7f070200;
+        public static final int settings_reset=0x7f070227;
+        public static final int settings_reset_warning=0x7f070228;
+        public static final int settings_select_bg_canceling=0x7f070286;
+        public static final int settings_select_bg_download=0x7f070284;
+        public static final int settings_select_bg_downloading=0x7f070285;
+        public static final int settings_select_bg_sdcard_fail=0x7f070287;
+        public static final int settings_select_bg_title=0x7f070282;
+        public static final int settings_select_bg_using=0x7f070283;
+        public static final int settings_send_confirmed_domainmail_again=0x7f070276;
+        public static final int settings_send_raw_image=0x7f07023f;
+        public static final int settings_sex=0x7f07021a;
+        public static final int settings_shake=0x7f07022c;
+        public static final int settings_share_weibo_tip=0x7f070205;
+        public static final int settings_show_weibo_field=0x7f0701dc;
+        public static final int settings_signature=0x7f0701e0;
+        public static final int settings_signature_empty=0x7f0701e5;
+        public static final int settings_skin=0x7f0701e6;
+        public static final int settings_sns_bg_from_artist=0x7f070593;
+        public static final int settings_sns_bg_select_bg=0x7f07058f;
+        public static final int settings_sns_bg_select_from_album=0x7f070590;
+        public static final int settings_sns_bg_take_photo=0x7f070591;
+        public static final int settings_sns_bg_title=0x7f070592;
+        public static final int settings_sns_notify=0x7f07022d;
+        public static final int settings_sns_notify_tip=0x7f07022e;
+        public static final int settings_sound=0x7f07022b;
+        public static final int settings_system_notice=0x7f070207;
+        public static final int settings_system_notice_url=0x7f070259;
+        public static final int settings_text_size=0x7f07023b;
+        public static final int settings_title=0x7f0701d2;
+        public static final int settings_total_traffic_statistic=0x7f070248;
+        public static final int settings_total_traffic_statistic_all=0x7f070247;
+        public static final int settings_traffic_all_statistic=0x7f070241;
+        public static final int settings_traffic_all_statistic_info=0x7f070242;
+        public static final int settings_traffic_statistic=0x7f070244;
+        public static final int settings_traffic_statistic_clear=0x7f070245;
+        public static final int settings_traffic_statistic_reset=0x7f070246;
+        public static final int settings_traffic_statistic_tip=0x7f070243;
+        public static final int settings_tweibo=0x7f07021c;
+        public static final int settings_tweibo_notfind=0x7f0701db;
+        public static final int settings_tweibo_open=0x7f0701d7;
+        public static final int settings_tweibo_open_not_set=0x7f0701d9;
+        public static final int settings_tweibo_open_set=0x7f0701da;
+        public static final int settings_tweibo_open_title=0x7f0701d8;
+        public static final int settings_tweibo_tip=0x7f07021e;
+        public static final int settings_uin=0x7f070219;
+        public static final int settings_update=0x7f07024a;
+        public static final int settings_upload_hd_avatar_fail=0x7f070258;
+        public static final int settings_upload_hd_avatar_success=0x7f070257;
+        public static final int settings_uploading_hd_avatar=0x7f070256;
+        public static final int settings_username=0x7f070217;
+        public static final int settings_voice_play_mode=0x7f07023e;
+        public static final int settings_voicerecorder_mode=0x7f07023d;
+        public static final int settings_voicerecorder_mode_change_to_amr=0x7f070240;
+        public static final int settings_weibo_notice=0x7f0701dd;
+        public static final int sex_female=0x7f070099;
+        public static final int sex_male=0x7f070098;
+        public static final int shake_a_friend=0x7f07049a;
+        public static final int shake_click_to_change_bg=0x7f07049e;
+        public static final int shake_finding=0x7f07049b;
+        public static final int shake_friends_clear_all=0x7f0704a7;
+        public static final int shake_friends_clear_title=0x7f0704a8;
+        public static final int shake_friends_no_shake_friends=0x7f0704a9;
+        public static final int shake_friends_see_olders=0x7f0704aa;
+        public static final int shake_getfial=0x7f07049c;
+        public static final int shake_has_closed_sound=0x7f0704a5;
+        public static final int shake_info_known=0x7f0704b1;
+        public static final int shake_info_long_text=0x7f0704b0;
+        public static final int shake_info_long_title=0x7f0704af;
+        public static final int shake_info_party_text=0x7f0704ae;
+        public static final int shake_info_party_title=0x7f0704ad;
+        public static final int shake_info_short_text=0x7f0704ac;
+        public static final int shake_info_short_title=0x7f0704ab;
+        public static final int shake_item_change_bgimg=0x7f0704a1;
+        public static final int shake_item_clear_shake_friends=0x7f0704a0;
+        public static final int shake_item_close_sound=0x7f0704a3;
+        public static final int shake_item_default_bgimg=0x7f0704a2;
+        public static final int shake_item_open_sound=0x7f0704a4;
+        public static final int shake_match=0x7f070021;
+        public static final int shake_match_isfriend=0x7f0704a6;
+        public static final int shake_meter=0x7f07049f;
+        public static final int shake_nomatch=0x7f070020;
+        public static final int shake_not_support=0x7f07049d;
+        public static final int shake_report_title=0x7f070499;
+        public static final int shake_sound_male=0x7f07001f;
+        public static final int share_at_least_one_item=0x7f070375;
+        public static final int share_btn=0x7f070371;
+        public static final int share_content=0x7f070376;
+        public static final int share_err=0x7f070377;
+        public static final int share_micromsg_card_name=0x7f070319;
+        public static final int share_micromsg_card_title=0x7f07031a;
+        public static final int share_ok=0x7f070378;
+        public static final int share_to_qq_sign=0x7f070373;
+        public static final int share_to_qq_zone=0x7f070374;
+        public static final int share_to_tencent_microblog=0x7f070372;
+        public static final int shareimg_file_too_large=0x7f070431;
+        public static final int shareimg_get_res_fail=0x7f070430;
+        public static final int skin_getmore=0x7f0703eb;
+        public static final int skin_getting_list=0x7f0703ea;
+        public static final int smiley_panel_art=0x7f0701c9;
+        public static final int smiley_panel_custom=0x7f0701c8;
+        public static final int smiley_panel_def=0x7f0701c6;
+        public static final int smiley_panel_emoji=0x7f0701c7;
+        public static final int sns_choose_image_from_album=0x7f07058c;
+        public static final int sns_choose_image_from_take_photo=0x7f07058d;
+        public static final int sns_comefrome=0x7f07055a;
+        public static final int sns_comment=0x7f07056b;
+        public static final int sns_comment_detial_ui_photo_count=0x7f070576;
+        public static final int sns_comment_detial_ui_title=0x7f070575;
+        public static final int sns_comment_like=0x7f07054b;
+        public static final int sns_comment_reply=0x7f07054d;
+        public static final int sns_comment_title=0x7f070595;
+        public static final int sns_comment_word=0x7f07054c;
+        public static final int sns_del_my_comment=0x7f070558;
+        public static final int sns_del_sns=0x7f070562;
+        public static final int sns_deling_sns=0x7f070563;
+        public static final int sns_down_error=0x7f07055c;
+        public static final int sns_dyna_photo_ui_title=0x7f07054a;
+        public static final int sns_dynamic_title=0x7f07056c;
+        public static final int sns_expose_sns=0x7f070561;
+        public static final int sns_from_bottle=0x7f07057c;
+        public static final int sns_from_lbs=0x7f07057e;
+        public static final int sns_from_qrcode=0x7f07057d;
+        public static final int sns_from_shake=0x7f07057f;
+        public static final int sns_from_stranger=0x7f07057b;
+        public static final int sns_gallery_comment=0x7f070598;
+        public static final int sns_gallery_has_like=0x7f070597;
+        public static final int sns_gallery_like=0x7f070596;
+        public static final int sns_get_location=0x7f070582;
+        public static final int sns_get_old_msg=0x7f070578;
+        public static final int sns_has_liked=0x7f07056a;
+        public static final int sns_has_save=0x7f07058e;
+        public static final int sns_is_all=0x7f070552;
+        public static final int sns_like=0x7f070569;
+        public static final int sns_like_background=0x7f070581;
+        public static final int sns_loading=0x7f070553;
+        public static final int sns_love_back=0x7f070551;
+        public static final int sns_media_count=0x7f070589;
+        public static final int sns_msg_clear_mgslist=0x7f07057a;
+        public static final int sns_msg_list=0x7f070579;
+        public static final int sns_msgui_title=0x7f070577;
+        public static final int sns_no_msg=0x7f070580;
+        public static final int sns_no_timeline=0x7f07055b;
+        public static final int sns_not_get_location=0x7f070583;
+        public static final int sns_photo_ui_title=0x7f070549;
+        public static final int sns_post_to=0x7f070560;
+        public static final int sns_privated=0x7f070586;
+        public static final int sns_privated_hint=0x7f070587;
+        public static final int sns_reply=0x7f070559;
+        public static final int sns_save_to_sns=0x7f07055f;
+        public static final int sns_setPrivateing_sns=0x7f070564;
+        public static final int sns_set_has_like_bg=0x7f07058b;
+        public static final int sns_set_it_bg=0x7f07058a;
+        public static final int sns_set_private=0x7f07055e;
+        public static final int sns_some_comment=0x7f070567;
+        public static final int sns_some_new_msg=0x7f070566;
+        public static final int sns_some_praise=0x7f070568;
+        public static final int sns_strange_tip=0x7f070555;
+        public static final int sns_sync_facebook=0x7f070585;
+        public static final int sns_sync_weibo=0x7f070584;
+        public static final int sns_timeline_ui_chang_background=0x7f07056e;
+        public static final int sns_timeline_ui_confirm_del=0x7f070573;
+        public static final int sns_timeline_ui_recommend_a_song=0x7f07056f;
+        public static final int sns_timeline_ui_recommend_a_video=0x7f070570;
+        public static final int sns_timeline_ui_recommend_an_article=0x7f070571;
+        public static final int sns_timeline_ui_title=0x7f07056d;
+        public static final int sns_timeline_ui_with_to=0x7f070572;
+        public static final int sns_timeline_ui_with_you=0x7f070574;
+        public static final int sns_total_count=0x7f070554;
+        public static final int sns_touch_setbg=0x7f070557;
+        public static final int sns_ui_comment=0x7f070550;
+        public static final int sns_ui_setback=0x7f07054f;
+        public static final int sns_upload_litmit=0x7f070588;
+        public static final int sns_upload_sns_hint=0x7f070565;
+        public static final int sns_user_start=0x7f070556;
+        public static final int sns_welcome_i_know=0x7f07059d;
+        public static final int sns_welcome_tip=0x7f070599;
+        public static final int sns_welcome_titlea=0x7f07059a;
+        public static final int sns_welcome_titleb=0x7f07059b;
+        public static final int sns_welcome_titlec=0x7f07059c;
+        public static final int sns_who_album=0x7f070594;
+        public static final int sns_wirte_down=0x7f07055d;
+        public static final int sns_with_you=0x7f07054e;
+        public static final int sys_bucket_name=0x7f0705f1;
+        public static final int sys_camera_bucket_name=0x7f0705f0;
+        public static final int time_apr=0x7f0705a1;
+        public static final int time_aug=0x7f0705a5;
+        public static final int time_dec=0x7f0705a9;
+        public static final int time_feb=0x7f07059f;
+        public static final int time_fri=0x7f0705ae;
+        public static final int time_jan=0x7f07059e;
+        public static final int time_jul=0x7f0705a4;
+        public static final int time_jun=0x7f0705a3;
+        public static final int time_limit=0x7f07001e;
+        public static final int time_mar=0x7f0705a0;
+        public static final int time_may=0x7f0705a2;
+        public static final int time_mon=0x7f0705aa;
+        public static final int time_nov=0x7f0705a8;
+        public static final int time_oct=0x7f0705a7;
+        public static final int time_sat=0x7f0705af;
+        public static final int time_sept=0x7f0705a6;
+        public static final int time_sun=0x7f0705b0;
+        public static final int time_thur=0x7f0705ad;
+        public static final int time_tues=0x7f0705ab;
+        public static final int time_wed=0x7f0705ac;
+        public static final int update_cancel=0x7f070108;
+        public static final int update_err_getinfo=0x7f070103;
+        public static final int update_exit=0x7f070107;
+        public static final int update_get_pack_error=0x7f070109;
+        public static final int update_getting_updateinfo=0x7f070101;
+        public static final int update_getting_updatepack=0x7f070102;
+        public static final int update_noupdate=0x7f070100;
+        public static final int update_now=0x7f070106;
+        public static final int update_tip_critical=0x7f070105;
+        public static final int update_tip_recommended_down=0x7f070104;
+        public static final int url_agreement=0x7f070019;
+        public static final int url_getpassword=0x7f07001a;
+        public static final int url_getqqpassword=0x7f07001b;
+        public static final int verify_account_err_chinese=0x7f0700e2;
+        public static final int verify_account_err_other=0x7f0700e4;
+        public static final int verify_account_err_space=0x7f0700e3;
+        public static final int verify_account_err_start=0x7f0700e1;
+        public static final int verify_account_null_tip=0x7f0700e5;
+        public static final int verify_account_tip=0x7f0700df;
+        public static final int verify_account_tip_short=0x7f0700e0;
+        public static final int verify_email_err_tip=0x7f0700ef;
+        public static final int verify_email_null_tip=0x7f0700e9;
+        public static final int verify_email_tip=0x7f0700ee;
+        public static final int verify_input_null_tip=0x7f0700e6;
+        public static final int verify_password_all_num_tip=0x7f0700ea;
+        public static final int verify_password_null_tip=0x7f0700e7;
+        public static final int verify_password_tip=0x7f0700eb;
+        public static final int verify_seccode_fail_tip=0x7f0700ed;
+        public static final int verify_seccode_tip=0x7f0700ec;
+        public static final int verify_username_null_tip=0x7f0700e8;
+        public static final int video_compress_fail=0x7f0703b5;
+        public static final int video_compress_ok=0x7f0703b1;
+        public static final int video_compressing=0x7f0703b0;
+        public static final int video_dev_create_failed=0x7f0703ac;
+        public static final int video_export_file_error=0x7f0703b9;
+        public static final int video_export_file_too_big=0x7f0703ba;
+        public static final int video_export_file_warning=0x7f0703bb;
+        public static final int video_play_export_file_error=0x7f0703b8;
+        public static final int video_play_faile=0x7f0703ae;
+        public static final int video_play_title=0x7f0703af;
+        public static final int video_recorder_cancel=0x7f0703b3;
+        public static final int video_recorder_file_error=0x7f0703b7;
+        public static final int video_recorder_restart=0x7f0703b2;
+        public static final int video_recorder_start_hint=0x7f0703b4;
+        public static final int video_recorder_time_limit=0x7f0703b6;
+        public static final int video_save_failed=0x7f0703ad;
+        public static final int video_saved=0x7f0703ab;
+        public static final int voip_disconnect_tip=0x7f0704dd;
+        public static final int voip_invite_incoming_text=0x7f0704da;
+        public static final int voip_invite_start=0x7f0704db;
+        public static final int voip_invite_waiting_tip=0x7f0704d9;
+        public static final int voip_no_resp=0x7f0704df;
+        public static final int voip_reject=0x7f0704de;
+        public static final int voip_shutdown_tip=0x7f0704dc;
+        public static final int whats_new_daybeforeyesterday=0x7f0704bf;
+        public static final int whats_new_guangzhou=0x7f0704c0;
+        public static final int whats_new_march=0x7f0704c1;
+        public static final int whats_new_msg1=0x7f0704b2;
+        public static final int whats_new_msg3=0x7f0704b5;
+        public static final int whats_new_start=0x7f0704bc;
+        public static final int whats_new_tip=0x7f0704b8;
+        public static final int whats_new_title2=0x7f0704b3;
+        public static final int whats_new_title3=0x7f0704b4;
+        public static final int whats_new_title4=0x7f0704b6;
+        public static final int whats_new_title5=0x7f0704b7;
+        public static final int whats_new_title6=0x7f0704b9;
+        public static final int whats_new_title7_01=0x7f0704ba;
+        public static final int whats_new_title7_02=0x7f0704bb;
+        public static final int whats_new_today=0x7f0704bd;
+        public static final int whats_new_yesterday=0x7f0704be;
     }
     public static final class style {
         /** 
@@ -1795,17 +1976,17 @@ containing a value of this type.
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
-        public static final int MMTabButton=0x7f070003;
-        public static final int WeChatActionBar=0x7f070004;
-        public static final int WeChatActionBarOverflow=0x7f070006;
-        public static final int WeChatActionBarTitleText=0x7f070005;
-        public static final int WeChatActionButtonOverflow=0x7f070007;
-        public static final int tab_item_text_style=0x7f070002;
+        public static final int AppTheme=0x7f090001;
+        public static final int MMTabButton=0x7f090003;
+        public static final int WeChatActionBar=0x7f090004;
+        public static final int WeChatActionBarOverflow=0x7f090006;
+        public static final int WeChatActionBarTitleText=0x7f090005;
+        public static final int WeChatActionButtonOverflow=0x7f090007;
+        public static final int tab_item_text_style=0x7f090002;
     }
     public static final class styleable {
         /** Attributes that can be used with a PagerSlidingTabStrip.
@@ -1839,9 +2020,9 @@ containing a value of this type.
            @see #PagerSlidingTabStrip_pstsUnderlineHeight
          */
         public static final int[] PagerSlidingTabStrip = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
-            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
-            0x7f010008, 0x7f010009, 0x7f01000a
+            0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016,
+            0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a,
+            0x7f01001b, 0x7f01001c, 0x7f01001d
         };
         /**
           <p>This symbol is the offset where the {@link com.haoli.R.attr#pstsDividerColor}
@@ -2006,5 +2187,325 @@ containing a value of this type.
           @attr name android:pstsUnderlineHeight
         */
         public static final int PagerSlidingTabStrip_pstsUnderlineHeight = 4;
+        /** Attributes that can be used with a PullToRefresh.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrAdapterViewBackground com.haoli:ptrAdapterViewBackground}</code></td><td> BELOW HERE ARE DEPRECEATED.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrAnimationStyle com.haoli:ptrAnimationStyle}</code></td><td> Style of Animation should be used displayed when pulling.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawable com.haoli:ptrDrawable}</code></td><td> Drawable to use as Loading Indicator.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableBottom com.haoli:ptrDrawableBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableEnd com.haoli:ptrDrawableEnd}</code></td><td> Drawable to use as Loading Indicator in the Footer View.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableStart com.haoli:ptrDrawableStart}</code></td><td> Drawable to use as Loading Indicator in the Header View.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableTop com.haoli:ptrDrawableTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderBackground com.haoli:ptrHeaderBackground}</code></td><td> A drawable to use as the background of the Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderSubTextColor com.haoli:ptrHeaderSubTextColor}</code></td><td> Text Color of the Header and Footer Loading Views Sub Header </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextAppearance com.haoli:ptrHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextColor com.haoli:ptrHeaderTextColor}</code></td><td> Text Color of the Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrListViewExtrasEnabled com.haoli:ptrListViewExtrasEnabled}</code></td><td>
+        	Whether PullToRefreshListView has it's extras enabled.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrMode com.haoli:ptrMode}</code></td><td> Mode of Pull-to-Refresh that should be used </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrOverScroll com.haoli:ptrOverScroll}</code></td><td> Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrRefreshableViewBackground com.haoli:ptrRefreshableViewBackground}</code></td><td> A drawable to use as the background of the Refreshable View </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrRotateDrawableWhilePulling com.haoli:ptrRotateDrawableWhilePulling}</code></td><td>
+        	Whether the Drawable should be continually rotated as you pull.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrScrollingWhileRefreshingEnabled com.haoli:ptrScrollingWhileRefreshingEnabled}</code></td><td> Whether the user can scroll while the View is Refreshing </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrShowIndicator com.haoli:ptrShowIndicator}</code></td><td> Whether the Indicator overlay(s) should be used </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrSubHeaderTextAppearance com.haoli:ptrSubHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header </td></tr>
+           </table>
+           @see #PullToRefresh_ptrAdapterViewBackground
+           @see #PullToRefresh_ptrAnimationStyle
+           @see #PullToRefresh_ptrDrawable
+           @see #PullToRefresh_ptrDrawableBottom
+           @see #PullToRefresh_ptrDrawableEnd
+           @see #PullToRefresh_ptrDrawableStart
+           @see #PullToRefresh_ptrDrawableTop
+           @see #PullToRefresh_ptrHeaderBackground
+           @see #PullToRefresh_ptrHeaderSubTextColor
+           @see #PullToRefresh_ptrHeaderTextAppearance
+           @see #PullToRefresh_ptrHeaderTextColor
+           @see #PullToRefresh_ptrListViewExtrasEnabled
+           @see #PullToRefresh_ptrMode
+           @see #PullToRefresh_ptrOverScroll
+           @see #PullToRefresh_ptrRefreshableViewBackground
+           @see #PullToRefresh_ptrRotateDrawableWhilePulling
+           @see #PullToRefresh_ptrScrollingWhileRefreshingEnabled
+           @see #PullToRefresh_ptrShowIndicator
+           @see #PullToRefresh_ptrSubHeaderTextAppearance
+         */
+        public static final int[] PullToRefresh = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012
+        };
+        /**
+          <p>
+          @attr description
+           BELOW HERE ARE DEPRECEATED. DO NOT USE. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrAdapterViewBackground
+        */
+        public static final int PullToRefresh_ptrAdapterViewBackground = 16;
+        /**
+          <p>
+          @attr description
+           Style of Animation should be used displayed when pulling. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>rotate</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:ptrAnimationStyle
+        */
+        public static final int PullToRefresh_ptrAnimationStyle = 12;
+        /**
+          <p>
+          @attr description
+           Drawable to use as Loading Indicator. Changes both Header and Footer. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrDrawable
+        */
+        public static final int PullToRefresh_ptrDrawable = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.haoli.R.attr#ptrDrawableBottom}
+          attribute's value can be found in the {@link #PullToRefresh} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:ptrDrawableBottom
+        */
+        public static final int PullToRefresh_ptrDrawableBottom = 18;
+        /**
+          <p>
+          @attr description
+           Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrDrawableEnd
+        */
+        public static final int PullToRefresh_ptrDrawableEnd = 8;
+        /**
+          <p>
+          @attr description
+           Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrDrawableStart
+        */
+        public static final int PullToRefresh_ptrDrawableStart = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.haoli.R.attr#ptrDrawableTop}
+          attribute's value can be found in the {@link #PullToRefresh} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:ptrDrawableTop
+        */
+        public static final int PullToRefresh_ptrDrawableTop = 17;
+        /**
+          <p>
+          @attr description
+           A drawable to use as the background of the Header and Footer Loading Views 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrHeaderBackground
+        */
+        public static final int PullToRefresh_ptrHeaderBackground = 1;
+        /**
+          <p>
+          @attr description
+           Text Color of the Header and Footer Loading Views Sub Header 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrHeaderSubTextColor
+        */
+        public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
+        /**
+          <p>
+          @attr description
+           Base text color, typeface, size, and style for Header and Footer Loading Views 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrHeaderTextAppearance
+        */
+        public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
+        /**
+          <p>
+          @attr description
+           Text Color of the Header and Footer Loading Views 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrHeaderTextColor
+        */
+        public static final int PullToRefresh_ptrHeaderTextColor = 2;
+        /**
+          <p>
+          @attr description
+          
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name android:ptrListViewExtrasEnabled
+        */
+        public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
+        /**
+          <p>
+          @attr description
+           Mode of Pull-to-Refresh that should be used 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>disabled</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>pullFromStart</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>pullFromEnd</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>both</code></td><td>0x3</td><td></td></tr>
+<tr><td><code>manualOnly</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>pullDownFromTop</code></td><td>0x1</td><td> These last two are depreacted </td></tr>
+<tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:ptrMode
+        */
+        public static final int PullToRefresh_ptrMode = 4;
+        /**
+          <p>
+          @attr description
+           Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name android:ptrOverScroll
+        */
+        public static final int PullToRefresh_ptrOverScroll = 9;
+        /**
+          <p>
+          @attr description
+           A drawable to use as the background of the Refreshable View 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrRefreshableViewBackground
+        */
+        public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
+        /**
+          <p>
+          @attr description
+          
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name android:ptrRotateDrawableWhilePulling
+        */
+        public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
+        /**
+          <p>
+          @attr description
+           Whether the user can scroll while the View is Refreshing 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name android:ptrScrollingWhileRefreshingEnabled
+        */
+        public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
+        /**
+          <p>
+          @attr description
+           Whether the Indicator overlay(s) should be used 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name android:ptrShowIndicator
+        */
+        public static final int PullToRefresh_ptrShowIndicator = 5;
+        /**
+          <p>
+          @attr description
+           Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:ptrSubHeaderTextAppearance
+        */
+        public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
     };
 }

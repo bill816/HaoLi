@@ -29,7 +29,7 @@
         <activity android:name=".tab.Activity2" />
         <activity android:name=".tab.Activity3" />
         <activity android:name=".tab.Activity4" />
-        
+        <activity android:name=".tab.PullToRefreshListActivity"/>
     </application>
     
        

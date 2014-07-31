@@ -52,6 +52,11 @@ public class TabMainActivity extends FragmentActivity {
 	private HelpFragment helpFragment;
 	
 	/**
+	 * 首页界面的Fragment
+	 */
+	private HomeFragment homeFragment;
+	
+	/**
 	 * PagerSlidingTabStrip的实例
 	 */
 	private PagerSlidingTabStrip tabs;
@@ -105,7 +110,7 @@ public class TabMainActivity extends FragmentActivity {
 			super(fm);
 		}
 
-		private final String[] titles = { "聊天", "发现", "通讯录","关于","帮助" };
+		private final String[] titles = { "聊天", "发现", "通讯录","关于","帮助","首页" };
 
 		@Override
 		public CharSequence getPageTitle(int position) {
@@ -145,6 +150,11 @@ public class TabMainActivity extends FragmentActivity {
 					helpFragment = new HelpFragment();
 				}
 				return helpFragment;
+			case 5:
+				if (homeFragment == null) {
+					homeFragment = new HomeFragment();
+				}
+				return homeFragment;
 			default:
 				return null;
 			}

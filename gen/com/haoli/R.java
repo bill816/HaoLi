@@ -380,24 +380,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tab_weixin_pressed=0x7f020031;
     }
     public static final class id {
-        public static final int action_album=0x7f05001c;
-        public static final int action_card=0x7f05001e;
-        public static final int action_collection=0x7f05001d;
-        public static final int action_feed=0x7f050020;
-        public static final int action_plus=0x7f05001b;
-        public static final int action_search=0x7f05001a;
-        public static final int action_settings=0x7f05001f;
+        public static final int RelativeLayout_Item=0x7f050010;
+        public static final int action_album=0x7f050020;
+        public static final int action_card=0x7f050022;
+        public static final int action_collection=0x7f050021;
+        public static final int action_feed=0x7f050024;
+        public static final int action_plus=0x7f05001f;
+        public static final int action_search=0x7f05001e;
+        public static final int action_settings=0x7f050023;
         public static final int both=0x7f050003;
         public static final int disabled=0x7f050000;
-        public static final int fl_inner=0x7f050019;
+        public static final int fl_inner=0x7f05001d;
         public static final int flip=0x7f050008;
         public static final int gridview=0x7f050009;
         public static final int imageview=0x7f05000c;
-        public static final int main_radiogroup=0x7f050010;
-        public static final int main_tab_address=0x7f050012;
-        public static final int main_tab_find_friend=0x7f050013;
-        public static final int main_tab_settings=0x7f050014;
-        public static final int main_tab_weixin=0x7f050011;
+        public static final int item_text_sumary=0x7f050012;
+        public static final int item_text_time=0x7f050013;
+        public static final int item_text_title=0x7f050011;
+        public static final int main_radiogroup=0x7f050014;
+        public static final int main_tab_address=0x7f050016;
+        public static final int main_tab_find_friend=0x7f050017;
+        public static final int main_tab_settings=0x7f050018;
+        public static final int main_tab_weixin=0x7f050015;
         public static final int manualOnly=0x7f050004;
         public static final int pager=0x7f05000f;
         public static final int pullDownFromTop=0x7f050005;
@@ -405,10 +409,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pullFromStart=0x7f050001;
         public static final int pullUpFromBottom=0x7f050006;
         public static final int pull_refresh_list=0x7f05000d;
-        public static final int pull_to_refresh_image=0x7f050015;
-        public static final int pull_to_refresh_progress=0x7f050016;
-        public static final int pull_to_refresh_sub_text=0x7f050018;
-        public static final int pull_to_refresh_text=0x7f050017;
+        public static final int pull_to_refresh_image=0x7f050019;
+        public static final int pull_to_refresh_progress=0x7f05001a;
+        public static final int pull_to_refresh_sub_text=0x7f05001c;
+        public static final int pull_to_refresh_text=0x7f05001b;
         public static final int rotate=0x7f050007;
         public static final int scrollview=0x7f05000b;
         public static final int tabs=0x7f05000e;
@@ -422,10 +426,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_list=0x7f030004;
         public static final int activity_main=0x7f030005;
         public static final int fragment_main=0x7f030006;
-        public static final int main_tab=0x7f030007;
-        public static final int pull_to_refresh_header=0x7f030008;
-        public static final int pull_to_refresh_header_horizontal=0x7f030009;
-        public static final int pull_to_refresh_header_vertical=0x7f03000a;
+        public static final int list_item=0x7f030007;
+        public static final int main_tab=0x7f030008;
+        public static final int pull_to_refresh_header=0x7f030009;
+        public static final int pull_to_refresh_header_horizontal=0x7f03000a;
+        public static final int pull_to_refresh_header_vertical=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;

@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 import com.haoli.R;
+import com.haoli.biz.NewsItemBiz;
 import com.haoli.net.GetHaoLiData;
 
 import android.app.TabActivity;
@@ -35,9 +36,9 @@ public class HaoLiMainActivity extends TabActivity {
         setContentView(R.layout.main_tab);
         GetHaoLiData getData = new GetHaoLiData();
         
-        getData.login("", "");
+//        getData.login("", "");
         
-        
+        NewsItemBiz.getNewsDataBase(0, 0, this);
         init();
     }
 
@@ -61,10 +62,8 @@ public class HaoLiMainActivity extends TabActivity {
 			
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
-				// TODO Auto-generated method stub
 				switch(checkedId){
 				case R.id.main_tab_weixin:
-
 					m_tabHost.setCurrentTabByTag(Constant.mTextviewArray[0]);
 					break;
 				case R.id.main_tab_address:

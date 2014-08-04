@@ -1,10 +1,13 @@
 package com.haoli.tab;
-
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 import com.haoli.R;
+import com.haoli.net.GetHaoLiData;
 
 import android.app.TabActivity;
 import android.content.Intent;
+import android.content.res.Resources.Theme;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -18,6 +21,7 @@ import android.widget.TabHost.TabSpec;
  * @author guoxiao
  *  
  */
+@SuppressWarnings("deprecation")
 public class HaoLiMainActivity extends TabActivity {
     /** Called when the activity is first created. */
     
@@ -29,6 +33,10 @@ public class HaoLiMainActivity extends TabActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_tab);
+        GetHaoLiData getData = new GetHaoLiData();
+        
+        getData.login("", "");
+        
         
         init();
     }

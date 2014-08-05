@@ -1,35 +1,23 @@
 package com.haoli.ActionBar;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.haoli.R;
+import com.haoli.activity.NewsDetail;
 import com.haoli.bean.NewsDataBase;
-
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
-import android.util.DisplayMetrics;
-import android.util.Log;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.FrameLayout.LayoutParams;
 import android.widget.Toast;
 
 /**
@@ -91,13 +79,14 @@ public class HomeFragment extends ListFragment {
 	@Override  
     public void onCreate(Bundle savedInstanceState) {  
         super.onCreate(savedInstanceState);  
-
 	}
-	
-	
+
 	@Override  
     public void onListItemClick(ListView l, View v, int position, long id) {  
         super.onListItemClick(l, v, position, id);  
+
+        Intent intent = new Intent(getActivity(), NewsDetail.class);
+		startActivity(intent);
         Toast.makeText(getActivity(), String.valueOf(position), Toast.LENGTH_LONG).show();
     } 
 	
@@ -190,7 +179,7 @@ public class HomeFragment extends ListFragment {
                 holder.sumary = (TextView) convertView.findViewById(R.id.item_text_sumary);
                 convertView.setTag(holder);
             } else {  
-                holder = (ViewHolder) convertView.getTag();  
+                holder = (ViewHolder) convertView.getTag();
             }  
             // 进行数据设置  
             holder.title.setText(news.getNewsTitle());  

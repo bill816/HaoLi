@@ -110,7 +110,7 @@ public class TabMainActivity extends FragmentActivity {
 			super(fm);
 		}
 
-		private final String[] titles = { "聊天", "发现", "通讯录","关于","帮助","首页" };
+		private final String[] titles = {"首页", "发现", "通讯录","关于","帮助","聊天" };
 
 		@Override
 		public CharSequence getPageTitle(int position) {
@@ -124,8 +124,13 @@ public class TabMainActivity extends FragmentActivity {
 
 		@Override
 		public Fragment getItem(int position) {
-			switch (position) {
+			switch (position) {		
 			case 0:
+				if (homeFragment == null) {
+					homeFragment = new HomeFragment();
+				}
+				return homeFragment;
+			case 5:
 				if (chatFragment == null) {
 					chatFragment = new ChatFragment();
 				}
@@ -150,11 +155,6 @@ public class TabMainActivity extends FragmentActivity {
 					helpFragment = new HelpFragment();
 				}
 				return helpFragment;
-			case 5:
-				if (homeFragment == null) {
-					homeFragment = new HomeFragment();
-				}
-				return homeFragment;
 			default:
 				return null;
 			}

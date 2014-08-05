@@ -12,6 +12,15 @@ public class NewsDataBase {
 	private String newsTitle;
 	private String newsTime;
 	private String newsSummary;
+	private String newsID;
+	
+	
+	public String getNewsID() {
+		return newsID;
+	}
+	public void setNewsID(String newsID) {
+		this.newsID = newsID;
+	}
 	
 	public String getNewsTitle() {
 		return newsTitle;

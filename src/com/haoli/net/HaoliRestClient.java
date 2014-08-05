@@ -4,7 +4,7 @@ package com.haoli.net;
 import com.loopj.android.http.*;
 
 public class HaoliRestClient {
-    private static final String BASE_URL = "http://115.28.135.82/";
+    private static final String BASE_URL = "http://115.28.135.82";
 
     private static AsyncHttpClient client = new AsyncHttpClient();
     

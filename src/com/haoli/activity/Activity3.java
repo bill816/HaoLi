@@ -1,4 +1,4 @@
-package com.haoli.tab;
+package com.haoli.activity;
 
 import com.haoli.R;
 
@@ -6,13 +6,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class Activity4 extends Activity{
+public class Activity3 extends Activity{
 
-	private final static String TAG = "Activity4";
+	private final static String TAG = "Activity3";
 	
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity4_layout);
+        setContentView(R.layout.activity3_layout);
 
         Log.i(TAG, "=============>onCreate");
     }
@@ -33,4 +33,5 @@ public class Activity4 extends Activity{
 		
 		 Log.i(TAG, "=============>onDestroy");
 	}
+	
 }

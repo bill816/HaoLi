@@ -1,4 +1,4 @@
-package com.haoli.tab;
+package com.haoli.activity;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
@@ -39,6 +39,7 @@ public class HaoLiMainActivity extends TabActivity {
 //        getData.login("", "");
         
         NewsItemBiz.getNewsDataBase(0, 0, this);
+        NewsItemBiz.getNewsDetail(null);
         init();
     }
 

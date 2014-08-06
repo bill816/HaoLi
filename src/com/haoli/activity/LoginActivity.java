@@ -2,7 +2,6 @@ package com.haoli.activity;
 
 import com.haoli.R;
 import com.haoli.net.GetHaoLiData;
-import com.haoli.net.HaoliRestClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import android.app.Activity;
@@ -14,7 +13,6 @@ import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;

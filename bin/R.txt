@@ -182,6 +182,8 @@ int id main_tab_find_friend 0x7f05001f
 int id main_tab_settings 0x7f050020
 int id main_tab_weixin 0x7f05001d
 int id manualOnly 0x7f050004
+int id newsTime 0x7f050022
+int id newsTitle 0x7f050021
 int id pager 0x7f05000f
 int id pullDownFromTop 0x7f050005
 int id pullFromEnd 0x7f050002
@@ -195,8 +197,6 @@ int id pull_to_refresh_text 0x7f050026
 int id rotate 0x7f050007
 int id scrollview 0x7f05000b
 int id tabs 0x7f05000e
-int id textTime 0x7f050022
-int id textTitle 0x7f050021
 int id tv_mima 0x7f050017
 int id tv_zh 0x7f050015
 int id webview 0x7f05000a

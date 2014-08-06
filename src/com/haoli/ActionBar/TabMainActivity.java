@@ -9,15 +9,23 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.View;
 import android.view.ViewConfiguration;
+import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.haoli.R;
+import com.haoli.utils.URLUtil;
 
 /**
  * ActionBar主界面
@@ -26,41 +34,29 @@ import com.haoli.R;
  */
 public class TabMainActivity extends FragmentActivity {
 
-	/**
-	 * 聊天界面的Fragment
-	 */
-	private ChatFragment chatFragment;
-
-	/**
-	 * 发现界面的Fragment
-	 */
-	private FoundFragment foundFragment;
-
-	/**
-	 * 通讯录界面的Fragment
-	 */
-	private ContactsFragment contactsFragment;
-
-	/**
-	 * 通讯录界面的Fragment
-	 */
-	private AboutFragment aboutFragment;
+	public  final String[] titles = {"操盘必读", "个股追踪", "深度课题","市场攻略"};
+	public  NewsListFragment mustReadFragment = new NewsListFragment(URLUtil.MR_MUST_READ,null);
+	public  NewsListFragment stocksTrackFragment = new NewsListFragment(URLUtil.MR_STOCKS_TRACK,null);
+	public  NewsListFragment deepTopicsFragment = new NewsListFragment(URLUtil.MR_DEEP_TOPICS,null);
+	public  NewsListFragment marketStrategyFragment = new NewsListFragment(URLUtil.MR_MARKET_STRATEGY,null);
 	
-	/**
-	 * 通讯录界面的Fragment
-	 */
-	private HelpFragment helpFragment;
+	public ChatFragment aboutFragment1 = new ChatFragment();
+	public StocksTrackFragment aboutFragment2 = new StocksTrackFragment();
+	public StocksTrackFragment aboutFragment3 = new StocksTrackFragment();
+	public StocksTrackFragment aboutFragment4 = new StocksTrackFragment();
 	
-	/**
-	 * 首页界面的Fragment
-	 */
-	private HomeFragment homeFragment;
+	public Fragment mTabClassArray[]= {
+		mustReadFragment,
+		stocksTrackFragment,
+		deepTopicsFragment,
+		marketStrategyFragment
+	};
 	
 	/**
 	 * PagerSlidingTabStrip的实例
 	 */
 	private PagerSlidingTabStrip tabs;
-
+	private ViewPager pager;
 	/**
 	 * 获取当前屏幕的密度
 	 */
@@ -72,10 +68,12 @@ public class TabMainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		setOverflowShowingAlways();
 		dm = getResources().getDisplayMetrics();
-		ViewPager pager = (ViewPager) findViewById(R.id.pager);
+		pager = (ViewPager) findViewById(R.id.pager);
 		tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
 		pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+		pager.setOffscreenPageLimit(0);
 		tabs.setViewPager(pager);
+		pager.setCurrentItem(0);
 		setTabsValue();
 	}
 
@@ -103,14 +101,12 @@ public class TabMainActivity extends FragmentActivity {
 		// 取消点击Tab时的背景色
 		tabs.setTabBackground(0);
 	}
+	public class MyPagerAdapter extends FragmentStatePagerAdapter  {
 
-	public class MyPagerAdapter extends FragmentPagerAdapter {
-
+		private int currentPageIndex = 0;
 		public MyPagerAdapter(FragmentManager fm) {
 			super(fm);
 		}
-
-		private final String[] titles = {"首页", "发现", "通讯录","关于","帮助","聊天" };
 
 		@Override
 		public CharSequence getPageTitle(int position) {
@@ -118,46 +114,33 @@ public class TabMainActivity extends FragmentActivity {
 		}
 
 		@Override
-		public int getCount() {
-			return titles.length;
+		public void finishUpdate(ViewGroup container) {
+			// TODO Auto-generated method stub
+			super.finishUpdate(container);
 		}
 
 		@Override
+		public Object instantiateItem(ViewGroup arg0, int arg1) {
+			// TODO Auto-generated method stub
+			return super.instantiateItem(arg0, arg1);
+		}
+
+		@Override
+		public void startUpdate(ViewGroup container) {
+			// TODO Auto-generated method stub
+			super.startUpdate(container);
+		}
+
+		@Override
+		public int getCount() {
+			return titles.length;
+		}
+		
+		@Override
 		public Fragment getItem(int position) {
-			switch (position) {		
-			case 0:
-				if (homeFragment == null) {
-					homeFragment = new HomeFragment();
-				}
-				return homeFragment;
-			case 5:
-				if (chatFragment == null) {
-					chatFragment = new ChatFragment();
-				}
-				return chatFragment;
-			case 1:
-				if (foundFragment == null) {
-					foundFragment = new FoundFragment();
-				}
-				return foundFragment;
-			case 2:
-				if (contactsFragment == null) {
-					contactsFragment = new ContactsFragment();
-				}
-				return contactsFragment;
-			case 3:
-				if (aboutFragment == null) {
-					aboutFragment = new AboutFragment();
-				}
-				return aboutFragment;
-			case 4:
-				if (helpFragment == null) {
-					helpFragment = new HelpFragment();
-				}
-				return helpFragment;
-			default:
-				return null;
-			}
+			return mTabClassArray[position];
+			
+			
 		}
 
 	}
@@ -168,6 +151,7 @@ public class TabMainActivity extends FragmentActivity {
 		return true;
 	}
 
+	/*
 	@Override
 	public boolean onMenuOpened(int featureId, Menu menu) {
 		if (featureId == Window.FEATURE_ACTION_BAR && menu != null) {
@@ -183,7 +167,7 @@ public class TabMainActivity extends FragmentActivity {
 		}
 		return super.onMenuOpened(featureId, menu);
 	}
-
+*/
 	private void setOverflowShowingAlways() {
 		try {
 			ViewConfiguration config = ViewConfiguration.get(this);
@@ -195,5 +179,6 @@ public class TabMainActivity extends FragmentActivity {
 			e.printStackTrace();
 		}
 	}
+	
 
 }

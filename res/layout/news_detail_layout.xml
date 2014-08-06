@@ -7,7 +7,7 @@
   >
 
    <TextView
-           android:id="@+id/textTitle"
+           android:id="@+id/newsTitle"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:textSize="19sp"
@@ -16,7 +16,7 @@
            android:gravity="center" />
        
     <TextView
-        android:id="@+id/textTime"
+        android:id="@+id/newsTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="2014-8-4 9:16:12"

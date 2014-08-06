@@ -411,6 +411,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int main_tab_settings=0x7f050020;
         public static final int main_tab_weixin=0x7f05001d;
         public static final int manualOnly=0x7f050004;
+        public static final int newsTime=0x7f050022;
+        public static final int newsTitle=0x7f050021;
         public static final int pager=0x7f05000f;
         public static final int pullDownFromTop=0x7f050005;
         public static final int pullFromEnd=0x7f050002;
@@ -424,8 +426,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int rotate=0x7f050007;
         public static final int scrollview=0x7f05000b;
         public static final int tabs=0x7f05000e;
-        public static final int textTime=0x7f050022;
-        public static final int textTitle=0x7f050021;
         public static final int tv_mima=0x7f050017;
         public static final int tv_zh=0x7f050015;
         public static final int webview=0x7f05000a;

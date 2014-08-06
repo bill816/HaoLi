@@ -30,18 +30,11 @@ public class GetHaoLiData {
 //		HaoliRestClient.post("/module/member/huiyuanzq.asp", null, resphandler);
 	}
 	
-	/*
-	static int a = 1;
-	AsyncHttpResponseHandler resphandler = new AsyncHttpResponseHandler(){
+
+	AsyncHttpResponseHandler resphandler1 = new AsyncHttpResponseHandler(){
 		@Override
         public void onSuccess(String response) {
             System.out.println(response);
-            System.out.println("--------------------------------------------");
-            System.out.println("--------------------------------------------");
-            System.out.println("--------------------------------------------");
-            if(a == 1)
-            	HaoliRestClient.post("module/celuezhuanan/touzhijingyao.asp", null, resphandler);
-            a = 2;
         }
 		@Override
         public void onFailure(Throwable e, String response) {
@@ -54,5 +47,4 @@ public class GetHaoLiData {
 			
         }
 	};
-	*/
 }

@@ -1,15 +1,22 @@
 package com.haoli.ActionBar;
 
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
+
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.haoli.R;
 import com.haoli.activity.NewsDetail;
 import com.haoli.bean.NewsDataBase;
+import com.haoli.biz.NewsItemBiz;
+import com.haoli.net.HaoliRestClient;
+import com.haoli.utils.URLUtil;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
 import android.content.Context;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
@@ -18,7 +25,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * 首页Fragment的界面
@@ -26,13 +32,25 @@ import android.widget.Toast;
  * 
  * @author guoxiao
  */
-public class HomeFragment extends ListFragment {
+public class NewsListFragment extends ListFragment {
 	 
 	private PullToRefreshListView mListView;
 	private Adapter mAdapter = new Adapter();
-	private String TAG = HomeFragment.class.getName();
+	private String TAG = NewsListFragment.class.getName();
 	public  ArrayList<NewsDataBase> mListData;
 	private LayoutInflater mInflater;
+	private int mCurrPage = 1;
+	private int mGetpage = 1;
+	protected String mRelativeUrl;
+	private String mNewsType;
+	
+	public NewsListFragment(String relativeurl,String newsType){
+		mRelativeUrl = relativeurl ;
+		mNewsType = newsType;
+	}
+	public NewsListFragment(){
+		
+	}
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -52,7 +70,9 @@ public class HomeFragment extends ListFragment {
         }
         mListData = new ArrayList<NewsDataBase>();
         setListAdapter(mAdapter);
-		mListView.onRefreshComplete(); 
+        mGetpage = mCurrPage;
+        HaoliRestClient.get(mRelativeUrl+"?r=6&page=" + mCurrPage++, null, resphandler);
+		mListView.onRefreshComplete();
 		
 		mListView.setOnRefreshListener(new OnRefreshListener2<ListView>()
 		{
@@ -61,7 +81,8 @@ public class HomeFragment extends ListFragment {
 					PullToRefreshBase<ListView> refreshView)
 			{
 				//这里写下拉刷新的任务
-				new GetDataTask().execute(mListData.size());
+				mGetpage = 1;
+				HaoliRestClient.get(mRelativeUrl+"?r=6&page=1", null, resphandler);
 			}
 
 			@Override
@@ -69,10 +90,12 @@ public class HomeFragment extends ListFragment {
 					PullToRefreshBase<ListView> refreshView)
 			{
 				//这里写上拉加载更多的任务
-				new GetDataTask().execute(mListData.size());
+				///module/shichangyanjiu/caopangbidu.asp?r=6&page=2
+				mGetpage = mCurrPage;
+				HaoliRestClient.get(mRelativeUrl+"?r=6&page=" + mCurrPage++, null, resphandler);
 			}
 		});
-			
+		mListView.refreshDrawableState();
 	 }  
 
 	
@@ -86,55 +109,12 @@ public class HomeFragment extends ListFragment {
         super.onListItemClick(l, v, position, id);  
 
         Intent intent = new Intent(getActivity(), NewsDetail.class);
+        Bundle bundleSimple = new Bundle();
+        bundleSimple.putString("id", mListData.get(position).getNewsID());
+        intent.putExtras(bundleSimple);
 		startActivity(intent);
-        Toast.makeText(getActivity(), String.valueOf(position), Toast.LENGTH_LONG).show();
+//        Toast.makeText(getActivity(), String.valueOf(position), Toast.LENGTH_LONG).show();
     } 
-	
-	/**  
-	 * 生成该类的对象，并调用execute方法之后  
-	 * 首先执行的是onProExecute方法  
-	 * 其次执行doInBackgroup方法  
-	 *  
-	 */
-	private class GetDataTask extends AsyncTask<Integer, Void, ArrayList<NewsDataBase>>
-	{
-
-		 /**  
-	     * 这里的Integer参数对应AsyncTask中的第一个参数，代表第几页新闻，最新的新闻值为1   
-	     * 这里的String返回值对应AsyncTask的第三个参数  
-	     * 该方法并不运行在UI线程当中，主要用于异步操作，所有在该方法中不能对UI当中的空间进行设置和修改  
-	     * 但是可以调用publishProgress方法触发onProgressUpdate对UI进行操作  
-	     */
-		@Override
-		protected ArrayList<NewsDataBase> doInBackground(Integer... params)
-		{
-			int page = params[0].intValue();
-			
-			ArrayList<NewsDataBase> dataList = new ArrayList<NewsDataBase>();
-			NewsDataBase data = new NewsDataBase();
-			data.setNewsTitle("test test test test test test test test");
-			data.setNewsTime("20140801");
-			data.setNewsSummary("sumary sumarysumary11111111111");
-			dataList.add(data);
-			
-			try
-			{
-				Thread.sleep(2000);
-			} catch (InterruptedException e)
-			{
-			}
-			return dataList;
-		}
-
-		@Override
-		protected void onPostExecute(ArrayList<NewsDataBase> result)
-		{
-			mListData.addAll(result);
-			mAdapter.notifyDataSetChanged();
-			// Call onRefreshComplete when the list has been refreshed.
-			mListView.onRefreshComplete();
-		}
-	}
 	
 	
 	 public final class ViewHolder {  
@@ -187,5 +167,38 @@ public class HomeFragment extends ListFragment {
             holder.sumary.setText(news.getNewsSummary());
             return convertView;  
         }  
-    }  
+    }
+    
+    AsyncHttpResponseHandler resphandler = new AsyncHttpResponseHandler(){
+		@Override
+        public void onSuccess(String response) {
+//            System.out.println(response);
+			
+			List<NewsDataBase> result = NewsItemBiz.htmlStrToNewsDataBase(0, response);
+			//如果有新的数据则清掉原来的数据
+			//如果加载页数为第1页，并且缓存里数据不为空时，对比第一个是否相等来判断是否有数据更新
+			if(mListData.isEmpty()){
+				mListData.addAll(result);
+			}else if(1 == mGetpage
+					&& !mListData.get(0).getNewsID().equals(result.get(0).getNewsID())){
+				mListData.clear();
+				mListData.addAll(result);
+			}else if(1 != mGetpage){
+				mListData.addAll(result);
+			}
+			mAdapter.notifyDataSetChanged();
+			// Call onRefreshComplete when the list has been refreshed.
+			mListView.onRefreshComplete();
+        }
+		@Override
+        public void onFailure(Throwable e, String response) {
+            System.out.println(response);
+        }
+		
+		@Override
+        public void onFinish() {
+			// Completed the request (either success or failure)
+			
+        }
+	};
 }

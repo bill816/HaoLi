@@ -34,12 +34,12 @@ public class HaoLiMainActivity extends TabActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_tab);
-        GetHaoLiData getData = new GetHaoLiData();
+//        GetHaoLiData getData = new GetHaoLiData();
         
 //        getData.login("", "");
         
-        NewsItemBiz.getNewsDataBase(0, 0, this);
-        NewsItemBiz.getNewsDetail(null);
+//        NewsItemBiz.getNewsDataBase(0, 0, this);
+//        NewsItemBiz.getNewsDetail(null);
         init();
     }
 

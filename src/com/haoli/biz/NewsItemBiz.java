@@ -26,9 +26,11 @@ public class NewsItemBiz
 	final static int BUFFER_SIZE = 4096; 
 	private static Context mContext;
 	
-	public static List<NewsDataBase> getNewsDataBase(int newsType,int currpage,Context context){
+	public static List<NewsDataBase> htmlStrToNewsDataBase(int newsType,String htmlStr){
 		List<NewsDataBase> newsItems = new ArrayList<NewsDataBase>();
 		NewsDataBase newsItem = null;
+		
+		/*
 		mContext = context;
 		String htmlStr=null;
 		try {
@@ -39,10 +41,12 @@ public class NewsItemBiz
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 		
 		Document doc = Jsoup.parse(htmlStr);
+		
+		
 		Elements units = doc.getElementsByClass("art");
 		for (int i = 0; i < units.size(); i++) {
 			newsItem = new NewsDataBase(); 
@@ -66,7 +70,12 @@ public class NewsItemBiz
 			
 			/*********************get summary*******************/
 			Element dd_ele = dl_ele.getElementsByTag("dd").get(0);
-			String sumary = dd_ele.textNodes().get(0).text();
+			String sumary;
+			if(dd_ele.textNodes().isEmpty()){
+				sumary = null;
+			}else{
+				sumary = dd_ele.textNodes().get(0).text();
+			}
 			newsItem.setNewsSummary(sumary);
 			newsItems.add(newsItem);
 			Log.d("[GX]","----------" + title);
@@ -74,18 +83,9 @@ public class NewsItemBiz
 		return newsItems;
 	}
 	
-	public static String getNewsDetail(String id){
+	public static NewsDataDetail JsonStrToNewsDetail(String jsonStr){
 		//String jsonStr = "{"title":"每日必读 2014-8-5","author":"曾海龙","className":"操盘必读","addtime":"2014-8-5 9:18:01","content":"<font face='黑体'>（1）万丰奥威上半年净利2亿元 拟10股派5元<br>（2）金正大上半年净利4.79亿元 同比增长27%<br>（3）哈空调拟1.31亿底价售上海天勃100%股权<br>（4）江铃汽车7月汽车销量22031辆 同比增33%<br>（5）维尔利拟2590万元受让常州大维51%股权<br>（6）信质电机上半年净利8069万 拟10股转5股<br>（7）三星电气中期净利1.03亿 同比增22.88%<br>（8）复星医药投5亿元与公立医院合作<br>（9）长园集团利好频发 沃尔核材举牌浮盈约3000万<br>（10）明牌珠宝进军在线教育 前景不明</font>"}"
-		String jsonStr=null;
-		try {
-			InputStream is = mContext.getAssets().open("test.json");
-			jsonStr = inputStreamTOString(is);
-//			Log.d("[GX]", htmlStr);
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		NewsDataDetail detail = new NewsDataDetail();
 		
 		try {  
             JsonReader reader=new JsonReader(new StringReader(jsonStr));  
@@ -94,27 +94,27 @@ public class NewsItemBiz
             String key=reader.nextName();  
             if("title".equals(key))  
             {  
-                System.out.println(reader.nextString());
+                detail.setNewsTitle(reader.nextString());
                 key=reader.nextName();
             }
             if("author".equals(key))
             {  
-                System.out.println(reader.nextString());
+                detail.setNewsAuther(reader.nextString());
                 key=reader.nextName();
             }  
             if("className".equals(key))
-            {  
-                System.out.println(reader.nextString()); 
+            {   
+                detail.setNewsType(reader.nextString());
                 key=reader.nextName();
             } 
             if("addtime".equals(key))  
             {  
-                System.out.println(reader.nextString());  
+            	detail.setNewsTime(reader.nextString());  
                 key=reader.nextName();
             }
             if("content".equals(key))  
             {  
-                System.out.println(reader.nextString());  
+                detail.setNewsContent(reader.nextString());
             }
             reader.endObject();  
               
@@ -122,7 +122,7 @@ public class NewsItemBiz
             // TODO Auto-generated catch block  
             e.printStackTrace();  
         }  
-		return null;
+		return detail;
 	}
 	
 	/**  

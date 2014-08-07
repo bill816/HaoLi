@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 
 import com.haoli.R;
 import com.haoli.biz.NewsItemBiz;
+import com.haoli.biz.StockItemBiz;
 import com.haoli.net.GetHaoLiData;
 
 import android.app.TabActivity;
@@ -40,6 +41,7 @@ public class HaoLiMainActivity extends TabActivity {
         
 //        NewsItemBiz.getNewsDataBase(0, 0, this);
 //        NewsItemBiz.getNewsDetail(null);
+        //StockItemBiz.htmlStrToNewsDataBase(0,"",this);
         init();
     }
 

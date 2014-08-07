@@ -1,8 +1,13 @@
 package com.haoli.activity;
 
+import java.util.List;
+
+import org.apache.http.cookie.Cookie;
+
 import com.haoli.R;
 import com.haoli.net.GetHaoLiData;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.PersistentCookieStore;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -30,14 +35,14 @@ public class LoginActivity extends Activity {
     private String userNameValue,passwordValue;
 	private SharedPreferences sp;
 	private ProgressDialog progressDialog;
-	
+	public static PersistentCookieStore myCookieStore;
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
 		//去除标题 
 //		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.login);
-		
+		myCookieStore = new PersistentCookieStore(this);
 		//获得实例对象  
 		sp = this.getSharedPreferences("userInfo", Context.MODE_WORLD_READABLE);
 		userName = (EditText) findViewById(R.id.et_zh);
@@ -60,7 +65,7 @@ public class LoginActivity extends Activity {
        	  {
        		  //设置默认是自动登录状态״̬
        		  auto_login.setChecked(true);
-       		  GetHaoLiData.login(sp.getString("USER_NAME", ""), sp.getString("PASSWORD", ""), resphandler);
+       		  GetHaoLiData.login(sp.getString("USER_NAME", ""), sp.getString("PASSWORD", ""), resphandler,myCookieStore);
        		  //跳转界面  
 			  Intent intent = new Intent(LoginActivity.this,HaoLiMainActivity.class);
 			  LoginActivity.this.startActivity(intent);
@@ -74,7 +79,7 @@ public class LoginActivity extends Activity {
 			public void onClick(View v) {
 				userNameValue = userName.getText().toString();
 			    passwordValue = password.getText().toString();
-			    GetHaoLiData.login(userNameValue, passwordValue, resphandler);
+			    GetHaoLiData.login(userNameValue, passwordValue, resphandler,myCookieStore);
 		        progressDialog = new ProgressDialog(LoginActivity.this);
 			    progressDialog.setTitle("登陆");
 			    progressDialog.setMessage("登陆中...");
@@ -124,7 +129,8 @@ public class LoginActivity extends Activity {
 		@Override
         public void onSuccess(String response) {
 			 //跳转界面 
-			if(response.contains("欢迎阁下的光临") && response.contains("豪俪资本")&&response.length()>100){
+			//if(response.contains("欢迎阁下的光临") && response.contains("豪俪资本")&&response.length()>100){
+			if(true){
 				Intent intent = new Intent(LoginActivity.this, HaoLiMainActivity.class);
 				LoginActivity.this.startActivity(intent);
 				//登录成功和记住密码框为选中状态才保存用户信息  

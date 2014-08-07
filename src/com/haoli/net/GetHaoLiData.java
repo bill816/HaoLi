@@ -1,6 +1,7 @@
 package com.haoli.net;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.PersistentCookieStore;
 import com.loopj.android.http.RequestParams;
 
 
@@ -12,7 +13,7 @@ public class GetHaoLiData {
 
 	}
 	
-	public static void login(String usr,String pwd,AsyncHttpResponseHandler resphandler ){
+	public static void login(String usr,String pwd,AsyncHttpResponseHandler resphandler,PersistentCookieStore cookieStore){
 			
 		RequestParams params = new RequestParams();  
 		params.put("username", usr);
@@ -21,7 +22,8 @@ public class GetHaoLiData {
 		params.put("toploginbtn", "");
 		params.put("ast", "in");
 		params.put("coolgn", "yes");
-		HaoliRestClient.addHeader(); 
+		HaoliRestClient.addHeader();
+		HaoliRestClient.setCookieStore(cookieStore);
 		HaoliRestClient.post("/module/member/huiyuanzq.asp", params, resphandler);
 	}
 	

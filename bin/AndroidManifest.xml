@@ -10,13 +10,13 @@
 	<uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/hl"
         android:label="@string/app_name"
-        android:logo="@drawable/logo"
+        android:logo="@drawable/hl"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.haoli.activity.LoginActivity"
-            android:icon="@drawable/logo"
+            android:icon="@drawable/hl"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +26,7 @@
         </activity>
         <activity android:name="com.haoli.activity.TabMainActivity" />
         <activity android:name="com.haoli.activity.StocksList" />
+        <activity android:name="com.haoli.activity.NewsDetail" />
         <activity android:name="com.haoli.activity.HaoLiMainActivity" />
         <activity android:name="com.haoli.activity.PullToRefreshListActivity"/>
     </application>

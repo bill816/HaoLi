@@ -3,6 +3,7 @@
     android:id="@android:id/tabhost" 
     android:layout_width="fill_parent" 
     android:layout_height="fill_parent"
+    android:background="#E1D8C1"
     xmlns:android="http://schemas.android.com/apk/res/android">
     
     <LinearLayout 
@@ -36,7 +37,7 @@
 			<RadioButton 
 			    android:id="@+id/main_tab_weixin" 
 			    android:checked="true" 
-			    android:text="@string/main_title" 
+			    android:text="@string/tab_type_strategy_project" 
 			    android:drawableTop="@drawable/tab_weixin"
 			    android:textColor="@color/tab_text"
 			    style="@style/MMTabButton" />	
@@ -44,14 +45,14 @@
 
 		 	<RadioButton 
                 android:id="@+id/main_tab_address" 
-                android:text="@string/main_contact" 
+                android:text="@string/tab_type_marcket_research" 
                 android:drawableTop="@drawable/tab_address" 
                 android:textColor="@color/tab_text"
                 style="@style/MMTabButton" />
 			
 		 	<RadioButton 
 		 	    android:id="@+id/main_tab_find_friend" 
-		 	    android:text="@string/main_addcontact" 
+		 	    android:text="@string/tab_type_project_model" 
 		 	    android:drawableTop="@drawable/tab_find_frd"
 		 	    android:textColor="@color/tab_text" 
 		 	    style="@style/MMTabButton" />
@@ -59,7 +60,7 @@
 		 	
 		 	<RadioButton 
 		 	    android:id="@+id/main_tab_settings" 
-		 	    android:text="@string/main_setting" 
+		 	    android:text="@string/tab_type_haoli_home" 
 		 	    android:drawableTop="@drawable/tab_settings" 
 		 	    android:textColor="@color/tab_text"
 		 	    style="@style/MMTabButton" />

@@ -16,6 +16,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebView;
@@ -41,6 +42,9 @@ public class StocksList extends Activity{
         mWebView = (WebView)findViewById(R.id.wvContent);
         mNewsTitle = (TextView)findViewById(R.id.newsTitle);
         mNewsTime = (TextView)findViewById(R.id.newsTime);
+        mNewsTitle.setVisibility(View.GONE);
+        mNewsTime.setVisibility(View.GONE);
+        
         mWebView.getSettings().setBuiltInZoomControls(true);  
         mWebView.getSettings().setJavaScriptEnabled(true);
         

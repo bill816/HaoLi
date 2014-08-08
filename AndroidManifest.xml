@@ -24,12 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActionBar.TabMainActivity" />
-        <activity android:name="com.haoli.activity.Activity1" />
-        <activity android:name="com.haoli.activity.Activity2" />
-        <activity android:name="com.haoli.activity.Activity3" />
-        <activity android:name="com.haoli.activity.Activity4" />
-        <activity android:name="com.haoli.activity.NewsDetail" />
+        <activity android:name="com.haoli.activity.TabMainActivity" />
         <activity android:name="com.haoli.activity.StocksList" />
         <activity android:name="com.haoli.activity.HaoLiMainActivity" />
         <activity android:name="com.haoli.activity.PullToRefreshListActivity"/>

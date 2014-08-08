@@ -6,6 +6,7 @@ import com.haoli.R;
 import com.haoli.biz.NewsItemBiz;
 import com.haoli.biz.StockItemBiz;
 import com.haoli.net.GetHaoLiData;
+import com.haoli.utils.TabContainer;
 
 import android.app.TabActivity;
 import android.content.Intent;
@@ -35,13 +36,6 @@ public class HaoLiMainActivity extends TabActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_tab);
-//        GetHaoLiData getData = new GetHaoLiData();
-        
-//        getData.login("", "");
-        
-//        NewsItemBiz.getNewsDataBase(0, 0, this);
-//        NewsItemBiz.getNewsDetail(null);
-        //StockItemBiz.htmlStrToNewsDataBase(0,"",this);
         init();
     }
 
@@ -51,12 +45,12 @@ public class HaoLiMainActivity extends TabActivity {
 	{
 		m_tabHost = getTabHost();
 	
-		int count = Constant.mTabClassArray.length;		
+		int count = TabContainer.mTextviewArray.length;		
 		for(int i = 0; i < count; i++)
 		{	
-			TabSpec tabSpec = m_tabHost.newTabSpec(Constant.mTextviewArray[i]).
-													setIndicator(Constant.mTextviewArray[i]).
-													setContent(getTabItemIntent(i));
+			TabSpec tabSpec = m_tabHost.newTabSpec(TabContainer.mTextviewArray[i]);
+			tabSpec.setIndicator(TabContainer.mTextviewArray[i]);
+			tabSpec.setContent(getTabItemIntent(i));
 			m_tabHost.addTab(tabSpec);
 		}
 		
@@ -67,16 +61,16 @@ public class HaoLiMainActivity extends TabActivity {
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
 				switch(checkedId){
 				case R.id.main_tab_weixin:
-					m_tabHost.setCurrentTabByTag(Constant.mTextviewArray[0]);
+					m_tabHost.setCurrentTabByTag(TabContainer.mTextviewArray[0]);
 					break;
 				case R.id.main_tab_address:
-					m_tabHost.setCurrentTabByTag(Constant.mTextviewArray[1]);
+					m_tabHost.setCurrentTabByTag(TabContainer.mTextviewArray[1]);
 					break;
 				case R.id.main_tab_find_friend:
-					m_tabHost.setCurrentTabByTag(Constant.mTextviewArray[2]);
+					m_tabHost.setCurrentTabByTag(TabContainer.mTextviewArray[2]);
 					break;
 				case R.id.main_tab_settings:
-					m_tabHost.setCurrentTabByTag(Constant.mTextviewArray[3]);
+					m_tabHost.setCurrentTabByTag(TabContainer.mTextviewArray[3]);
 					break;
 				}
 			}
@@ -87,8 +81,11 @@ public class HaoLiMainActivity extends TabActivity {
 	
 	private Intent getTabItemIntent(int index)
 	{
-		Intent intent = new Intent(this, Constant.mTabClassArray[index]);
-		
+		Intent intent = new Intent(this, TabMainActivity.class);
+		Bundle bundleSimple = new Bundle();
+        bundleSimple.putInt("type", index);
+        intent.putExtras(bundleSimple);
+//		startActivity(intent);
 		return intent;
 	}
 }

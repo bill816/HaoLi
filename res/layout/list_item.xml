@@ -3,6 +3,7 @@
     android:id="@+id/RelativeLayout_Item"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    android:background="#E1D8C1"
     android:paddingBottom="5dip" >
 
    <TextView

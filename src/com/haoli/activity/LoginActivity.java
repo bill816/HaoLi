@@ -66,10 +66,6 @@ public class LoginActivity extends Activity {
        		  //设置默认是自动登录状态״̬
        		  auto_login.setChecked(true);
        		  GetHaoLiData.login(sp.getString("USER_NAME", ""), sp.getString("PASSWORD", ""), resphandler,myCookieStore);
-       		  //跳转界面  
-			  Intent intent = new Intent(LoginActivity.this,HaoLiMainActivity.class);
-			  LoginActivity.this.startActivity(intent);
-				
        	  }
         }
 		
@@ -129,8 +125,9 @@ public class LoginActivity extends Activity {
 		@Override
         public void onSuccess(String response) {
 			 //跳转界面 
-			//if(response.contains("欢迎阁下的光临") && response.contains("豪俪资本")&&response.length()>100){
-			if(true){
+			if((response.contains("欢迎阁下的光临") && response.contains("豪俪资本")&&response.length()>100)
+					|| response.equals("<script type='text/javascript'>location.href='/home.asp';</script>")){
+//			if(true){
 				Intent intent = new Intent(LoginActivity.this, HaoLiMainActivity.class);
 				LoginActivity.this.startActivity(intent);
 				//登录成功和记住密码框为选中状态才保存用户信息  
@@ -159,8 +156,8 @@ public class LoginActivity extends Activity {
 		@Override
         public void onFinish() {
 			// Completed the request (either success or failure)
-			progressDialog.cancel();
-			Toast.makeText(LoginActivity.this,"用户名或密码错误，请重新登录", Toast.LENGTH_LONG).show();
+//			progressDialog.cancel();
+//			Toast.makeText(LoginActivity.this,"用户名或密码错误，请重新登录", Toast.LENGTH_LONG).show();
         }
 	};
 }

@@ -142,14 +142,14 @@ public class LoginActivity extends Activity {
 				finish();
 			}else{
 				progressDialog.cancel();
-				Toast.makeText(LoginActivity.this,"用户名或密码错误，请重新登录", Toast.LENGTH_LONG).show();
+				Toast.makeText(LoginActivity.this,"用户名或密码错误，请重新登录!", Toast.LENGTH_LONG).show();
 			}
             System.out.println(response);
         }
 		@Override
         public void onFailure(Throwable e, String response) {
 			progressDialog.cancel();
-			Toast.makeText(LoginActivity.this,"用户名或密码错误，请重新登录", Toast.LENGTH_LONG).show();
+			Toast.makeText(LoginActivity.this,"无法连接服务器，请检查您的网络是否连通！", Toast.LENGTH_LONG).show();
             System.out.println(response);
         }
 		

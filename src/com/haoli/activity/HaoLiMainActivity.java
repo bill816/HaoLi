@@ -6,12 +6,19 @@ import com.haoli.R;
 import com.haoli.biz.NewsItemBiz;
 import com.haoli.biz.StockItemBiz;
 import com.haoli.net.GetHaoLiData;
+import com.haoli.umeng.MyPushIntentService;
 import com.haoli.utils.TabContainer;
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.message.IUmengRegisterCallback;
+import com.umeng.message.IUmengUnregisterCallback;
+import com.umeng.message.PushAgent;
 
 import android.app.TabActivity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources.Theme;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
@@ -31,11 +38,29 @@ public class HaoLiMainActivity extends TabActivity {
     
 	private TabHost		m_tabHost;		
 	private RadioGroup  m_radioGroup;
-		
+	private PushAgent mPushAgent;	
+	private Context mContext;
+	private final  String mPageName = "AnalyticsHome";
 		
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_tab);
+        mContext = this;
+        //umeng push code
+		mPushAgent = PushAgent.getInstance(this);
+		mPushAgent.onAppStart();
+		mPushAgent.enable(mRegisterCallback);
+		mPushAgent.setPushIntentServiceClass(MyPushIntentService.class);
+		
+		//umeng analytics code
+		MobclickAgent.setDebugMode(true);
+//      SDK在统计Fragment时，需要关闭Activity自带的页面统计，
+//		然后在每个页面中重新集成页面统计的代码(包括调用了 onResume 和 onPause 的Activity)。
+		MobclickAgent.openActivityDurationTrack(false);
+//		MobclickAgent.setAutoLocation(true);
+//		MobclickAgent.setSessionContinueMillis(1000);
+		
+		MobclickAgent.updateOnlineConfig(this);
         init();
     }
 
@@ -88,4 +113,54 @@ public class HaoLiMainActivity extends TabActivity {
 //		startActivity(intent);
 		return intent;
 	}
+	
+	
+	@Override
+	public void onResume() {
+		super.onResume();
+		MobclickAgent.onPageStart( mPageName );
+		MobclickAgent.onResume(mContext);
+	}
+	
+	@Override
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPageEnd( mPageName );
+		MobclickAgent.onPause(mContext);
+	}
+	
+	
+	public Handler handler = new Handler();
+	public IUmengRegisterCallback mRegisterCallback = new IUmengRegisterCallback() {
+		
+		@Override
+		public void onRegistered(String registrationId) {
+			// TODO Auto-generated method stub
+			handler.post(new Runnable() {
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+//					updateStatus();
+				}
+			});
+		}
+	};
+	
+	public IUmengUnregisterCallback mUnregisterCallback = new IUmengUnregisterCallback() {
+		
+		@Override
+		public void onUnregistered(String registrationId) {
+			// TODO Auto-generated method stub
+			handler.post(new Runnable() {
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+//					updateStatus();
+				}
+			});
+		}
+	};
+	
 }
